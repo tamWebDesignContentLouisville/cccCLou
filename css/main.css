@@ -48,7 +48,7 @@ body {
     padding-right: 10px; 
 }
 
-.cccLogo {
+.cccLogo3 {
     position: absolute; 
     margin-top: 0 5px 5px 0;
     width: 100%;
@@ -57,17 +57,18 @@ body {
     max-width: 25%;
 }
 
-.ccc-logo3 {
+.ccc-logo {
     display: none;
 }
-
+   
+   
 .slideShow {
     display: flex;
     flex-direction: row;
     position: absolute;
     width: 100%;
     height: 100px;
-    top: 200px;
+    top: 168px;
     left: 200px;
     overflow: hidden;
     z-index: 1001;
@@ -87,18 +88,17 @@ body {
     position: absolute;
     width: 20%;
     height: auto;
-    margin: 160px 0 0 310px;
+    margin: 180px 0 0 310px;
     background-size: contain;
     cursor: pointer;
     border: solid 4px #ff1cd5;
     z-index: 1000;
 }
 
-
 .bkgdImg {
     position: absolute;
     width: 100%;
-    top: 198px;
+    top: 168px;
 }
 
 .bkgdImg2 {
@@ -109,13 +109,16 @@ body {
 
 .intro {
     font-family: 'Lato', sans-serif;
-    color: #fff; 
+    color: #440099; 
     text-shadow: 1px 1px 2px #000;
     text-align: center;
     padding: 10px;
     width: 100%;
-    height: 150px;
-    background: radial-gradient(circle at top right, #004744 0%, #00e0d5 55%, #00e0d5 65%, #1ffff4  80%, #fff 90%);
+    height: 120px;
+    
+    /*background: radial-gradient(circle at top right, #004744 0%, #00e0d5 55%, #00e0d5 65%, #1ffff4  80%, #fff 90%);*/
+    
+    background: #fff;
     border-bottom: solid 5px #440099;  
 }
 
@@ -130,28 +133,25 @@ body {
 }
 
 #scholLinks {
-    height: ;
-    left: 500px;
-    width: 290px;
+    height: 100%;
+    width: 100%;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     color: #440099;
     text-shadow: none;
-    text-align: right;
+    text-align: center;
     z-index: 11;
     top: 50;
 }
 
 #scholLinks a {
     display: inline-block;
-    left: 1000px;
-    font-size: 1.3em;
-    text-shadow: none;
-    display: inline;
     position: relative;
+    font-size: 1em;
+    text-shadow: none;
     color: #440099;
     padding: 0 0 0 80px;
-    top: 25px;
+    top: 65px;
 }
 
 #scholLinks a:link {
@@ -178,10 +178,14 @@ body {
     flex-direction: column;
 }
 
+#hoursPg {
+    display: none;
+}
+
 .txtMissn {
     display: flex;
     position: absolute;
-    top: 180px;
+    top: 140px;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -195,10 +199,6 @@ body {
     z-index: 999;
     opacity: 0.6;
     filter: alpha(opacity=0.6); /* For IE8 and earlier */
-}
-
-#hoursPg {
-    display: none;
 }
 
 .txtMissn span {
@@ -302,13 +302,9 @@ mapDir p {
     margin-top: px;
 }
 
-.navPhone {
-    display: none;
-}
-
 .transSide {
     position: absolute;
-    height: 1296px;
+    height: 1316px;
     width: 200px;
     margin: 0;
     top: 0;
@@ -323,7 +319,7 @@ mapDir p {
 .transSide ul {
     margin-top: 25px;
     list-style-type: none;
-    padding: 0 25px 0 25px;
+    padding: 0 15px 0 15px;
     margin-bottom: 40px;
 }
 
@@ -346,15 +342,40 @@ mapDir p {
     font-weight: bold;
     color: #440099;
     text-align: center;
-    /*margin-top: 125px;*/
     list-style-type: none;
     padding: 25px 0 0 25px;
     margin-bottom: 1px;
 }
 
-navPhone2 {
-    display: none;
+ .navPhone2 {
+        display: flex;
+        jusstify-content: flex-end;
+        position: absolute;
+        font-family: 'Lato', sans-serif;
+        font-size: 100%;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        height: 125px;
+        width: 90px;
+        margin: 0;
+        top: 60px;
+        right: 0;
+        z-index: 99;   
+    }
+    
+    .navPhone2 ul {
+        color: #fff;
+        padding: 0 5px;
+        list-style-type: none;
+    }
+    
+    .navPhone2 li {
+        padding-left: 5px;
+        color: #fff;
+        text-size: .6em;
 }
+
 
 a:link {
     color: #440099;
@@ -381,19 +402,23 @@ a:active {
 
 
 #hdhrs {
-    font-size: 1em
+    font-size: .7em;
     text-decoration: underline;
     color: #440099;
     padding-bottom: 5px;
 }
 
+.fbLogo a {
+    font-size: .8em;
+}
+
 .day {
-    font-size: .9em;
+    font-size: .7em;
     margin-bottom: 5px;
 }
 
 .time {
-    font-size: .7em;
+    font-size: .6em;
     color: #000;
     margin-bottom: 10px;
 }
@@ -402,14 +427,20 @@ a:active {
     top: 560px;
     margin: 25px 0;
     padding: 5px;
-    font-size: .9em;
+    font-size: .8em;
+}
+
+.fbLogo2 {
+    top: 560px;
+    padding: 5px;
+    margin: 0 10px;
 }
 
 .myButton {
     margin: 0 300px 0 650px;
     position: absolute;
     width: auto;
-    top: 130px;
+    top: 75px;
     right: 50px;
 	-moz-box-shadow: 1px 2px 3px 1px #fff6af;
 	-webkit-box-shadow: 1px 2px 3px 1px #fff6af;
@@ -454,12 +485,6 @@ a:active {
     color: red;
 }
 
-
-.fbLogo2 {
-    top: 560px;
-    padding: 5px;
-    margin: 0 10px;
-}
 
 .main-footer {
     display: flex;
@@ -507,7 +532,7 @@ a:active {
         position: absolute;
         /*start size of button*/
         top: 100px;
-        right: 10px;
+        right: 120px;
         /*end size of button*/
         margin: 32px 0 0 200px;
         padding: 2px 1px;
@@ -516,33 +541,14 @@ a:active {
     }
     
     #scholLinks {
-        left: 300px;
-        width: 250px;
-        margin: 40px 0 0;
-        font-family: 'Lato', sans-serif;
-        font-weight: bold;
-        color: #440099;
-        text-shadow: none;
-        text-align: left;
-        z-index: 11;
-        top: 50;
+        text-align:;
     }
 
     #scholLinks a {
-        display: inline-block;
-        left: 170px;
-        font-size: 1em;
-        text-shadow: none;
-        display: inline;
-        position: relative;
-        color: #440099;
-        padding: 0;
-        top: 45px;
+        width: 50%;
+        top: 30px;
+        padding: 0 0 0 40px;
     }
-
-    #scholLinks a:link {
-        color: #fff;
-    }  
 
     .intro {
         flex-direction: column;
@@ -560,9 +566,9 @@ a:active {
     }
     
     #hoursPg {
-        position: absolute;
-        right: 100px;
-        width: 100px;
+        position: fixed;
+        right: 3px;
+        width: ;
         padding-right: 7px;
         top: 150px;
         font-family: 'Lato', sans-serif;
@@ -622,7 +628,8 @@ a:active {
     
     .navPhone2 {
         display: flex;
-        align-content: flex-start;
+        flex-direction: column;
+        align-content: flex-end;
         position: absolute;
         font-family: 'Lato', sans-serif;
         font-size: 90%;
@@ -632,8 +639,8 @@ a:active {
         height: 125px;
         width: 90px;
         margin: 0;
-        top: 60px;
-        left: 175px;
+        top: 67px;
+        right: 0;
         z-index: 99;   
     }
     
@@ -643,30 +650,18 @@ a:active {
         list-style-type: none;
     }
     
-    .navPhone li {
+    .navPhone2 li {
         padding-left: 5px;
         color: #fff;
         text-size: .6em;
     }
     
     .slideShow {
-        position: absolute;
-        width: 100%;
-        top: 178px;
-        left: 0;
-        display: flex;
-        flex-direction: row;
-        height: 100px;
-        overflow: hidden;
+        display: none;
     }
 
     .slideShow img {
-        height: 70%;
-        width:  auto;
-        background-size: contain;
-        cursor: pointer;
-        border-right: solid 2px #fff;
-        border-bottom: solid 2px #440099;
+        display: none;
     }
     
     .lrgImg {
