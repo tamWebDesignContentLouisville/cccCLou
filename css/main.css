@@ -15,7 +15,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+content {
     
 	display: flex;
     flex-direction: column;
@@ -355,15 +355,9 @@ a:active {
     color: red;
 }
 
-.content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
 
-#hoursPg {
-    display: none;
-}
+
+
 
 .txtMissn {
     display: flex;
@@ -502,24 +496,9 @@ mapDir p {
 	background: powderblue;
     z-index: 1000;
 }
-
 #hoursPg {
-        position: absolute;
-        right: 50px;
-        width: 100px;
-        top: 300px;    
-        background: #1c63ff;
-    /*
-        padding-right: 7px;
-       
-        font-family: 'Lato', sans-serif;
-        font-size: .8em;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 20px #440099;
-        
-        z-index: 10000;
-    */
-    }
+    display: none;
+}
 
 /* MEDIA QUERIES */
 
@@ -529,6 +508,34 @@ mapDir p {
 @media (max-width: 414px){
     
 
+#hoursPg {
+        position: absolute;
+        display: inline-block;
+        right: 0px;
+        width: 70px;
+        top: 170px;    
+        background: #1c63ff;
+        z-index: 1000;
+}
+ /*
+#hoursPg {
+        position: absolute;
+        right: 50px;
+        width: 100px;
+        top: 300px;    
+        background: #1c63ff;
+   
+        padding-right: 7px;
+       
+        font-family: 'Lato', sans-serif;
+        font-size: .8em;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 20px #440099;
+        
+        z-index: 10000;
+    
+    }
+*/
    
     .banner {
         font-size: .4em;
