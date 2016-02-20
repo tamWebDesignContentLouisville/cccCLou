@@ -15,6 +15,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 content {
     
 	display: flex;
@@ -61,17 +65,15 @@ content {
 .ccc-logo {
     display: none;
 }
-   
-   
+     
 .slideShow {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     position: absolute;
     width: 100%;
     height: 100px;
     top: 162px;
-    left: 200px;
-    overflow: hidden;
+    left: 0px;
+    overflow-x: scroll;
     z-index: 1001;
 }
 
@@ -213,40 +215,52 @@ content {
     color: #440099;
     text-align: center;
     list-style-type: none;
-    padding: 25px 0 0 25px;
+    padding: 5px 0 0 25px;
     margin-bottom: 1px;
 }
 
  .navPhone2 {
-        display: flex;
-        jusstify-content: flex-end;
-        position: absolute;
+        float:right;
+       /*display: flex;
+        justify-content: flex-end;*/
+       /* position: absolute;*/
         font-family: 'Lato', sans-serif;
         font-size: 100%;
         font-weight: bold;
-        color: #fff;
-        text-align: center;
-        height: 125px;
-        width: 90px;
-        margin: 0;
-        top: 50px;
+        color: #000;
+       
+        margin: 10px;
+     list-style: none;
+       /* top: 50px;
         right: 0;
+      text-align: center;
+        height: 15px;
+        width: 90px;*/
         z-index: 99;   
     }
     
     .navPhone2 ul {
-        color: #fff;
+        color: #000;
         padding: 0 5px;
         list-style-type: none;
     }
     
     .navPhone2 li {
+        float: left;
         padding-left: 5px;
-        color: #fff;
+        color: #000;
+        background: darkblue;
         text-size: .6em;
 }
 
-
+a {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    color: #440099;
+    text-decoration: none;
+    border-radius: 10px;
+}
 a:link {
     color: #440099;
 }  
@@ -256,8 +270,9 @@ a:visited {
 }
 
 /* mouse over link */
-a:hover {
+a:hover, a:focus {
     color: red;
+    background:#000;
 }
 
 /* selected link */
@@ -354,10 +369,6 @@ a:active {
     ;*/
     color: red;
 }
-
-
-
-
 
 .txtMissn {
     display: flex;
@@ -509,34 +520,21 @@ mapDir p {
     
 
 #hoursPg {
-        position: absolute;
+        position: fixed;
         display: inline-block;
         right: 0px;
-        width: 70px;
-        top: 170px;    
-        background: #1c63ff;
-        z-index: 1000;
-}
- /*
-#hoursPg {
-        position: absolute;
-        right: 50px;
-        width: 100px;
-        top: 300px;    
-        background: #1c63ff;
-   
-        padding-right: 7px;
-       
+        width: 60px;
+        height: 22px;
+        top: 175px;
         font-family: 'Lato', sans-serif;
         font-size: .8em;
+        text-align: center;
+        background: powderblue;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 20px #440099;
-        
-        z-index: 10000;
-    
+        z-index: 1000;
     }
-*/
-   
+ 
     .banner {
         font-size: .4em;
         text-align: center;
@@ -555,14 +553,14 @@ mapDir p {
     
     .myButton {
         position: absolute;
-        /*start size of button*/
-        top: 100px;
-        right: 120px;
-        /*end size of button*/
-        margin: 32px 0 0 200px;
-        padding: 2px 1px;
+        top: 200px;
+        right: 0px;
+        margin: 370px 0px 0 200px;
+        padding: 0;
+        margin-right: 8px;
         width: auto;
         top: 40px; 
+        z-index: 1001;
     }
     
     #scholLinks {
@@ -589,8 +587,6 @@ mapDir p {
     .intro ul {
         display: none;
     }
-    
-
 
     .txtMissn {
         margin: 0 auto;
@@ -725,6 +721,22 @@ mapDir p {
         padding: 10px 3px;
     }
     
+    #hoursPg {
+        position: absolute;
+        display: inline-block;
+        right: 0px;
+        width: 60px;
+        height: 22px;
+        top: 175px;
+        font-family: 'Lato', sans-serif;
+        font-size: .8em;
+        text-align: center;
+        background: powderblue;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 20px #440099;
+        z-index: 1000;
+    }
+ 
     .cccLogo {
         display: none;
     }
@@ -735,16 +747,16 @@ mapDir p {
         left: 8px;
     } 
     
-    .myButton {
+     .myButton {
         position: absolute;
-        /*start size of button*/
-        top: 100px;
-        right: 120px;
-        /*end size of button*/
-        margin: 32px 0 0 200px;
-        padding: 2px 1px;
+        top: 50px;
+        right: 0px;
+        margin: 240px 0px 0 180px;
+        padding: 0;
+        margin-right: 10px;
         width: auto;
         top: 40px; 
+        z-index: 1001;
     }
     
     #scholLinks {
@@ -773,22 +785,24 @@ mapDir p {
     }
     
     #hoursPg {
-        position: fixed;
-        right: 3px;
-        width: ;
-        padding-right: 7px;
-        top: 150px;
+        position: absolute;
+        display: inline-block;
+        right: 0px;
+        width: 60px;
+        height: 22px;
+        top: 159px;
         font-family: 'Lato', sans-serif;
         font-size: .8em;
+        text-align: center;
+        background: powderblue;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 20px #440099;
-        background: #1c63ff;
-        z-index: 10000;
+        z-index: 1000;
     }
-
+        
     .txtMissn {
         margin: 0 auto;
-        margin-top: 65px;
+        margin-top: 25px;
         width: 100%;
         opacity: .8;
     }
@@ -879,7 +893,11 @@ mapDir p {
         display: none;
     }
     
-     .bkgdImg2 {
+     .bkgdImgInvrt {
+        display: none;
+    }
+    
+    .bkgdImgInvrt2 {
         display: none;
     }
     
