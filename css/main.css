@@ -20,12 +20,23 @@
 HOURS TAB TO PAGE
 *************************/
 
-
 #hoursPg {
-    display: none;
-    z-index: 2
-}
-
+        position: absolute;
+        display: inline-block;
+        right: 30px;
+        width: 70px;
+        height: 32px;
+        top: 231px;
+        font-family: 'Lato', sans-serif;
+        font-color: #fff;
+        font-size: .8em;
+        text-align: center;
+        background: gold;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 20px #000;
+        z-index: 1000;
+    }
+ 
 
 /************************
 HEADER
@@ -286,7 +297,7 @@ SLIDE SHOW
     width: 45%;
     height: 100px;
     top: 232px;
-    left: 0px;
+    left: 10px;
     overflow-x: scroll;
     z-index: 1001;
 }
@@ -309,7 +320,7 @@ SLIDE SHOW
     margin: 310px 0 0 10px;
     background-size: contain;
     cursor: pointer;
-    border: solid 4px #440099;
+    border: solid 3px darkblue;
     z-index: 1000;
 }
 
@@ -331,7 +342,8 @@ ABOUT CCC
     padding: 5px 10px 5px 5px;
     width: 43%;
     height: 400px;
-    margin: 150px 0 0 670px;
+    top: 230px;
+    right: 30px;
     background-color: powderblue;
     border: solid 2px darkblue;
     z-index: 999;
