@@ -15,23 +15,27 @@
     font-family: 'Roboto', sans-serif;
 }
 
-img {
-    max-width: 100%;
+
+/************************
+HOURS TAB TO PAGE
+*************************/
+
+
+#hoursPg {
+    display: none;
+    z-index: 2
 }
 
-content {
-    
-	display: flex;
-    flex-direction: column;
-	min-height: 100vh;
-    width: 100%;
-    margin-left: 0;
-}
+
+/************************
+HEADER
+*************************/
 
 .headerSec {
     position: absolute;
     flex-direction: column;
-    width: 100%; 
+    width: 100%;
+    z-index: 3
 }
 
 .banner {
@@ -53,87 +57,98 @@ content {
     padding-right: 10px; 
 }
 
-.cccLogo3 {
+.cccLogo {
     position: absolute; 
     margin-top: 0 5px 5px 0;
     width: 100%;
-    top: 60px;
-    left: 240px;
+    top: 10px;
+    left: 10px;
+    padding-left: 15px;
     max-width: 25%;
 }
-
-.ccc-logo {
+.cccLogo4 {
     display: none;
 }
-     
-.slideShow {
-    display: inline-flex;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    top: 162px;
-    left: 0px;
-    overflow-x: scroll;
-    z-index: 1001;
+
+
+/************************
+NAV LINKS
+*************************/
+
+ .navPhone2 {
+        float:right;
+       /*display: flex;
+        justify-content: flex-end;*/
+       /* position: absolute;*/
+        font-family: 'Lato', sans-serif;
+        font-size: 100%;
+        font-weight: bold;
+        color: navyblue;
+        margin: 10px 15px;
+     list-style: none;
+       /* top: 50px;
+        right: 0;
+      text-align: center;
+        height: 15px;
+        width: 90px;*/
+        z-index: 99;   
+    }
+    
+    .navPhone2 ul {
+        color: navyblue;
+        padding: 0 5px;
+        list-style-type: none;
+    }
+    
+    .navPhone2 li {
+        float: left;
+        padding-left: 5px;
+        color: navyblue;
+        background: powderblue;
+        border-radius: 10px;
+        margin-left: 5px;
+        text-size: .6em;
 }
 
-.slideShow img{
-    height: 100%;
-    width:  auto;
-    background-size: contain;
-    cursor: pointer;
-    border-right: solid 2px #440099;
-    border-bottom: solid 3px #440099;
-    z-index: 1002;
-}
 
-.lrgImg {
-    position: absolute;
-    width: 20%;
-    height: auto;
-    margin: 180px 0 0 310px;
-    background-size: contain;
-    cursor: pointer;
-    border: solid 4px #ff1cd5;
-    z-index: 1000;
-}
 
-.bkgdImgInvrt {
-    position: absolute;
-    width: 100%;
-    top: 161px;
-}
+/************************
+NAV ANCHORS
+*************************/
 
-.bkgdImgInvrt2 {
-    position: absolute;
-    width: 100%;
-    top: 598px;
-}
-
-.intro {
-    font-family: 'Lato', sans-serif;
-    color: #440099; 
-    text-shadow: 1px 1px 2px #000;
-    text-align: center;
+a {
+    font-size: 1.3em;
+    font-weight: bold;
     padding: 10px;
-    width: 100%;
-    height: 120px;
-    
-    /*background: radial-gradient(circle at top right, #004744 0%, #00e0d5 55%, #00e0d5 65%, #1ffff4  80%, #fff 90%);*/
-    
-    background: #fff;
-    border-bottom: solid 5px #440099;  
+    color: #440099;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
-.intro ul {
-    margin: 0 5px 0 400px;
-    list-style-type: none;
-    font-size: 1.5em;
-    width: 30%;
-    left: 200px;
-    top: auto;
-    height: 130px;
+a:link {
+    color: #440099;
+}  
+
+a:visited {
+    color: #ff1cd5;
 }
+
+/* mouse over link */
+a:hover, a:focus {
+    color: red;
+    background:#000;
+}
+
+/* selected link */
+a:active {
+    color: gold;
+}
+
+
+/************************
+TUITION ASSIST
+*************************/
+
 
 #scholLinks {
     height: 100%;
@@ -149,12 +164,15 @@ content {
 
 #scholLinks a {
     display: inline-block;
-    position: relative;
-    font-size: 1em;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    font-size: 1.2em;
     text-shadow: none;
     color: #440099;
-    padding: 0;
-    top: 70px;
+    padding: 0 0 0 20px;
+        ;
+    z-index: 999;
 }
 
 #scholLinks a:link {
@@ -175,151 +193,11 @@ content {
     color: gold;
 }
 
-.transSide {
-    position: absolute;
-    height: 1316px;
-    width: 200px;
-    margin: 0;
-    top: 0;
-    left: 0;
-    bottom: 100px;
-    padding-top: 40px;
-    background: #fff;
-    opacity: 0.6;
-    filter: alpha(opacity=0.6); /* For IE8 and earlier */
-}
 
-.transSide ul {
-    margin-top: 15px;
-    list-style-type: none;
-    padding: 0 15px 0 15px;
-    margin-bottom: 40px;
-}
+/************************
+DONATE BUTTON
+*************************/
 
-.hours2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #440099;
-    text-align: center;
-    list-style-type: none;
-    padding: 5px 25px 0 0;
-    margin-bottom: 1px;
-    height: 1296px;
-}
-
-.navMenu {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #440099;
-    text-align: center;
-    list-style-type: none;
-    padding: 5px 0 0 25px;
-    margin-bottom: 1px;
-}
-
- .navPhone2 {
-        float:right;
-       /*display: flex;
-        justify-content: flex-end;*/
-       /* position: absolute;*/
-        font-family: 'Lato', sans-serif;
-        font-size: 100%;
-        font-weight: bold;
-        color: #000;
-       
-        margin: 10px;
-     list-style: none;
-       /* top: 50px;
-        right: 0;
-      text-align: center;
-        height: 15px;
-        width: 90px;*/
-        z-index: 99;   
-    }
-    
-    .navPhone2 ul {
-        color: #000;
-        padding: 0 5px;
-        list-style-type: none;
-    }
-    
-    .navPhone2 li {
-        float: left;
-        padding-left: 5px;
-        color: #000;
-        background: darkblue;
-        text-size: .6em;
-}
-
-a {
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 10px;
-    color: #440099;
-    text-decoration: none;
-    border-radius: 10px;
-}
-a:link {
-    color: #440099;
-}  
-
-a:visited {
-    color: #ff1cd5;
-}
-
-/* mouse over link */
-a:hover, a:focus {
-    color: red;
-    background:#000;
-}
-
-/* selected link */
-a:active {
-    color: gold;
-}
-
-.navMenu .hours {
-    top: 640px;
-    position: absolute;
-}
-
-
-#hdhrs {
-    font-size: .7em;
-    text-decoration: underline;
-    color: #440099;
-    padding-bottom: 5px;
-}
-
-.fbLogo a {
-    font-size: .8em;
-}
-
-.day {
-    font-size: .7em;
-    margin-bottom: 5px;
-}
-
-.time {
-    font-size: .6em;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-.fbLogo {
-    top: 560px;
-    margin: 25px 0;
-    padding: 5px;
-    font-size: .8em;
-}
-
-.fbLogo2 {
-    /*top: 560px;
-    padding: 5px;
-    margin: 0 10px;*/
-}
 
 .myButton {
     margin: 0 200px 0 650px;
@@ -370,10 +248,81 @@ a:active {
     color: red;
 }
 
+
+/************************
+CONTENT
+*************************/
+
+
+content {   
+	display: flex;
+    flex-direction: column;
+	min-height: 100vh;
+    width: 100%;
+    margin-left: 0;
+}
+
+
+/************************
+BACKGROUND IMAGE 1
+*************************/
+
+
+.bkgdImgInvrt4 {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+
+/************************
+SLIDE SHOW
+*************************/
+
+  
+.slideShow {
+    display: inline-flex;
+    position: absolute;
+    width: 45%;
+    height: 100px;
+    top: 232px;
+    left: 0px;
+    overflow-x: scroll;
+    z-index: 1001;
+}
+
+.slideShow img{
+    height: 100%;
+    width:  auto;
+    background-size: contain;
+    cursor: pointer;
+    border-right: solid 2px #440099;
+    border-bottom: solid 3px #440099;
+    border-top: solid 3px #440099;
+    z-index: 1002;
+}
+
+.lrgImg {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    margin: 310px 0 0 10px;
+    background-size: contain;
+    cursor: pointer;
+    border: solid 4px #440099;
+    z-index: 1000;
+}
+
+
+/************************
+ABOUT CCC
+*************************/
+
+
 .txtMissn {
     display: flex;
     position: absolute;
-    top: 140px;
+    top: 81px;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -383,10 +332,11 @@ a:active {
     width: 43%;
     height: 400px;
     margin: 150px 0 0 670px;
-    background-color: #fff;
+    background-color: powderblue;
+    border: solid 2px darkblue;
     z-index: 999;
-    opacity: 0.6;
-    filter: alpha(opacity=0.6); /* For IE8 and earlier */
+/*    opacity: 0.6;
+    filter: alpha(opacity=0.6);  For IE8 and earlier */
 }
 
 .txtMissn span {
@@ -397,6 +347,7 @@ a:active {
     font-style: bold;
     font-size: 1.3em;
     margin: 4px 4px;
+    padding-bottom: 15px;
 }
 
 .missnCols {
@@ -439,9 +390,9 @@ h4 {
     color: #000;
 }
 
-.navPhone {
-    display: none;
-}
+/************************
+GOOGLE MAP
+*************************/
 
 #map {
     display: flex;
@@ -490,6 +441,82 @@ mapDir p {
     margin-top: px;
 }
 
+
+/************************
+BACKGROUND IMG2
+*************************/
+
+
+.bkgdImgInvrt3 {
+    position: absolute;
+    width: 100%;
+    top: 1008px;
+}
+
+
+
+.hours2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #440099;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px 25px 0 0;
+    margin-bottom: 1px;
+    height: 1296px;
+}
+
+.navMenu {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #440099;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px 0 0 25px;
+    margin-bottom: 1px;
+}
+
+
+.navMenu .hours {
+    top: 640px;
+    position: absolute;
+}
+
+
+#hdhrs {
+    font-size: .7em;
+    text-decoration: underline;
+    color: #440099;
+    padding-bottom: 5px;
+}
+
+.day {
+    font-size: .7em;
+    margin-bottom: 5px;
+}
+
+.time {
+    font-size: .6em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.fbLogo {
+    position: fixed;
+    top: 560px;
+    margin: 60px 0 0 300px;
+    padding: 5px;
+    font-size: .8em;
+    border-radius: 10px;
+    z-index: 1003;
+}
+
+.fbLogo a {
+    font-size: .8em;
+}
+
 .main-footer {
     display: flex;
     position: fixed;
@@ -507,9 +534,67 @@ mapDir p {
 	background: powderblue;
     z-index: 1000;
 }
-#hoursPg {
+
+
+/****************************
+EXTRA CODE????
+*****************************/
+
+
+/*
+.intro {
+    font-family: 'Lato', sans-serif;
+    color: #440099; 
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 120px;
+    
+    /*background: radial-gradient(circle at top right, #004744 0%, #00e0d5 55%, #00e0d5 65%, #1ffff4  80%, #fff 90%);*/
+    
+    background: #fff;
+    border-bottom: solid 5px #440099;  
+}
+
+.intro ul {
+    margin: 0 5px 0 400px;
+    list-style-type: none;
+    font-size: 1.5em;
+    width: 30%;
+    left: 200px;
+    top: auto;
+    height: 130px;
+}
+*/
+
+.transSide {
+    position: absolute;
+    height: 1316px;
+    width: 200px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 100px;
+    padding-top: 40px;
+    background: #fff;
+    opacity: 0.6;
+    filter: alpha(opacity=0.6); /* For IE8 and earlier */
+}
+
+.transSide ul {
+    margin-top: 15px;
+    list-style-type: none;
+    padding: 0 15px 0 15px;
+    margin-bottom: 40px;
+}
+
+
+.navPhone {
     display: none;
 }
+
+
 
 /* MEDIA QUERIES */
 
