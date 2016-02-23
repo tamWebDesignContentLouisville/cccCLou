@@ -88,10 +88,12 @@ NAV LINKS
         float: left;
         padding-left: 5px;
         color: navyblue;
-        background: powderblue;
-        border-radius: 10px;
-        margin-left: 5px;
-        text-size: .6em;
+        background: #eee;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        padding: 2px 0 0 2px;
+        margin: 5px;
+        font-size: .9em;
 }
 
 
@@ -120,7 +122,7 @@ a:visited {
 /* mouse over link */
 a:hover, a:focus {
     color: red;
-    background:#000;
+    background:#222;
 }
 
 /* selected link */
@@ -197,14 +199,17 @@ content {
 
 
 /************************
-BACKGROUND IMAGE 1
+BACKGROUND IMAGE
 *************************/
 
 
 .bkgdImgInvrt4 {
-    position: absolute;
+    position: fixed;
+    background-repeat: repeat-y;
     width: 100%;
-    top: 0px;
+    top: 0;
+    opacity: 0.6;
+    filter: alpha(opacity=0.6); 
 }
 
 
@@ -237,9 +242,9 @@ SLIDE SHOW
 
 .lrgImg {
     position: absolute;
-    width: 25%;
+    width: 45%;
     height: auto;
-    margin: 310px 0 0 10px;
+    margin: 350px 0 0 10px;
     background-size: contain;
     cursor: pointer;
     border: solid 3px darkblue;
@@ -251,26 +256,25 @@ SLIDE SHOW
 ABOUT CCC
 *************************/
 
-
 .txtMissn {
     display: flex;
     position: absolute;
     top: 81px;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #1c63ff;
     text-align: left;
     padding: 5px 10px 5px 5px;
     width: 43%;
-    height: 400px;
+    height: 430px;
     top: 230px;
     right: 30px;
-    background-color: powderblue;
+    background-color: #4ee2ec;
     border: solid 2px darkblue;
     z-index: 999;
-/*    opacity: 0.6;
-    filter: alpha(opacity=0.6);  For IE8 and earlier */
+    opacity: 0.6;
+    filter: alpha(opacity=0.6); 
 }
 
 .txtMissn span {
@@ -279,6 +283,7 @@ ABOUT CCC
     justify-content: center;
     font-family: 'Lato', sans-serif;
     font-style: bold;
+    color: #222;
     font-size: 1.3em;
     margin: 4px 4px;
     padding-bottom: 15px;
@@ -299,6 +304,7 @@ ABOUT CCC
     margin:5px 20px 0 10px;
     padding: 5px;
 }
+
 .missnCol1 p {
     padding-bottom: 10px;
 }
@@ -328,34 +334,38 @@ h4 {
         position: absolute;
         display: inline-block;
         top: 0;
+        left: 0;
+        width: 63px;
+        height: 25px;
+        font-family: 'Lato', sans-serif;
+        font-size: .7em;
+        text-align: center;
+        padding: 0;
+        background: gold;
+        border: solid 1px #000;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 30px #000;
+        z-index: 1000;
+    }
+
+.donate {
+    position: absolute;
+        display: inline-block;
+        top: 0;
         right: 0;
-        width: 70px;
-        height: 32px;
+        width: 63px;
+        height: 25px;
+        padding-bottom: 25px;
         font-family: 'Lato', sans-serif;
         font-color: #fff;
         font-size: .8em;
         text-align: center;
         background: gold;
         border: solid 2px #000;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 20px #000;
+        border-bottom-left-radius: 30px #000;
         z-index: 1000;
-    }
-
-.donateBtn {
-    background: gold;
-    color: #222;
-    width: 100%;
-    font-family: 'Lato', sans-serif;
-    font-size: 100%;
-    color: #fff;
-    font-weight: bold;
-    right: 0;
-    margin: 180px;
-    border: solid 2px #000;
-    border-radius: 30px;
 }
-
+/*
 .donateBtn ul {
     list-style-type: none;   
 }
@@ -365,7 +375,7 @@ h4 {
     text-size: .6em; 
     color: #fff;
 }
-
+*/
 a {
     font-size: 1.3em;
     font-weight: bold;
@@ -455,9 +465,133 @@ DONATE BUTTON
 
 */
 
+
 /************************
-GOOGLE MAP
+DONATION BOX 
 *************************/
+
+.donateBx {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 701px;
+    right: 0px;
+    width: 100%;
+    height: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #1c63ff;
+    text-align: left;
+    background-color: #4ee2ec;
+    border: solid 2px darkblue;    
+    padding: 5px 10px 5px 5px;
+    margin-top: 500px;
+    z-index: 1002;
+    opacity: 0.6;
+    filter: alpha(opacity=0.6);
+}
+
+.donateBx span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-style: bold;
+    color: #222;
+    font-size: 1.3em;
+    margin: 4px 4px;
+    padding-bottom: 15px;
+}
+
+.missnCols {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #000;
+}
+
+.missnCol1 {
+    width: 46.5%;
+    height: 400px;
+    float: left;
+    clear: both;
+    margin:5px 20px 0 10px;
+    padding: 5px;
+}
+.missnCol1 p {
+    padding-bottom: 10px;
+}
+
+.missnCol2 {
+    width: 46.5%;
+    height: 400px;
+    float: right;
+    clear: both;
+    margin:5px 20px 0 10px;
+    padding: 5px;
+}
+
+#m1c2 {
+    padding-top: 5px;
+}
+
+h4 {
+    #440099;
+}
+
+#hdM {
+    color: #000;
+}
+
+
+
+/****************************
+VOLUNTEER
+*****************************/
+
+.volunteer {
+    width: 50%;
+    height: 600px;
+    right: 0;
+    margin: 700px 0px 0 650px;
+    background: #4ee2ec;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
+    filter: alpha(opacity=0.6);  
+}
+
+.volunteer span h4 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+}
+
+.volunteer h4 {
+    font-size: 1.1em;
+    color: darkblue;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.volunteer ul {
+    list-style-type: disc;
+}
+
+.volunteer p {
+    font-size: 1.1em;
+    padding: 0 20px;
+}
+
+.imgVol {
+    font-size: .9em;
+    font-style: oblique;
+}
+
+/****************************
+GOOGLE MAP
+*****************************/
 
 #map {
     display: flex;
@@ -508,17 +642,9 @@ mapDir p {
 
 
 /************************
-BACKGROUND IMG2
+UNNEEDED CODE?
 *************************/
-
-
-.bkgdImgInvrt3 {
-    position: absolute;
-    width: 100%;
-    top: 1008px;
-}
-
-
+/*
 
 .hours2 {
     font-family: 'Lato', sans-serif;
@@ -549,7 +675,6 @@ BACKGROUND IMG2
     position: absolute;
 }
 
-
 #hdhrs {
     font-size: .7em;
     text-decoration: underline;
@@ -568,9 +693,11 @@ BACKGROUND IMG2
     margin-bottom: 10px;
 }
 
+*/
+
 .fbLogo {
     position: fixed;
-    top: 560px;
+    top: 540px;
     margin: 60px 0 0 300px;
     padding: 5px;
     font-size: .8em;
@@ -596,7 +723,7 @@ BACKGROUND IMG2
     border-top: solid 3px darkblue;
 	text-align: center;
     vertical-align: middle;
-	background: powderblue;
+	background: #eee;
     z-index: 1000;
 }
 
@@ -661,10 +788,11 @@ EXTRA CODE????
 
 
 
-/* MEDIA QUERIES */
-
-
-/********* Phones *********/
+/****************************
+*****************************
+MEDIA QUERIES - SMALL PHONES
+*****************************
+*****************************/
 
 @media (max-width: 414px){
     
@@ -677,9 +805,9 @@ EXTRA CODE????
     }
   
     
-/************************
+/****************************
 HEADER - SMALL PHONES
-*************************/
+*****************************/
     .banner {
         text-align: center;
         padding-left: 10px;
@@ -698,28 +826,9 @@ HEADER - SMALL PHONES
 }
 
     
-  /*  .cccLogo4 {
-        position: absolute;
-        top: 70px;
-        left: 8px;
-    } 
-    
-    .cccLogo4 {
-        position: absolute; 
-        margin-top: 0 5px 5px 0;
-        width: 100%;
-        top: 10px;
-        left: 10px;
-        padding-left: 15px;
-       max-width: 25%;
-    }
-
-    */
-
-    
-/************************
+/****************************
 TUITION ASSIST - SMALL PHONES
-*************************/
+*****************************/
        
     #scholLinks {
         text-align:;
@@ -787,11 +896,11 @@ NAV LINKS - SMALL PHONES
         font-family: 'Lato', sans-serif;
         font-size: .8em;
         font-weight: bold;
-        color: #fff;
+        color: rgba();
         height: 125px;
-        width: 130px;
+        width: 120px;
         margin: 0;
-        top: 67px;
+        top: 90px;
         right: 10px;
         z-index: 99;  
          
@@ -802,8 +911,7 @@ NAV LINKS - SMALL PHONES
         color: #fff;
         padding: 0 5px;
         list-style-type: none;
-           border-color: #fff;
-        
+        border-color: #fff;
     }
     
     .navPhone2 li {
@@ -812,7 +920,8 @@ NAV LINKS - SMALL PHONES
         text-size: .4em;
         text-align: center;
         background: #fff;
-     
+        margin: 0;
+        padding: 0;
     }
     
 
@@ -864,13 +973,9 @@ ABOUT CCC - SMALL PHONES
         font-size: 100%;
     }
     
-    
-    
-    
-    .transSide {
-        display: none;
+    .hoursPg {
+        
     }
-   
     
  /************************
 BACKGROUND IMAGES - SMALL PHONES
@@ -901,104 +1006,149 @@ BACKGROUND IMAGES - SMALL PHONES
 
 
 
-
-/********* Phablets *********/
+        
+/****************************
+*****************************
+MEDIA QUERIES - PHABLETS
+*****************************
+*****************************/
 
 @media (min-width: 415px)
     and (max-width: 740px){
-        
-  .banner {
-        font-size: .4em;
+    
+    
+/****************************
+HEADER - PHABLETS
+*****************************/
+    .banner {
         text-align: center;
-        padding: 10px 3px;
+        padding-left: 10px;
     }
     
-    #hoursPg {
-        position: absolute;
-        display: inline-block;
-        right: 0px;
-        width: 60px;
-        height: 22px;
-        top: 175px;
-        font-family: 'Lato', sans-serif;
-        font-size: .8em;
-        text-align: center;
-        background: powderblue;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 20px #440099;
-        z-index: 1000;
-    }
- 
     .cccLogo {
-        position: absolute; 
-        margin-top: 0 5px 5px 0;
-        width: 100%;
-        top: 10px;
+        top: 83px;
         left: 10px;
-        padding-left: 15px;
-        max-width: 25%;
-    } 
-    
- /*    .myButton {
-        position: absolute;
-        top: 50px;
-        right: 0px;
-        margin: 240px 0px 0 180px;
-        padding: 0;
-        margin-right: 10px;
-        width: auto;
-        top: 40px; 
-        z-index: 1001;
+        
     }
-*/    
+    
+    #logo{
+    height: 64px;
+    width:90px;
+    background-size: contain;
+}
+
+    
+/****************************
+TUITION ASSIST - PHABLETS
+*****************************/
+       
     #scholLinks {
         text-align:;
     }
 
     #scholLinks a {
         width: 50%;
-        top: 30px;
-        padding: 0 0 0 40px;
-    }
-/*
-    .intro {
-        flex-direction: column;
-        align-content: flex-end;
-        color: #fff;
-        font-size: 75%;
-        font-weight: bold;
-        width: 100%;
-        height: 120px;
-        border-bottom: solid 4px #440099;
+        font-size: 95%;
+        top: 180px;
+        left: 0;
+        padding: 0;
     }
     
-    .intro ul {
+    
+/************************
+SLIDE SHOW - PHABLETS
+*************************/
+    
+    .slideShow {
         display: none;
     }
- 
-*/        
 
-    #hoursPg {
-        position: absolute;
-        display: inline-block;
-        right: 0px;
-        width: 60px;
-        height: 22px;
-        top: 159px;
+    .slideShow img {
+        display: none;
+    }
+    
+    .lrgImg {
+        display: none;
+    }
+    
+    
+/************************
+NAV LINKS - PHABLETS
+*************************/
+
+   /* .navPhone2 {
+        width: 100%;
         font-family: 'Lato', sans-serif;
+        font-size: 95%;
+        font-weight: bold;
+        margin: 10px 15px;
+        padding: 20px 0 0 0;
+        list-style: none;
+        border-color: none;
+        z-index: 99;   
+    }
+    
+    .navPhone2 li {
+        float: left;
+        padding-right: 15px;
+        color: navyblue;
+        background: none;
+        border-radius: 10px;
+        margin-right: 15px;
         font-size: .8em;
         text-align: center;
-        background: powderblue;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 20px #440099;
-        z-index: 1000;
+}
+*/
+    
+    
+    .navPhone2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        font-family: 'Lato', sans-serif;
+        font-size: .8em;
+        font-weight: bold;
+        color: rgba();
+        height: 125px;
+        width: 120px;
+        margin: 0;
+        top: 90px;
+        right: 10px;
+        z-index: 99;  
+         
     }
-        
-    .txtMissn {
-        margin: 0 auto;
-        margin-top: 25px;
+    
+    .navPhone2 ul {
+       
+        color: #fff;
+        padding: 0 5px;
+        list-style-type: none;
+        border-color: #fff;
+    }
+    
+    .navPhone2 li {
         width: 100%;
-        opacity: .8;
+        color: #fff;
+        text-size: .4em;
+        text-align: center;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+/************************
+ABOUT CCC - PHABLETS
+*************************/
+
+    .txtMissn {
+        display: flex:
+        margin: 0 auto;
+        margin-top: 0;
+        width: 100%;
+        opacity: .9;
+        right: 0px;
+        background: 00e0d5;
     }
     
     .txtMissn span {
@@ -1010,8 +1160,6 @@ BACKGROUND IMAGES - SMALL PHONES
     }
     
     .missnCols {
-        display:flex;
-        flex-direction: column;
         flex-wrap: wrap;
         font-size: 70%;
         padding-right: 0px;
@@ -1037,84 +1185,35 @@ BACKGROUND IMAGES - SMALL PHONES
         font-size: 100%;
     }
     
-    .transSide {
+    .hoursPg {
+        
+    }
+    
+ /************************
+BACKGROUND IMAGES - PHABLETS
+*************************/
+   
+    
+    
+    .bkgdImgInvrt {
         display: none;
     }
     
-    .navPhone2 {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-end;
-        position: absolute;
-        font-family: 'Lato', sans-serif;
-        font-size: 90%;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
-        height: 125px;
-        width: 90px;
-        margin: 0;
-        top: 67px;
-        right: 0;
-        z-index: 99;   
-    }
-    
-    .navPhone2 ul {
-        color: #fff;
-        padding: 0 5px;
-        list-style-type: none;
-    }
-    
-    .navPhone2 li {
-        padding-left: 5px;
-        color: #fff;
-        text-size: .6em;
-    }
-    
-    .slideShow {
-        display: none;
-    }
-
-    .slideShow img {
+     .bkgdImgInvrt2 {
         display: none;
     }
     
-    .lrgImg {
-        display: none;
-    }
-    
-    .bkgdImg {
-        display: none;
-    }
-    
-     .bkgdImgInvrt {
-        display: none;
-    }
-    
-    .bkgdImgInvrt2 {
-        display: none;
-    }
-    
-    .transSide {
-        display: none;
-    }
-
-    .fbLogo {
-        display: none;
-    }
-    
-    .fbLogo2 {
-        display: none;
-    }
     .main-footer {
         height: 70px; 
         width: 100%;
         font-size: 75%;
         position: fixed;
         padding: 0;
+        position: absolute;
     }
+
 }
-    
+
 /********* End Phablets MQ *********/
 
 
