@@ -21,20 +21,20 @@ HEADER
 *************************/
 
 .headerSec {
-    position: absolute;
-    flex-direction: column;
+    display: inline-block;
     width: 100%;
-    z-index: 3
+    z-index: 3;
+    height: 120px;
+
 }
 
 .banner {
     display: flex;
-    height: 100%;
+    margin-top:0;
     justify-content: flex-end;
-    /*background-color: #1c63ff;*/
     background: #440099;
-    padding: 10px 0;
-    font-size: 50%;
+    padding: 10px 3px;
+    font-size: .6em;
     text-shadow: 1px 1px 4px #000;
     font-family: 'Lato', sans-serif;
     font-style: oblique;
@@ -53,8 +53,8 @@ HEADER
     top: 10px;
     left: 10px;
     padding-left: 15px;
-   /* max-width: 25%;*/
 }
+
 #logo{
     height: 108px;
     width:180px;
@@ -63,37 +63,43 @@ HEADER
 
 
 
-/************************
+/****************************
 NAV LINKS
-*************************/
+*****************************/
 
  .navPhone2 {
-        float:right;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: absolute;
         font-family: 'Lato', sans-serif;
-        font-size: 95%;
+        font-size: .8em;
         font-weight: bold;
-        color: navyblue;
-        margin: 10px 15px;
-        list-style: none;
-        z-index: 99;   
-    }
-    
-    .navPhone2 ul {
-        color: navyblue;
-        padding: 10px 10px;
-        list-style-type: none;
-    }
-    
-    .navPhone2 li {
-        float: left;
-        padding-left: 5px;
-        color: navyblue;
-        background: #eee;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        padding: 2px 0 0 2px;
-        margin: 5px;
-        font-size: .9em;
+        color: rgba();
+        height: 45px;
+        width: 100%;
+        margin: 0;
+        top: 50px;
+        right: 10px;
+        z-index: 99; 
+}
+         
+.navPhone2 ul {
+    color: navyblue;
+    padding: 10px 10px;
+    list-style-type: none;
+}
+
+.navPhone2 li {
+    float: left;
+    padding-left: 5px;
+    color: navyblue;
+    background: #eee;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 2px 0 0 2px;
+    margin: 5px;
+    font-size: .9em;
 }
 
 
@@ -153,10 +159,11 @@ TUITION ASSIST
 #scholLinks a {
     display: inline-block;
     position: absolute;
-    top: 170px;
+    top: 160px;
     left: 0;
     font-size: 1.2em;
     text-shadow: none;
+    text-decoration: underline;align-content: 
     color: #440099;
     background: navyblue;
     padding: 0 0 0 20px;
@@ -244,7 +251,8 @@ SLIDE SHOW
     position: absolute;
     width: 45%;
     height: auto;
-    margin: 350px 0 0 10px;
+    top: 220px;
+    margin: 150px 0 0 10px;
     background-size: contain;
     cursor: pointer;
     border: solid 3px darkblue;
@@ -273,8 +281,8 @@ ABOUT CCC
     background-color: #4ee2ec;
     border: solid 2px darkblue;
     z-index: 999;
-    opacity: 0.6;
-    filter: alpha(opacity=0.6); 
+    opacity: 0.7;
+    filter: alpha(opacity=0.7); 
 }
 
 .txtMissn span {
@@ -326,7 +334,7 @@ h4 {
     #440099;
 }
 
-#hdM {
+.hdM {
     color: #000;
 }
 
@@ -457,90 +465,7 @@ DONATE BUTTON
 }
 
 .myButton:active {
-	/*position:relative;
-	top:1px
-    ;*/
     color: red;
-}
-
-*/
-
-
-/************************
-DONATION BOX 
-*************************/
-
-.donateBx {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    top: 701px;
-    right: 0px;
-    width: 100%;
-    height: 400px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    color: #1c63ff;
-    text-align: left;
-    background-color: #4ee2ec;
-    border: solid 2px darkblue;    
-    padding: 5px 10px 5px 5px;
-    margin-top: 500px;
-    z-index: 1002;
-    opacity: 0.6;
-    filter: alpha(opacity=0.6);
-}
-
-.donateBx span {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Lato', sans-serif;
-    font-style: bold;
-    color: #222;
-    font-size: 1.3em;
-    margin: 4px 4px;
-    padding-bottom: 15px;
-}
-
-.missnCols {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: #000;
-}
-
-.missnCol1 {
-    width: 46.5%;
-    height: 400px;
-    float: left;
-    clear: both;
-    margin:5px 20px 0 10px;
-    padding: 5px;
-}
-.missnCol1 p {
-    padding-bottom: 10px;
-}
-
-.missnCol2 {
-    width: 46.5%;
-    height: 400px;
-    float: right;
-    clear: both;
-    margin:5px 20px 0 10px;
-    padding: 5px;
-}
-
-#m1c2 {
-    padding-top: 5px;
-}
-
-h4 {
-    #440099;
-}
-
-#hdM {
-    color: #000;
 }
 
 
@@ -550,15 +475,15 @@ VOLUNTEER
 *****************************/
 
 .volunteer {
-    width: 50%;
-    height: 600px;
-    right: 0;
-    margin: 700px 0px 0 650px;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    margin: 500px 0px 0 0px;
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.6;
-    filter: alpha(opacity=0.6);  
+    opacity: 0.7;
+    filter: alpha(opacity=0.7);  
 }
 
 .volunteer span h4 {
@@ -566,28 +491,271 @@ VOLUNTEER
     color: #000;
     text-align: center;
     padding: 15px;
+    width: 50%
 }
 
 .volunteer h4 {
-    font-size: 1.1em;
-    color: darkblue;
+    font-size: 1.2em;
+    color: #440099;
     text-align: center;
     padding-bottom: 25px;
+    width: 50%;
 }
 
 .volunteer ul {
     list-style-type: disc;
+    width: 50%;
+}
+
+.volunteer li {
+    list-style-type: disc;
+    width: 50%;
+    margin: 0 45px;
+    padding: 5px;
 }
 
 .volunteer p {
     font-size: 1.1em;
-    padding: 0 20px;
+    padding: 5px 40px;
+    width: 50%;
+}
+
+.volunteer a {
+    font-size: 1em;
+    width: 50%;
 }
 
 .imgVol {
     font-size: .9em;
     font-style: oblique;
+    padding: 0;
+    width: 50%;
 }
+
+
+
+/****************************
+DONATE
+*****************************/
+
+.donateBx {
+    width: 100%;
+    height: 700px;
+    top:00px;
+    margin: 1000px 0px 0 0px;
+    background: #4ee2ec;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    filter: alpha(opacity=0.7);  
+}
+
+.donateBx span h4 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    width: 50%
+}
+
+.donateBx h4 {
+    font-size: 1.2em;
+    color: #440099;
+    text-align: center;
+    padding-bottom: 25px;
+    width: 50%;
+}
+
+.donateBx ul {
+    list-style-type: disc;
+    width: 50%;
+}
+
+.donateBx li {
+    list-style-type: disc;
+    width: 50%;
+    margin: 0 45px;
+    padding: 5px;
+}
+
+.donateBx p {
+    font-size: 1.1em;
+    padding: 5px 40px;
+    width: 50%;
+}
+
+.donateBx a {
+    font-size: 1em;
+    width: 50%;
+}
+
+
+
+/****************************
+PARTNERS
+*****************************/
+
+.partners {
+    width: 100%;
+    height: 700px;
+    top:00px;
+    margin: 1000px 0px 0 0px;
+    background: #4ee2ec;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    filter: alpha(opacity=0.7);  
+}
+
+.partners span h4 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    width: 50%
+}
+
+.partners h4 {
+    font-size: 1.2em;
+    color: #440099;
+    text-align: center;
+    padding-bottom: 25px;
+    width: 50%;
+}
+
+.partners ul {
+    list-style-type: disc;
+    width: 50%;
+}
+
+.partners li {
+    list-style-type: disc;
+    width: 50%;
+    margin: 0 45px;
+    padding: 5px;
+}
+
+.partners p {
+    font-size: 1.1em;
+    padding: 5px 40px;
+    width: 50%;
+}
+
+
+
+/****************************
+DIRECTIONS
+*****************************/
+
+.directions {
+    width: 100%;
+    height: 700px;
+    top:00px;
+    margin: 1500px 0px 0 0px;
+    background: #4ee2ec;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    filter: alpha(opacity=0.7);  
+}
+
+.directions span h4 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    width: 50%
+}
+
+.directions h4 {
+    font-size: 1.2em;
+    color: #440099;
+    text-align: center;
+    padding-bottom: 25px;
+    width: 50%;
+}
+
+.directions ul {
+    list-style-type: disc;
+    width: 50%;
+}
+
+.directions li {
+    list-style-type: disc;
+    width: 50%;
+    margin: 0 45px;
+    padding: 5px;
+}
+
+.directions p {
+    font-size: 1.1em;
+    padding: 5px 40px;
+    width: 50%;
+}
+
+.directions a {
+    font-size: 1em;
+    width: 50%;
+}
+
+
+
+/****************************
+CONTACT
+*****************************/
+
+.contact {
+    width: 100%;
+    height: 700px;
+    top:00px;
+    margin: 2000px 0px 0 0px;
+    background: #4ee2ec;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    filter: alpha(opacity=0.7);  
+}
+
+.contact span h4 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    width: 50%
+}
+
+.contact h4 {
+    font-size: 1.2em;
+    color: #440099;
+    text-align: center;
+    padding-bottom: 25px;
+    width: 50%;
+}
+
+.contact ul {
+    list-style-type: disc;
+    width: 50%;
+}
+
+.contact li {
+    list-style-type: disc;
+    width: 50%;
+    margin: 0 45px;
+    padding: 5px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    padding: 5px 40px;
+    width: 50%;
+}
+
+.contact a {
+    font-size: 1em;
+    width: 50%;
+}
+
+
 
 /****************************
 GOOGLE MAP
@@ -742,22 +910,11 @@ EXTRA CODE????
     padding: 10px;
     width: 100%;
     height: 120px;
-    
     /*background: radial-gradient(circle at top right, #004744 0%, #00e0d5 55%, #00e0d5 65%, #1ffff4  80%, #fff 90%);*/
-    
     background: #fff;
     border-bottom: solid 5px #440099;  
 }
 
-.intro ul {
-    margin: 0 5px 0 400px;
-    list-style-type: none;
-    font-size: 1.5em;
-    width: 30%;
-    left: 200px;
-    top: auto;
-    height: 130px;
-}
 */
 
 .transSide {

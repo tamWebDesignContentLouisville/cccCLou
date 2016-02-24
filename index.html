@@ -8,17 +8,22 @@
 		content="text/html;charset=utf-8" />
     <link rel="stylesheet" type="text/css" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic|Roboto:400,400italic,500,500italic,700,700italic,900,900italic' rel="stylesheet" type='text/css'>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>	    
 </head>
 
-<body>   
-
+<body> 
+    
+        <div>
+            <img class="bkgdImgInvrt4" src="img/bkgdImgInvrt4.jpg" />
+        </div>
+    
     <div class="headerSec">    
         <div class="banner">
             <h1>Catholic Education Tuition Assistance to Louisville's Portland and West End Children
-            </h1>
+            </h1>        
+            
         </div>
     
     <div class="cccLogo">
@@ -36,45 +41,44 @@
 
     <div class="navPhone2">
            <ul>
-            <li ><a href="index.html" class="selected">Home</a></li>
-            <li ><a href="donate.html">Donate</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="partners.html">Partners</a></li>
-            <li><a href="directions.html">Directions</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+            <li><a href="#indexPg">Home</a></li>
+            <li ><a href="#volunteerPg">Volunteer</a></li>
+            <li ><a href="#donatePg">Donate</a></li>
+            <li ><a href="#partnersPg">Partners</a></li>
+            <li ><a href="#directionsPg">Directions</a></li>
+            <li ><a href="#contactPg">Contact Us</a></li>
+         </ul>
         </div>
           
         <div id="scholLinks"> 
                 <ul>
                     <li><a  href="http://www.schoolchoiceky.org/20162017-application" alt="School Choice Scholarships">Tuition Assistance Application</a></li>
+                </ul>
         </div>
         
             
-     <!--   </div> -->
-    </div> 
+     
+    </div> <!-- end header sec -->
     
     <div class="content"> 
-        <div>
-            <img class="bkgdImgInvrt4" src="img/bkgdImgInvrt4.jpg" alt="Background Image">
-        </div>
+
         
          <div class="slideShow">  
-             <img src="./img/img1.jpg"/>
-             <img id="img2"  src="./img/img2.jpg"/>
-             <img id="img3"  src="./img/img3.jpg"/>
-             <img id="img4"  src="./img/img4.jpg"/> 
-             <img id="img5"  src="./img/img5.jpg"/>
-             <img id="img6"  src="./img/img6.jpg"/>
-             <img id="img7"  src="./img/img7.jpg"/>
-             <img id="img8"  src="./img/img8.jpg"/> 
-             <img id="img9"  src="./img/img9.jpg"/>
-             <img id="img11"  src="./img/img11.jpg"/>
-             <img id="img12"  src="./img/img12.jpg"/>
-             <img id="img13"  src="./img/img13.jpg"/>
-             <img id="img14"  src="./img/img14.jpg"/>
-             <img id="img15"  src="./img/img15.jpg"/>
-             <img id="img16"  src="./img/img16.jpg"/>
+             <img src="./img/img1.jpg" alt="Three girls painting."/>
+             <img id="img2"  src="./img/img2.jpg" alt="Boy relaxing under a tree at summer picnic."/>
+             <img id="img3"  src="./img/img3.jpg" alt="Tutor"/>
+             <img id="img4"  src="./img/img4.jpg" alt="Archbishop Joseph E. Kurtz"/> 
+             <img id="img5"  src="./img/img5.jpg" alt="Families eating together."/>
+             <img id="img6"  src="./img/img6.jpg" alt="After school tutoring"/>
+             <img id="img7"  src="./img/img7.jpg" alt="Student with St. X shirt."/>
+             <img id="img8"  src="./img/img8.jpg" alt="Woman mentor with girl mentee."/> 
+             <img id="img9"  src="./img/img9.jpg" alt="Students at Louisville Bats game."/>
+             <img id="img11"  src="./img/img11.jpg" alt="Students perform service."/>
+             <img id="img12"  src="./img/img12.jpg" alt="Students participate in robotics program during summer break."/>
+             <img id="img13"  src="./img/img13.jpg" alt="Fun activities at the summer picinic."/>
+             <img id="img14"  src="./img/img14.jpg" alt="Tutoring."/>
+             <img id="img15"  src="./img/img15.jpg" alt="Male mentor and mentee."/>
+             <img id="img16"  src="./img/img16.jpg" alt="Family enjoying a meal."/>
         </div>
         
         <div> 
@@ -84,7 +88,7 @@
         
         <div class="txtMissn">
             <div>
-                <span #hdM><h4>Community Catholic Center</h4></span>
+                <span class="hdM"><h4>Community Catholic Center</h4></span>
             </div>
             <div class="missnCols">
                 <div class="missnCol1" id="m1">
@@ -118,27 +122,54 @@
                        
             </div><!-- End Cols Div -->
         </div>  <!-- End txtMissn Div -->
-        
-        <div class="donateBx">
-            <span #hdM><h4>>Donate
-                </h4></span>
+            
+        <div class="donateBx" id="donatePg">
+            <span><h4>Donation Opportunities</h4></span>
+            <h4>dsfljljlj</h4>
+            <p>sdfljlsdfjslj</p>
+            <span class="hdM"></span>
         </div>
         
-        <div class="volunteer">
+        <div class="volunteer" id="volunteerPg">
             <span><h4>Volunteer Opportunities</h4></span>
             <h4>Become a Volunteer</h4>
-            <p>Participate in the following ways:<br>
+            <p>Participate in the following ways:</p>
                 <ul>
                     <li>Serve as a Jr. High/High School Mentor</li>
                     <li>Tutor students after school</li>
                     <li>Volunteer as a cook or server for the Christmas Celebration (December) or Achievement Ceremony (May)</li>
                     <li>Organize a school supply or snack drive to provide needed items for student support</li>
-                    <div class="imgVol"><a href="../imgTutorVol.jpg" alt="Volunteer Tutor with Student"></a><caption>Evan Burks, NDA student, works with SHA tutring volunteer Courtney Ford.</caption></div>
+                    
+                    </ul>
+                    <p>If you are interested in volunteering for these opportunities, email your request to<a href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a>and information as well as a background check form will be sent to you.</p>
+                    <p>
+                    Pray for Our Success–  As all things come from God, CCC continually needs prayers to continue its work.  Please pray for the CCC students and families as well as for our efforts to educate, empower and inspire their faith and educational development.</p>
+            
+        <a class="imgVol" href="../imgTutorVol.jpg" alt="Volunteer Tutor with Student"><caption>Evan Burks, NDA student, works with SHA tutring volunteer Courtney Ford.</caption></a>
                         
-            </ul>
-            <p>If you are interested in volunteering for these opportunities, email your request to heidi@communitycatholiccenter.org and information as well as a background check form will be sent to you<br>
-            Pray for Our Success–  As all things come from God, CCC continually needs prayers to continue its work.  Please pray for the CCC students and families as well as for our efforts to educate, empower and inspire their faith and educational development.</p>
         </div>
+            
+        <div class="partners" id="partnersPg">
+            <span><h4>Our Partners</h4></span>
+            <h4>dsfljljlj</h4>
+            <p>sdfljlsdfjslj</p>
+            <span class="hdM"></span>
+        </div>
+        
+        <div class="directions" id="directionsPg">
+            <span><h4>Directions</h4></span>
+            <h4>dsfljljlj</h4>
+            <p>sdfljlsdfjslj</p>
+            <span class="hdM"></span>
+        </div>
+            
+        <div class="contact" id="contactPg">
+            <span><h4>Contact Us</h4></span>
+            <h4>dsfljljlj</h4>
+            <p>sdfljlsdfjslj</p>
+            <span class="hdM"></span>
+        </div>
+        
         
       <!--  
         
