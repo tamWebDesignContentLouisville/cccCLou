@@ -30,7 +30,6 @@ HEADER
 
 .banner {
     display: flex;
-    margin-top:0;
     justify-content: flex-end;
     background: #440099;
     padding: 10px 3px;
@@ -81,7 +80,7 @@ NAV LINKS
         margin: 0;
         top: 50px;
         right: 10px;
-        z-index: 99; 
+        z-index: 5; 
 }
          
 .navPhone2 ul {
@@ -99,7 +98,6 @@ NAV LINKS
     border-top-left-radius: 20px;
     padding: 2px 0 0 2px;
     margin: 5px;
-    font-size: .9em;
 }
 
 
@@ -212,11 +210,10 @@ BACKGROUND IMAGE
 
 .bkgdImgInvrt4 {
     position: fixed;
-    background-repeat: repeat-y;
+    background-image: no repeat;
     width: 100%;
     top: 0;
-    opacity: 0.6;
-    filter: alpha(opacity=0.6); 
+    opacity: .2;
 }
 
 
@@ -256,7 +253,7 @@ SLIDE SHOW
     background-size: contain;
     cursor: pointer;
     border: solid 3px darkblue;
-    z-index: 1000;
+    z-index: 8;
 }
 
 
@@ -280,7 +277,7 @@ ABOUT CCC
     right: 30px;
     background-color: #4ee2ec;
     border: solid 2px darkblue;
-    z-index: 999;
+    z-index: 8;
     opacity: 0.7;
     filter: alpha(opacity=0.7); 
 }
@@ -469,6 +466,451 @@ DONATE BUTTON
 }
 
 
+/****************************
+ABOUT CCC - Sec. 1
+*****************************/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    top: 0;
+    margin: 1000px 0px 0 0px;
+    background: #4ee2ec;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    filter: alpha(opacity=0.7);  
+}
+.aboutHdr{
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    
+}
+.aboutHdr img{
+    width: 200px;
+    height: 120px;
+    
+}
+.aboutEEIrow ul{
+    display: flex;
+    flex-direction: row;
+}
+.aboutCCC{
+    display: flex;
+    flex-direction: row;
+}
+
+.about span h4 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    width: 100%
+}
+
+.about h4 ul {
+    font-size: 1.2em;
+    color: #440099;
+    text-align: center;
+    padding: 25px;
+    width: 45%;
+    font-size: 1.3em;
+    
+}
+
+.about h4 li {
+
+}
+.about ul {
+    list-style-type: disc;
+
+}
+
+.about li {
+    list-style-type: disc;
+    width: 48%;
+    margin: 0 45px;
+    padding: 5px;
+}
+
+.about p {
+    font-size: 1.1em;
+    padding: 5px 40px;
+    width: 48%;
+}
+
+.about a {
+    font-size: 1em;
+    width: 48%;
+}
+
+.img17 {
+    width: 100%;
+    height: 100%;
+}
+
+.serviceProj {
+     width: 100%;
+    height: 100%;
+    font-size: .9em;
+    font-style: oblique;
+    padding: 0;
+    width: 100%;
+}
+
+
+/****************************
+ABOUT CCC - Sec. 2
+*****************************/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    top: 0;
+    margin: 1000px 0px 0 0px;
+    background: #4ee2ec;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    filter: alpha(opacity=0.7);  
+}
+
+/*.aboutEEIrow ul{
+    display: flex;
+    flex-direction: row;
+}*/
+
+.aboutCCCsec2{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.aboutHdr {
+    display: none;
+}
+    /****************************
+ABOUT CCC
+*****************************/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    top: 0;
+    margin: 1000px 0px 0 0px;
+    background: #4ee2ec;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    filter: alpha(opacity=0.7);  
+}
+.aboutHdr{
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    
+}
+.aboutHdr img{
+    width: 200px;
+    height: 120px;
+    
+}
+.aboutEEIrow ul{
+    display: flex;
+    flex-direction: row;
+}
+.aboutCCC{
+    display: flex;
+    flex-direction: row;
+}
+
+.about span h4 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    width: 100%
+}
+
+.abtCols {
+    
+}
+
+.about h4 ul {
+    font-size: 1.2em;
+    color: #440099;
+    text-align: center;
+    padding: 25px;
+    width: 45%;
+    font-size: 1.3em;
+    
+}
+
+.about h4 li {
+
+}
+.about ul {
+    list-style-type: disc;
+
+}
+
+.about li {
+    list-style-type: disc;
+    width: 48%;
+    margin: 0 45px;
+    padding: 5px;
+}
+
+.about p {
+    font-size: 1.1em;
+    padding: 5px 40px;
+    width: 48%;
+}
+
+.about a {
+    font-size: 1em;
+    width: 48%;
+}
+
+.img17 {
+    width: 100%;
+    height: 100%;
+}
+
+.serviceProj {
+     width: 100%;
+    height: 100%;
+    font-size: .9em;
+    font-style: oblique;
+    padding: 0;
+    width: 100%;
+}
+    
+    
+
+
+.about span h4 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    width: 100%
+}
+
+.about h4 ul {
+    font-size: 1.2em;
+    color: #440099;
+    text-align: center;
+    padding: 25px;
+    width: 45%;
+    font-size: 1.3em;
+    
+}
+
+.about h4 li {
+
+}
+.about ul {
+    list-style-type: disc;
+
+}
+
+.about li {
+    list-style-type: disc;
+    width: 48%;
+    margin: 0 45px;
+    padding: 5px;
+}
+
+.about p {
+    font-size: 1.1em;
+    padding: 5px 40px;
+    width: 48%;
+}
+
+.about a {
+    font-size: 1em;
+    width: 48%;
+}
+
+.img17 {
+    width: 100%;
+    height: 100%;
+}
+
+.serviceProj {
+     width: 100%;
+    height: 100%;
+    font-size: .9em;
+    font-style: oblique;
+    padding: 0;
+    width: 100%;
+}
+
+
+/****************************
+EDUCATE, EMPOWER, INSPIRE
+*****************************/
+
+
+.containerEEI {
+    width: 1300px;
+    top: 400px;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.educate {
+    display: inline-block;
+    width: 30%;
+    height: 740px;
+    vertical-align: middle;
+    top: 400px;
+    left: 0;
+    margin: 0px 0 0 40px;
+    background: #440099;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.educate span h4,
+.empower span h4, 
+.inspire span h4 {
+    font-size: 1.2em;
+    color: #FFF;
+    text-align: center;
+    padding: 5px 0; 25px;
+    width: 100%;
+}
+
+.educate h4,
+.empower h4, 
+.inspire h4 {
+    font-size: 1.2em;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0; 25px;
+    width: 100%;
+}
+.educate ul {
+    list-style-type: disc;
+    width: 100%;
+    color: #fff;
+    padding-right: 10px;
+}
+
+.educate li,
+.empower li,
+.inspire li {
+    list-style-type: disc;
+    width: 50%;
+    color: #fff;
+    font-size: .9em;
+    padding-bottom: 10px;
+    width: 100%;
+    color: #fff;
+}
+
+.educate p,
+.empower p,
+.inspire p {
+    font-size: .9em;
+    padding: 5px 40px;
+    width: 100%;
+    color: #fff;
+}
+
+.educate a {
+    font-size: .89em;
+    width: 50%;
+    color: #fff;    
+}
+
+.img caption {
+    font-size: .6em;
+    font-style: oblique;
+    color: #fff;
+    width: 50%;
+}
+
+/****************************
+EMPOWER
+*****************************/
+
+.empower {
+    display: inline-block;
+    width: 30%;
+    height: 350px;
+    vertical-align: middle;
+    top: 0;
+    align: center;
+    margin: 0 0 0 20PX;
+    right: 0;
+    background: #440099;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.empower span h4 {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    width: 50%;
+}
+
+.empower a {
+    font-size: .89em;
+    width: 50%;
+    color: #fff;
+    
+}
+*/
+.img caption {
+    font-size: .6em;
+    font-style: oblique;
+    color: #fff;
+    width: 50%;
+}
+
+
+/****************************
+INSPIRE
+*****************************/
+
+
+.inspire {
+    display: inline-block;
+    width: 30%;
+    height:300px;
+    vertical-align: middle;
+    top: 0;
+    right: 0;
+    align: center;
+    margin: 0 0 0 20PX;
+    background: #440099;
+    border: solid 2px darkblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img caption {
+    font-size: .6em;
+    font-style: oblique;
+    color: #fff;
+    width: 50%;
+}
+
+
 
 /****************************
 VOLUNTEER
@@ -476,9 +918,9 @@ VOLUNTEER
 
 .volunteer {
     width: 100%;
-    height: 500px;
+    height: 600px;
     top: 0;
-    margin: 500px 0px 0 0px;
+    margin: 1400px 0px 0 0px;
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
@@ -603,8 +1045,8 @@ PARTNERS
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.7;
-    filter: alpha(opacity=0.7);  
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
 .partners span h4 {
@@ -649,14 +1091,14 @@ DIRECTIONS
 
 .directions {
     width: 100%;
-    height: 700px;
+    height: 740px;
     top:00px;
     margin: 1500px 0px 0 0px;
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.7;
-    filter: alpha(opacity=0.7);  
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
 .directions span h4 {
@@ -712,8 +1154,8 @@ CONTACT
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.7;
-    filter: alpha(opacity=0.7);  
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
 .contact span h4 {
@@ -887,12 +1329,13 @@ UNNEEDED CODE?
     padding: 10px 210px 10px 300px;
     justify-content: center;
     font-family: 'Lato', sans-serif;
+    color: #fff;
     font-size: 80%;
     border-top: solid 3px darkblue;
 	text-align: center;
     vertical-align: middle;
-	background: #eee;
-    z-index: 1000;
+	background: #222;
+    z-index: 1005;
 }
 
 
