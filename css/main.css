@@ -772,11 +772,10 @@ EDUCATE, EMPOWER, INSPIRE
 .educate {
     display: inline-block;
     width: 30%;
-    height: 740px;
+    height: 870px;
     vertical-align: middle;
-    top: 400px;
     left: 0;
-    margin: 0px 0 0 40px;
+    margin: 800px 0 0 40px;
     background: #440099;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
@@ -816,7 +815,9 @@ EDUCATE, EMPOWER, INSPIRE
     width: 50%;
     color: #fff;
     font-size: .9em;
-    padding-bottom: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    margin: 0 15px;
     width: 100%;
     color: #fff;
 }
@@ -850,11 +851,11 @@ EMPOWER
 .empower {
     display: inline-block;
     width: 30%;
-    height: 350px;
+    height: 400px;
     vertical-align: middle;
     top: 0;
     align: center;
-    margin: 0 0 0 20PX;
+    margin: 800px 0 0 20PX;
     right: 0;
     background: #440099;
     border: solid 2px darkblue;
@@ -892,12 +893,12 @@ INSPIRE
 .inspire {
     display: inline-block;
     width: 30%;
-    height:300px;
+    height: 310px;
     vertical-align: middle;
     top: 0;
     right: 0;
     align: center;
-    margin: 0 0 0 20PX;
+    margin: 800px 0 0 20PX;
     background: #440099;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
