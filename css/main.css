@@ -791,7 +791,7 @@ VOLUNTEER - LEFT
     display: flex;
     flex-direction: column;
     height: 600px;
-    width: 48%;
+    width: 50%;
     font-size: 1.3em;
 }
 
@@ -849,7 +849,7 @@ VOLUNTEER - RIGHT
     width: 92%;
 	text-align: center;
     height: auto;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 .volRight{
@@ -871,7 +871,7 @@ VOLUNTEER - RIGHT
 .volCCCsec2 {
     font-size: 1.1em;
     width: 100%;
-    margin-top: 0px;
+    margin-left: 40px;
     justify-content: center;
     padding: 25px;
 }
@@ -882,12 +882,13 @@ VOLUNTEER - RIGHT
     padding: 10px 45px 20px 25px;
 }
 
-.vol a {
+.backBtt a {
     font-size: .9em;
     height: 50px;
     margin-top: 20px;
     text-decoration: underline;
     justify-content: flex-end;
+	text-decoration: underline;
 }
 
 
@@ -896,8 +897,10 @@ DONATE
 *****************************/
 
 .donateBx {
+	display: flex;
+	flex-direction: column;
     width: 100%;
-    height: 480px;
+    height: 520px;
     top: 0;
     margin: 1000px 0px 0 0px;
     background: #4ee2ec;
@@ -905,6 +908,11 @@ DONATE
     font-family: 'Roboto', sans-serif;
     opacity: 0.7;
     filter: alpha(opacity=0.7);  
+}
+
+donTtl {
+	display: flex;
+	flex-direction: row;
 }
 
 .donateBx span h4 {
@@ -924,78 +932,124 @@ DONATE
     width: 50%;
 }
 
-
-
 .donateBx p {
+	display: flex;
+	flex-direction: row;
     font-size: 1.1em;
+	margin-top: 15px;
     padding: 5px 40px;
-    width: 48%;
+    width: 100%;
+}
+
+.donBthSecs {
+	display: flex;
+	flex-direction: row;
+}
+
+.donSec1 {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-top: 15px;
+}
+
+.donSec2 {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
 }
 
 .imgDon {
-    margin-left: 650px;
-    top: 0;
-    margin-right: 500px;
-    bottom: 0;
-    font-size: 1em;
-    width: 50%;
+	width: 100%;
+	height: auto;
+	margin-left: 20px;
+	padding: 35px 0 45px 20px;
 }
-
-
 
 /****************************
 PARTNERS
+
 *****************************/
 
 .partners {
+	display: flex;
+	flex-direction: column;
     width: 100%;
-    height: 650px;
-    top:00px;
+    height: 720px;
+    top: 0;
     margin: 1000px 0px 0 0px;
     background: #4ee2ec;
-    border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.9;
-    filter: alpha(opacity=0.9);  
+    opacity: 0.7;
+    filter: alpha(opacity=0.7);  
 }
 
 .partners span h4 {
-    font-size: 1.3em;
+    font-size: 2.3em;
     color: #000;
     text-align: center;
-    padding: 15px;
-    width: 50%
+    padding: 30px 15px 40px;
+    width: 100%;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+}
+	
+/*subheads*/
+.partners h4 {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-end;
+    font-size: 2em;
+    color: #440099;
+    text-align: left;
+    padding: 0 0 25px 35px;
+    width: 100%;
 }
 
-.partners h4 {
-    font-size: 1.2em;
-    color: #440099;
-    text-align: center;
-    padding-bottom: 25px;
-    width: 50%;
+.partners p {
+	display: flex;
+	flex-direction: row;
+    font-size: 1.1em;
+    padding: 5px 40px 10px;
+    width: 100%;
 }
 
 .partners ul {
     list-style-type: disc;
-    width: 50%;
+    width: 100%;
 }
 
 .partners li {
     list-style-type: disc;
-    width: 50%;
+    width: 100%;
+	padding-bottom: 15px;
+	height: 100%;
     margin: 0 45px;
     padding: 5px;
 }
 
-.partners p {
-    font-size: 1.1em;
-    padding: 5px 40px;
-    width: 50%;
+.partSecs {
+	display: flex;
+	flex-direction: row;
+}
+
+.partSec1 {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	height:;
 }
 
 .partSec2 {
-    margin-left: 650px;
-    top: 0;
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	height: ;
+}
+
+.backBtt {
+	text-decoration: underline;
 }
 
 /****************************
@@ -1004,9 +1058,8 @@ DIRECTIONS
 
 .directions {
     width: 100%;
-    height: 780px;
-    top:00px;
-    margin: 1500px 0px 0 0px;
+    height: 800px;
+    margin: 1500px 0 0;
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
@@ -1015,11 +1068,11 @@ DIRECTIONS
 }
 
 .directions span h4 {
-    font-size: 1.3em;
+    font-size: 2.3em;
     color: #000;
     text-align: center;
-    padding: 15px;
-    width: 50%
+    padding: 30px 15px 40px;
+    width: 100%
 }
 
 .directions h4 {
@@ -1032,25 +1085,52 @@ DIRECTIONS
 
 .directions ul {
     list-style-type: disc;
-    width: 50%;
+    width: 90%;
 }
 
 .directions li {
     list-style-type: disc;
-    width: 50%;
+    width: 90%;
     margin: 0 45px;
     padding: 5px;
+	font-size: 1.1em;
+	margin: 5px 0;
+	margin-left: 40px;
 }
 
 .directions p {
     font-size: 1.1em;
     padding: 5px 40px;
-    width: 50%;
+    width: 90%;
 }
 
-.directions a {
+.dirSecs {
+    display: flex;
+	flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.dirSec1 {
+    display: flex;
+	flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.dirSec2map {
+    display: flex;
+	flex-direction: column;
+    width: 100%;
+    height: auto;
+	margin-bottom: 30px;
+	
+}
+
+.backBtt a {
     font-size: 1em;
     width: 50%;
+	text-decoration: underline;
 }
 
 
@@ -1061,7 +1141,7 @@ CONTACT
 
 .contact {
     width: 100%;
-    height: 400px;
+    height: 540px;
     top:00px;
     margin: 2000px 0px 0 0px;
     background: #4ee2ec;
@@ -1071,45 +1151,76 @@ CONTACT
     filter: alpha(opacity=0.9);  
 }
 
-.contact span h4 {
-    font-size: 1.3em;
+
+
+
+.conTtl {
+    font-size: 2.3em;
     color: #000;
     text-align: center;
-    padding: 15px;
-    width: 50%
+    padding: 30px 15px 40px;
+    width: 100%;
 }
 
-.contact h4 {
+.conSub h4 {
     font-size: 1.2em;
     color: #440099;
     text-align: center;
     padding-bottom: 25px;
-    width: 50%;
+    width: 100%;
 }
 
-.contact ul {
-    list-style-type: disc;
-    width: 50%;
+
+/*
+.contact span h4 {
+    font-size: 2.3em;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    width: 100%
 }
 
-.contact li {
-    list-style-type: disc;
-    width: 50%;
-    margin: 0 45px;
-    padding: 5px;
+.contact h4 {
+    display: flex;
+	flex-direction: row;
+	text-align: center;
+    font-size: 2em;
+    color: #440099;
+    text-align: left;
+    padding: 0 0 25px 35px;
+    width: 100%;
+}
+*/
+
+
+table {
+	margin-left: 20px;
+	padding-bottom: 24px;
 }
 
-.contact p {
-    font-size: 1.1em;
-    padding: 5px 40px;
-    width: 50%;
+table td,
+table th{
+	font-size: 1.2em;
+	text-align: left;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+table th {
+	text-decoration: underline;
 }
 
 .contact a {
     font-size: 1em;
     width: 50%;
+	padding-top: 10px;
+	text-decoration: underline;
 }
 
+
+/****************************
+FOOTER
+*****************************/
 .fbLogo {
     position: fixed;
     top: 540px;
@@ -1148,14 +1259,6 @@ CONTACT
 GOOGLE MAP
 *****************************/
 
-#map {
-    display: flex;
-    align-items: center;
-    width: 600px;
-    height: 500px;
-    top: 50px;
-    left: 170px;
-}
 
 #mapDir {
     display: flex;
