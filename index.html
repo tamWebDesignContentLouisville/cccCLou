@@ -31,7 +31,7 @@
     </div>
 
     <div class="navPhone2">
-           <ul>
+         <ul>
             <li><a href="#indexPg">Home</a></li>
             <li ><a href="#aboutPg">About</a></li>
             <li ><a href="#volunteerPg">Volunteer</a></li>
@@ -40,18 +40,11 @@
             <li ><a href="#directionsPg">Directions</a></li>
             <li ><a href="#contactPg">Contact Us</a></li>
          </ul>
-        </div>
-          
-        <div id="scholLinks"> 
-                <ul>
-                    <li><a  href="http://www.schoolchoiceky.org/20162017-application" alt="School Choice Scholarships" target="_blank">Tuition Assistance Application</a></li>
-                </ul>
-        </div>              
+       </div>	
     </div> <!-- end header sec -->
     
     <div class="content"> 
-        
-        
+          
          <div class="slideShow">  
              <img src="./img/img1.jpg" alt="Three girls painting."/>
              <img id="img2"  src="./img/img2.jpg" alt="Boy relaxing under a tree at summer picnic."/>
@@ -74,18 +67,18 @@
             <img class="lrgImg" src="./img/img7.jpg" />
         </div>       
 
-        <div class="txtMissn">
-            <div>
-                <span class="hdM"><h4>Community Catholic Center</h4></span>
-            </div>
-            <div class="missnCols">
-                <div class="missnCol1" id="m1">
+        <div class="mainBx">
+            <div class="mainHdr">
+                <span><h4>Community Catholic Center</h4></span>
+			</div>
+            <div class="mainCols">
+                <div class="mainCol1" id="m1">
                     <h4>Educate. Empower. Inspire.</h4><br>
                     <p>Community Catholic Center Inc., a 501(c) (3) non-profit organization, works in the Portland and West End neighborhood of Louisville, Kentucky, to assist families in providing a Catholic education to their children.</p>
                     <p>Several Catholic elementary schools and high schools partner with CCC to provide a comprehensive Catholic education to the children in our program.
                     </p>
                 </div>
-                <div class="missnCol2" id="m1c2">
+                <div class="mainCol2" id="m1c2">
                     <p>With generous support from donors, CCC provides financial assistance for tuition at local Catholic schools and enrichment opportunities to further develop the students in the program.</p>
                     <br>
                     <h4>Family Counseling.</h4><h4>Family Advocates.</h4> 
@@ -93,15 +86,29 @@
                     <h4>Tutors. </h4>                    
                 </div> 
                 
-                    <div id="hoursPg">
-                        <a  href="hours.html">Hours</a>
-                    </div>
-                
-                    <div>
-                        <a class="donate" href="donate.html">Donate</a>
-                    </div>
-            </div><!-- End Cols Div -->
-        </div>  <!-- End txtMissn Div -->
+                <div id="scholLinks"> 
+                	<ul>
+                    	<li><a  href="http://www.schoolchoiceky.org/20162017-application" alt="School Choice Scholarships" target="_blank">Tuition Assistance Application</a></li>
+                	</ul>
+        		</div>              
+				<div class=hoursBtt>
+					<a  href="hours.html">Hours</a>
+				</div>
+				
+				<a href="#openModal">Open Modal</a>
+				<div id="openModal" class="modalDialog">
+				</div>
+				<a href="#close" title="Close" class="close">X</a>
+				<h2>Modal Box</h2>
+				<p>This is a sample modal box that can be created using the powers of CSS3.</p>
+				<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+				</div>
+				
+				<div>
+					<a class="donate"  href="#donatePg">Donate</a>
+				</div>
+            </div><!-- End Main Cols  -->
+		</div><!-- End Main Box -->
     
         
     <div class="about" id="aboutPg">
@@ -110,7 +117,6 @@
           <img class="img17" src="./img/img17.jpg" alt="Girl smiling with other students in the background." width="700" height="300"></a>
           </div>
         
-          
             <div class="aboutCCCtxtLeft">
             <p>Community Catholic Center is dedicated to making a quality Catholic education available and accessible to children living in a community where no Catholic schools are present. First and foremost CCC works with the family to meet the tuition needs of the students; however, through a holistic model CCC also works to improve the students’ overall well-being by incorporating education and personal development activities.</p>
         
@@ -139,7 +145,7 @@
                 <div>
                     <img class="serviceProj" src="./img/serviceProj2.jpg" alt="Operation Brightside service project volunteers." width="300" height="170" />
                 </div>
-                    <div  id="imgSvc"><caption>CCC families pledge to participate in group service projects.<br> Families participated in the Operation Brightside Clean Up in the Portland neighborhood.</caption>
+                 <div  id="imgSvc"><caption>CCC families pledge to participate in group service projects.<br> Families participated in the Operation Brightside Clean Up in the Portland neighborhood.</caption>
                 </div>   
                 
                 <p id="paraRight">Enrichment and support includes:</p>
@@ -160,6 +166,7 @@
         
             
     <div class="containerEEI"> 
+		
         <div class="educate" id="educatePg">
             <h4>Educate</h4>
             <p>When families come to CCC seeking tuition assistance in sending their children to Catholic schools, CCC works with the family to create a successful partnership.  CCC and the parents enter into an annual contract to guide the partnership.  Listed below are parent commitments in the contract.
@@ -177,8 +184,7 @@
                 <li>Parents will create a positive learning environment at home by reading to children, checking homework, and studying nightly.</li>
             </ul> 
                
-            <a class="backBtt" href="#topPg">back to top</a>
-                    
+            <a class="backBtt" href="#topPg">back to top</a>           
         </div>
         
         <div class="empower" id="empowerPg">
@@ -189,8 +195,7 @@
                     <li>Louisville Central Community Center offers child and youth development activities as well as job training and financial education for adults.  502.583.8821.</li>
                     <li>West Louisville Community Ministries offers many family services including child care and tutoring programs.  502.778.2815.
                     </li>
-                </ul>
-                   
+                </ul>         
             <a class="backBtt" href="#topPg">back to top</a>
                     
             </div>
@@ -203,21 +208,14 @@
                     <li>University of Louisville football players</li>
                     <li>Louisville Metro Police Officers</li>
                     <li>Louisville Fire Fighters</li>
-                </ul>
-                   
-            <a class="backBtt"href="#topPg">back to top</a>
-                    
+                </ul>      
+            <a class="backBtt"href="#topPg">back to top</a>         
             </div>
         </div>
-
-
-
-<!--volunteeer page -->
-
+	
 		        
-    <div class="vol" id="volPg">
+    <div class="vol" id="volunteerPg">
       <div class="volLeft"> 
-          	<div class="volCCCtxtLeft">
 			<span><h4>Volunteer Opportunities</h4></span> 
 			
             <p #volSec1>Participate in the following ways:</p>
@@ -229,61 +227,26 @@
 			<li>Organize a school supply or snack drive to provide needed items for student support</li>
         </ul>
 				
-		<p #volSec1>If you are interested in volunteering for these opportunities, email your request to<a href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a>and information as well as a background check form will be sent to you.</p>
+		<p #volSec1>If you are interested in volunteering for these opportunities, email your request to<a class="mlTo" href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a>and information as well as a background check form will be sent to you.</p>
         <p>
          Pray for Our Success–  As all things come from God, CCC continually needs prayers to continue its work.  Please pray for the CCC students and families as well as for our efforts to educate, empower and inspire their faith and educational development
 				</p>
-				
-        </div><!-- volCCCtxtLeft -->
         </div> <!-- end volLeft  -->
         
-        <div class="volLeft">       
-            <div class="volTtl">
-            
-            </div>
+        <div class="volRight">  
             <div class="volCCCsec2">
-                
                 <div>
-                    <img class="imgVol" src="./img/imgTutorVol.jpg" alt="Woman tutors NDA student." width="550" height="400" / >
+                    <img class="imgVol" src="./img/imgTutorVol.jpg" alt="Woman tutors NDA student." width="500" height="380" / >
 				</div>
 				<div id="volCap">
                    <caption class="volCap">Evan Burks, NDA student, works with SHA tutoring volunteer Courtney Ford.</caption>
                 </div>
-                
-                <a class="backBtt" href="#topPg">back to top</a>
-            </div>
-       </div> <!-- end volLeft --> 
+               
+                <a class="volBkBtt" href="#topPg">back to top</a>
+            </div> <!-- end volCCCsec2-->
+       </div> <!-- end volRight --> 
     </div> <!-- volPg end -->
 
-
-<!--end volunteeer page -->
-
-
-  <!--      
-    <div class="volunteer" id="volunteerPg">
-            <span><h4>Volunteer Opportunities</h4></span>
-            <h4>Become a Volunteer</h4>
-            <p>Participate in the following ways:</p>
-                <ul>
-                    <li>Serve as a Jr. High/High School Mentor</li>
-                    <li>Tutor students after school</li>
-                    <li>Volunteer as a cook or server for the Christmas Celebration (December) or Achievement Ceremony (May)</li>
-                    <li>Organize a school supply or snack drive to provide needed items for student support</li>
-                    </ul>
-            
-                    <p>If you are interested in volunteering for these opportunities, email your request to<a href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a>and information as well as a background check form will be sent to you.</p>
-                    <p>
-                    Pray for Our Success–  As all things come from God, CCC continually needs prayers to continue its work.  Please pray for the CCC students and families as well as for our efforts to educate, empower and inspire their faith and educational development.</p>
-            
-               <div>
-                    <img class="imgVol" src="./img/imgTutorVol.jpg" alt="Woman tutors NDA student." width="550" height="400" / >
-                   <caption>Evan Burks, NDA student, works with SHA tutoring volunteer Courtney Ford.</caption>
-                </div>
-                   
-                <a href="#topPg">back to top</a>
-                    
-            </div>
-    -->
 	
     <div class="donateBx" id="donatePg">
          <div  class="donTtl">	<span><h4>Donation Opportunities</h4></span>
@@ -309,10 +272,7 @@
 	<div class="donSec2">
          <div><img class="imgDon" src="./img/img20.jpg" alt="Smiling boys." width="400" height="350" />
 		</div>
-	
-         <div>  
-            <a class="backBtt" href="#topPg">back to top</a>
-		</div>
+            <a class="donBkBtt"  href="#topPg">back to top</a>
 	  </div>
    	</div>                 
    </div>
@@ -363,7 +323,7 @@
 		<li>Renee Yates</li>
 		</ul>
 		  
-        <a class="backBtt" href="#topPg">back to top</a>
+        <a class="partBkBtt" href="#topPg">back to top</a>
 	</div>    
    </div>
 </div>
@@ -376,7 +336,7 @@
 	<div class="dirSecs">
 		<div class="dirSec1">
             <p>Driving Directions to Community Catholic Center
-                3525 Rudd Avenue</p>
+                3525 Rudd Avenue:</p>
             <p>
             <ul>
                 <li>If coming from I-64 heading west, take the 22nd Street exit.</li> 
@@ -394,12 +354,14 @@
 
             <p>Street parking is available in front of  Lehmann Hall.   Parking is also available between the church and Lehmann.
             </p>
+			
+			<a class="dirBkBtt" href="#topPg">back to top</a>
 		</div>
 		
         <div class="dirSec2map">   
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.1333578894996!2d-85.80826488513497!3d38.27640139091366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88696d0255d8769b%3A0xfee6ff71c6754636!2s3525+Rudd+Ave%2C+Louisville%2C+KY+40212!5e0!3m2!1sen!2sus!4v1456516592195" width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
       <div>         
-            <a class="backBtt" href="#topPg">back to top</a>
+            
           </div>          
 		</div>
 	 </div>
@@ -410,54 +372,48 @@
 		<div class="conTtl">
             <span><h4>Contact Us</h4></span>
 		</div>
-        <div class="conSub"><h4>CCC Staff</h4></div>
+        <div class="conSub">CCC Staff
+		  </div>
 	
-		<table>
+		<table class="conTbl">
 		<tr>
 			<th>Staff Member</th>
 			<th>Position</th>
-			<th></th>
-			<th></th>
-			<th>Phone</th>
+			<th class="phone">Phone</th>
 		</tr>
 		<tr>
 			<td>Rae</td>
 			<td>Office Manager</td>
-			<td></td>
-			<td></td>
-			<td>424.9398</td>
+			<td class="phone"><img src="./img/phone.svg" alt="phone icon" />
+			502-424-9398</td>
 		</tr>
 		<tr>
 			<td>Vern</td>
 			<td>LCSW</td>
-			<td></td>
-			<td></td>
-			<td>592.8195</td>
+			<td class="phone"><img src="./img/phone.svg" alt="phone icon" />
+			502-592-8195</td>
 		</tr>
 		<tr>
 			<td>Carol</td>
 			<td>Elementary Education</td>
-			<td></td>
-			<td></td>
-			<td>609.1280</td>
+			<td class="phone"><img src="./img/phone.svg" alt="phone icon" />
+			502-609-1280</td>
 		</tr>
         <tr>
 			<td>Becky</td>
 			<td>Secondary Education</td>
-			<td></td>
-			<td></td>
-			<td>387.7369</td>
+			<td class="phone"><img src="./img/phone.svg" alt="phone icon" />
+			502-387-7369</td>
 		</tr>
         <tr>
 			<td>Heidi</td>
 			<td>Executive Director</td>
-			<td></td>
-			<td></td>
-			<td>797.6493</td>
+			<td class="phone"><img  src="./img/phone.svg" alt="phone icon" />
+			502-797-6493</td>
 		</tr>
     </table>  
-		<div>
-			<a class="backBtt"  href="#topPg">back to top</a>
+		<div class="contBkBtt">
+			<a href="#topPg">back to top</a>
     	</div>
 	</div>
         

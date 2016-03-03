@@ -21,18 +21,19 @@ HEADER
 *************************/
 
 .headerSec {
+	display: flex;
+	flex-direction: row;
     display: inline-block;
     width: 100%;
-    z-index: 3;
     height: 120px;
-
 }
 
 .banner {
-    display: flex;
+   	display: flex;
     justify-content: flex-end;
     background: #440099;
-    padding: 10px 3px;
+	width: 100%;
+    padding: 10px 3px; 
     font-size: .6em;
     text-shadow: 1px 1px 4px #000;
     font-family: 'Lato', sans-serif;
@@ -47,17 +48,16 @@ HEADER
 
 .cccLogo {
     position: absolute; 
-    margin-top: 0 5px 5px 0;
-    width: 100%;
-    top: 10px;
-    left: 10px;
-    padding-left: 15px;
+   /* margin: 10px 0 0 25px;*/
+    width: 14%;
+    top: 20px;
+	left: 35px;
 }
 
 #logo{
-    height: 108px;
-    width:180px;
-    background-size: contain;
+/*   height: 108px;
+    width: 180px; 
+    background-size: contain; */
 }
 
 
@@ -74,30 +74,24 @@ NAV LINKS
         font-family: 'Lato', sans-serif;
         font-size: .8em;
         font-weight: bold;
-        color: rgba();
         height: 45px;
         width: 100%;
-        margin: 0;
-        top: 50px;
+        top: 65px;
         right: 10px;
         z-index: 5; 
 }
          
 .navPhone2 ul {
     color: navyblue;
-    padding: 10px 10px;
     list-style-type: none;
 }
 
 .navPhone2 li {
     float: left;
-    padding-left: 5px;
-    color: navyblue;
-    background: #eee;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    padding: 2px 0 0 2px;
-    margin: 5px;
+    margin: 2px;
+	border: solid 2px #440099;
 }
 
 
@@ -111,7 +105,7 @@ a {
     font-weight: bold;
     padding: 10px;
     color: #440099;
-    text-decoration: none;
+    text-decoration: none;	
     border-radius: 10px;
 }
 
@@ -125,13 +119,13 @@ a:visited {
 
 /* mouse over link */
 a:hover, a:focus {
-    color: red;
+    color: gold;
     background:#222;
 }
 
 /* selected link */
 a:active {
-    color: gold;
+    color: red;
 }
 
 
@@ -161,7 +155,7 @@ TUITION ASSIST
     left: 0;
     font-size: 1.2em;
     text-shadow: none;
-    text-decoration: underline;align-content: 
+    text-decoration: underline;
     color: #440099;
     background: navyblue;
     padding: 0 0 0 20px;
@@ -195,7 +189,7 @@ CONTENT
 *************************/
 
 
-content {   
+.content {   
 	display: flex;
     flex-direction: column;
     width: 100%;
@@ -213,7 +207,7 @@ BACKGROUND IMAGE
     background-image: no repeat;
     width: 100%;
     top: 0;
-	opacity: .2;
+	opacity: .7;
 }
 
 
@@ -227,8 +221,8 @@ SLIDE SHOW
     position: absolute;
     width: 45%;
     height: 100px;
-    top: 232px;
-    left: 10px;
+    top: 174px;
+    right: 30px;
     overflow-x: scroll;
     z-index: 1001;
 }
@@ -238,9 +232,7 @@ SLIDE SHOW
     width:  auto;
     background-size: contain;
     cursor: pointer;
-    border-right: solid 2px #440099;
-    border-bottom: solid 3px #440099;
-    border-top: solid 3px #440099;
+    border: solid 2px #440099;
     z-index: 1002;
 }
 
@@ -248,7 +240,8 @@ SLIDE SHOW
     position: absolute;
     width: 45%;
     height: auto;
-    top: 220px;
+    top: 140px;
+	right: 30px;
     margin: 150px 0 0 10px;
     background-size: contain;
     cursor: pointer;
@@ -258,13 +251,13 @@ SLIDE SHOW
 
 
 /************************
-ABOUT CCC
+MAIN CCC
 *************************/
 
-.txtMissn {
+.mainBx {
     display: flex;
     position: absolute;
-    top: 81px;
+    top: 173px;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
@@ -272,17 +265,20 @@ ABOUT CCC
     text-align: left;
     padding: 5px 10px 5px 5px;
     width: 43%;
-    height: 430px;
-    top: 230px;
-    right: 30px;
+    height: 440px;
+    left: 30px;
     background-color: #4ee2ec;
     border: solid 2px darkblue;
     z-index: 8;
-    opacity: 0.7;
+    opacity: 0.9;
     filter: alpha(opacity=0.7); 
 }
 
-.txtMissn span {
+.mainHdr {
+	color: #44009;
+}
+
+.mainBx span {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -294,14 +290,14 @@ ABOUT CCC
     padding-bottom: 15px;
 }
 
-.missnCols {
+.mainCols {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     color: #000;
 }
 
-.missnCol1 {
+.mainCol1 {
     width: 46.5%;
     height: 400px;
     float: left;
@@ -310,11 +306,11 @@ ABOUT CCC
     padding: 5px;
 }
 
-.missnCol1 p {
+.mainnCol1 p {
     padding-bottom: 10px;
 }
 
-.missnCol2 {
+.mainCol2 {
     width: 46.5%;
     height: 400px;
     float: right;
@@ -331,27 +327,128 @@ h4 {
     #440099;
 }
 
-.hdM {
-    color: #000;
+/**HOURS BUTTON ON MAIN BOX**/
+
+.hoursBtt {
+	position: absolute;
+	color: #440099;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	width: 75px;
+	height: 35px;
+	font-family: 'Lato', sans-serif;
+	font-size: .7em;
+	text-align: center;
+	background: #ddd;
+	border: solid 1px #000;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 30px #000;
+    }
+
+
+/**MODAL WINDOW TO HOURS FROM HOURS BUTTON FROM  MAIN BOX**/
+
+.modalDialog {
+	position: fixed;
+	font-family: 'Lato', sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transion: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
 }
 
-#hoursPg {
-        position: absolute;
-        display: inline-block;
-        top: 0;
-        left: 0;
-        width: 63px;
-        height: 25px;
-        font-family: 'Lato', sans-serif;
-        font-size: .7em;
-        text-align: center;
-        padding: 0;
-        background: gold;
-        border: solid 1px #000;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 30px #000;
-        z-index: 1000;
-    }
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -0-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color:#fff;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	-moz-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+
+.hours2 {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #440099;
+    text-align: center;
+    list-style-type: none;
+	width: 100%;
+	top: 0;
+}
+
+.hrs2list ul {
+	list-style-style: none;
+}
+
+#hdhrs {
+    font-size: .9em;
+    text-decoration: underline;
+    color: #440099;
+    padding-bottom: 5px;
+}
+
+.day {
+    font-size: .7em;
+    margin-bottom: 5px;
+}
+
+.time {
+    font-size: .6em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.backBtt {
+	font-size: .9em;
+    height: 50px;
+    margin-top: 20px;
+    text-decoration: underline;
+    justify-content: flex-end;
+}
+
+
+
+/**DONATE BUTTON ON MAIN BOX**/
 
 .donate {
     position: absolute;
@@ -365,106 +462,61 @@ h4 {
         font-color: #fff;
         font-size: .8em;
         text-align: center;
-        background: gold;
+        background: #ddd;
         border: solid 2px #000;
         border-bottom-left-radius: 30px #000;
         z-index: 1000;
 }
-/*
-.donateBtn ul {
-    list-style-type: none;   
-}
 
-.donateBtn li {
-    postion: absolute;
-    text-size: .6em; 
-    color: #fff;
-}
-*/
-a {
-    font-size: 1.3em;
+/**SCHOLARSHIP LINK ON MAIN BOX**/
+
+#scholLinks {
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
-    padding: 10px;
-    color: #000;
-    text-decoration: none;
-    border-radius: 10px;
+    color: #440099;
+    text-shadow: none;
+    text-align: center;
+    background: navyblue;
+    border-radius: 30;
+    z-index: 11;
+    top: 40;
 }
 
-a:link {
-    color: #440099;
+#scholLinks a {
+    display: inline-block;
+    position: absolute;
+	width: 30%;
+    top: 300px;
+    left: 360px;
+    font-size: 1.2em;
+    text-decoration: underline;
+	right: 0;
+	margin-top: 20px;
+    border-radius: 30px navyblue;
+    z-index: 999;
+}
+
+#scholLinks li,
+#scholLinks a:link {
+    color: #fff;
 }  
 
-a:visited {
-    color: #ff1cd5;
+#scholLinks a:visited {
+    color: #440099;
 }
 
 /* mouse over link */
-a:hover, a:focus {
-    color: red;
-    background:#000;
-}
-
-/* selected link */
-a:active {
+#scholLinks a:hover {
     color: gold;
 }
 
-
-
-
- 
-
-/************************
-DONATE BUTTON
-*************************/
-
-/*
-.myButton {
-    margin: 0 200px 0 650px;
-    position: absolute;
-    width: auto;
-    top: 95px;
-    right: 50px;
-	-moz-box-shadow: 1px 2px 3px 1px #fff6af;
-	-webkit-box-shadow: 1px 2px 3px 1px #fff6af;
-	box-shadow: 1px 2px 3px 1px #fff6af;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
-	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
-	background-color:#ffec64;
-	-moz-border-radius:20px;
-	-webkit-border-radius:20px;
-	border-radius:20px;
-	border:2px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:13px 20px;
-	text-decoration:none;
-	text-shadow:1px -3px 5px #ffee66;
-}
-
-.myButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
-	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
-	background-color:#ffab23;
-}
-
-.myButton:active {
+/* selected link */
+#scholLinks a:active {
     color: red;
 }
-
+ 
 
 /****************************
 ABOUT CCC
@@ -475,13 +527,13 @@ ABOUT CCC
     flex-direction: row;
     width: 1348px;
     height: 940px;
-    top: 0;
+    top: 1000px;
     margin: 1000px 0 0;
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.7;
-    filter: alpha(opacity=0.7);  
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
 .img17 {
@@ -553,7 +605,7 @@ ABOUT CCC
     margin-bottom: 5px
 }
 
-/* both left and right paragraphs - no bullets*/
+/* both left and right paragraphs  no bullets*/
 .about p {
     font-size: .9em;
     padding: 10px 45px 20px 25px;
@@ -561,6 +613,7 @@ ABOUT CCC
 
 .about a {
     font-size: .9em;
+	width: 30%;
     height: 50px;
     margin-top: 20px;
     text-decoration: underline;
@@ -626,41 +679,47 @@ EDUCATE, EMPOWER, INSPIRE
 .educate {
     display: inline-block;
     width: 30%;
-    height: 870px;
+    height: 910px;
     vertical-align: middle;
     left: 0;
-    margin: 800px 0 0 40px;
+    margin: 300px 0 0 40px;
+	padding-top: 15px;
     background: #440099;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
-	z-index: 11000;
+    color: #eee;
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
 .educate span h4,
 .empower span h4, 
 .inspire span h4 {
     font-size: 1.2em;
-    color: #FFF;
+    color: #eee;
     text-align: center;
-    padding: 5px 0; 25px;
+    padding: 5px 0 25px;
     width: 100%;
+	
 }
 
 .educate h4,
 .empower h4, 
 .inspire h4 {
     font-size: 1.2em;
-    color: #FFF;
+    color: #eee;
     text-align: center;
-    padding: 10px 0; 25px;
+    padding: 10px 0 25px;
     width: 100%;
+	
 }
+
 .educate ul {
     list-style-type: disc;
     width: 100%;
-    color: #fff;
+    color: #eee;
     padding-right: 10px;
+
 }
 
 .educate li,
@@ -668,13 +727,14 @@ EDUCATE, EMPOWER, INSPIRE
 .inspire li {
     list-style-type: disc;
     width: 50%;
-    color: #fff;
+    color: #eee;
     font-size: .9em;
     padding: 10px;
     padding-right: 20px;
     margin: 0 15px;
     width: 100%;
     color: #fff;
+	
 }
 
 .educate p,
@@ -683,7 +743,8 @@ EDUCATE, EMPOWER, INSPIRE
     font-size: .9em;
     padding: 5px 40px;
     width: 100%;
-    color: #fff;
+    color: #eee;
+	
 }
 
 .educate a {
@@ -694,6 +755,7 @@ EDUCATE, EMPOWER, INSPIRE
     margin-top: 30px;
     text-decoration: underline;
     justify-content: flex-end;
+	
 }
 
 
@@ -704,16 +766,18 @@ EMPOWER
 .empower {
     display: inline-block;
     width: 30%;
-    height: 440px;
+    height: 495px;
     vertical-align: middle;
     top: 0;
     align: center;
-    margin: 800px 0 0 20PX;
+    margin: 300px 0 0 20PX;
     right: 0;
+	padding: 10px;
     background: #440099;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-	z-index: 11000;
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
 .empower span h4 {
@@ -735,26 +799,25 @@ EMPOWER
 }
 
 
-
-
 /****************************
 INSPIRE
 *****************************/
 
-
 .inspire {
     display: inline-block;
     width: 30%;
-    height: 350px;
+    height: 375px;
     vertical-align: middle;
     top: 0;
     right: 0;
     align: center;
-    margin: 800px 0 0 20PX;
+    margin: 300px 0 0 20PX;
+	padding-top: 10px;
     background: #440099;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-	z-index: 11000;
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
 .inspire a {
@@ -768,79 +831,66 @@ INSPIRE
 }
 
 
-
-
-/*********************************
+/*******************************
 VOLUNTEER - LEFT
-**********************************/
+********************************/
 
 .vol {
     display: flex;
     flex-direction: row;
+    border: solid 2px darkblue;
     width: 1348px;
-    height: 600px;
+    height: 620px;
     top: 0;
-    margin: 1000px 0 0;
+    margin: 400px 0 0 0;
     background: #4ee2ec;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.7;
-    filter: alpha(opacity=0.7);  
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
-.volLeft{
+.volLeft {
     display: flex;
     flex-direction: column;
     height: 600px;
-    width: 50%;
+    width: 48%;
     font-size: 1.3em;
 }
 
-#paraRightVol {
-    font-size: .9em;
-    padding: 5px 45px 10px 0;
-}
-
-#bulletRightVol {
-    font-size: .7em;
-    margin-bottom: 20px;
-}
-
-#bulletRight li {
-    padding-bottom: 5px;
-}
-
-.volTtl{
-    width: 100%; 
-	padding-top: 20px;
+.volRight {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 48%;
+    font-size: 1.3em;
 }
 
 .vol span h4 {
     font-size: 2.3em;
     color: #000;
     text-align: center;
-    padding: 35px;
+    padding: 25px;
     width: 100%;
 }
 
-#volsec1 {
+#volSec1 {
     list-style-type: disc;
     margin-left: 15px;
     font-size: .8em;
-    padding: 10px 90px 0 50px;   
+    padding: 0 90px 5px 50px;   
 }
-
 
 /****************************
 VOLUNTEER - RIGHT
 *****************************/
 
-.img {
-    width: 100%;
+.imgVol {
+    width: 95%;
     height: 100%;
     font-size: .9em;
     font-style: oblique;
-    padding-top: 5px;
-    width: 100%;
+	top: 25px;
+	margin-top: 15px;
 }
 
 #volCap {
@@ -850,22 +900,6 @@ VOLUNTEER - RIGHT
 	text-align: center;
     height: auto;
 	padding-bottom: 30px;
-}
-
-.volRight{
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-    margin-left: 20px;
-    font-size: 1.3em;
-}
-
-#volEEIrow{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.3em;
-    justify-content: center;
-    align-content: space-around;
 }
 
 .volCCCsec2 {
@@ -879,16 +913,21 @@ VOLUNTEER - RIGHT
 /* both left and right paragraphs - no bullets*/
 .vol p {
     font-size: .9em;
-    padding: 10px 45px 20px 25px;
+    padding: 10px 45px 5px 25px;
 }
 
-.backBtt a {
+.volBkBtt{
+	display:flex;
     font-size: .9em;
+	width: 30%;
     height: 50px;
-    margin-top: 20px;
+	right: 0;
     text-decoration: underline;
-    justify-content: flex-end;
-	text-decoration: underline;
+    justify-content: center;
+}
+
+.mlTo {
+	font-size: .9em;
 }
 
 
@@ -902,12 +941,12 @@ DONATE
     width: 100%;
     height: 520px;
     top: 0;
-    margin: 1000px 0px 0 0px;
+    margin: 300px 0px 0 0px;
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.7;
-    filter: alpha(opacity=0.7);  
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
 donTtl {
@@ -963,25 +1002,36 @@ donTtl {
 	width: 100%;
 	height: auto;
 	margin-left: 20px;
-	padding: 35px 0 45px 20px;
+	padding: 35px 0 15px 20px;
 }
+
+.donBkBtt {
+	display: flex;
+    font-size: 1.3em;
+	width: 30%;
+    height: 50px;
+    text-decoration: underline;
+    justify-content: center;
+}
+
+
 
 /****************************
 PARTNERS
-
 *****************************/
 
 .partners {
 	display: flex;
 	flex-direction: column;
+    border: solid 2px darkblue;
     width: 100%;
     height: 720px;
     top: 0;
-    margin: 1000px 0px 0 0px;
+    margin: 340px 0px 0 0px;
     background: #4ee2ec;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.7;
-    filter: alpha(opacity=0.7);  
+    opacity: 0.9;
+    filter: alpha(opacity=0.9);  
 }
 
 .partners span h4 {
@@ -1048,8 +1098,13 @@ PARTNERS
 	height: ;
 }
 
-.backBtt {
+.partBkBtt {
+    font-size: 1.4em;
+    width: 40%;
+    height: 50px;
+    margin-top: 20px;
 	text-decoration: underline;
+    justify-content: flex-end;
 }
 
 /****************************
@@ -1059,7 +1114,7 @@ DIRECTIONS
 .directions {
     width: 100%;
     height: 800px;
-    margin: 1500px 0 0;
+    margin: 380px 0 0;
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
@@ -1100,7 +1155,7 @@ DIRECTIONS
 
 .directions p {
     font-size: 1.1em;
-    padding: 5px 40px;
+    padding: 5px 40px 15px;
     width: 90%;
 }
 
@@ -1127,10 +1182,14 @@ DIRECTIONS
 	
 }
 
-.backBtt a {
-    font-size: 1em;
-    width: 50%;
+.dirBkBtt {
+    font-size: 1.4em;
+    width: 30%;
+    height: 50px;
+	margin-left: 320px;
+    margin-top: 20px;
 	text-decoration: underline;
+    justify-content: flex-end;
 }
 
 
@@ -1140,10 +1199,12 @@ CONTACT
 *****************************/
 
 .contact {
+	display: flex;
+	flex-direction: column;
+    border: solid 2px darkblue;
     width: 100%;
-    height: 540px;
-    top:00px;
-    margin: 2000px 0px 0 0px;
+    height: 600px;
+    margin: 430px 0px 0 0px;
     background: #4ee2ec;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
@@ -1151,10 +1212,9 @@ CONTACT
     filter: alpha(opacity=0.9);  
 }
 
-
-
-
 .conTtl {
+	display: flex;
+	flex-direction: column;
     font-size: 2.3em;
     color: #000;
     text-align: center;
@@ -1162,59 +1222,49 @@ CONTACT
     width: 100%;
 }
 
-.conSub h4 {
-    font-size: 1.2em;
+.conSub {
+	display: flex;
+	flex-direction: column;
+    font-size: 2em;
+	font-weight: bold;
     color: #440099;
     text-align: center;
     padding-bottom: 25px;
     width: 100%;
 }
 
-
-/*
-.contact span h4 {
-    font-size: 2.3em;
-    color: #000;
-    text-align: center;
-    padding: 15px;
-    width: 100%
+.conTbl {
+	margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 54px;
+	width: 60%;
 }
 
-.contact h4 {
-    display: flex;
-	flex-direction: row;
-	text-align: center;
-    font-size: 2em;
-    color: #440099;
-    text-align: left;
-    padding: 0 0 25px 35px;
-    width: 100%;
-}
-*/
-
-
-table {
-	margin-left: 20px;
-	padding-bottom: 24px;
-}
-
-table td,
-table th{
+.conTbl td,
+.conTbl th{
 	font-size: 1.2em;
 	text-align: left;
-	padding: 10px;
+	padding-right: 0px;
 	margin-bottom: 10px;
 }
 
-table th {
+.conTbl th {
 	text-decoration: underline;
+	height: 50px;
 }
 
-.contact a {
-    font-size: 1em;
-    width: 50%;
-	padding-top: 10px;
+img .phone {
+	padding-right: 0;
+}
+
+.contBkBtt {
+	font-size: 1em;
+    width: 30%;
+    height: 50px;
+	margin-left: 620px;
+    margin-top: 20px;
 	text-decoration: underline;
+    justify-content: flex-end;
 }
 
 
@@ -1254,124 +1304,6 @@ FOOTER
     z-index: 1005;
 }
 
-
-/****************************
-GOOGLE MAP
-*****************************/
-
-
-#mapDir {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    font-family: 'Roboto', sans-serif; 
-    margin: 100px 100px;
-    font-size: 1em;
-    color: #1c63ff;
-    text-align: left;
-    padding: 5px 10px 5px 5px;
-    width: 73%;
-    height: 750px;
-    margin: 350px 0 0 220px;
-    background-color: #fff;
-    opacity: 0.9;
-    filter: alpha(opacity=0.9); /* For IE8 and earlier */
-}
-
-#mapDir span {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-style: bold;
-    font-size: 1.3em;
-    color: #000;
-    margin: 4px 4px;
-}
-
-#mapDir h4 {
-    color: #440099;
-}
-
-mapDir p {
-    font-size: 80%;
-    padding: 5px 5px 0 10px;
-    margin-top: px;
-}
-
-.hours2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #440099;
-    text-align: center;
-    list-style-type: none;
-    padding: 5px 25px 0 0;
-    margin-bottom: 1px;
-    height: 1296px;
-}
-
-
-/*
-.navMenu {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #440099;
-    text-align: center;
-    list-style-type: none;
-    padding: 5px 0 0 25px;
-    margin-bottom: 1px;
-}
-*/
-
-.hours2 {
-    top: 640px;
-    position: absolute;
-}
-
-#hdhrs {
-    font-size: .7em;
-    text-decoration: underline;
-    color: #440099;
-    padding-bottom: 5px;
-}
-
-.day {
-    font-size: .7em;
-    margin-bottom: 5px;
-}
-
-.time {
-    font-size: .6em;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-
-/****************************
-EXTRA CODE????
-*****************************/
-
-.transSide {
-    position: absolute;
-    height: 1316px;
-    width: 200px;
-    margin: 0;
-    top: 0;
-    left: 0;
-    bottom: 100px;
-    padding-top: 40px;
-    background: #fff;
-    opacity: 0.6;
-    filter: alpha(opacity=0.6); /* For IE8 and earlier */
-}
-
-.transSide ul {
-    margin-top: 15px;
-    list-style-type: none;
-    padding: 0 15px 0 15px;
-    margin-bottom: 40px;
-}
 
 
 /****************************
@@ -1559,9 +1491,7 @@ ABOUT CCC - SMALL PHONES
         font-size: 100%;
     }
     
-    .hoursPg {
-        
-    }
+    
     
  /************************
 BACKGROUND IMAGES - SMALL PHONES
@@ -1771,9 +1701,7 @@ ABOUT CCC - PHABLETS
         font-size: 100%;
     }
     
-    .hoursPg {
-        
-    }
+    
     
  /************************
 BACKGROUND IMAGES - PHABLETS
@@ -1872,3 +1800,214 @@ BACKGROUND IMAGES - PHABLETS
 } 
 
 /********* End Tablets MQ *********/
+
+
+
+
+/****************************
+EXTRA CODE????
+*****************************/
+
+/*
+.donateBtn ul {
+    list-style-type: none;   
+}
+
+.donateBtn li {
+    postion: absolute;
+    text-size: .6em; 
+    color: #fff;
+}
+*/
+
+/*
+
+
+a {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+a:link {
+    color: #440099;
+}  
+
+a:visited {
+    color: #440099;
+}
+
+/* mouse over link */
+a:hover, a:focus {
+    color: gold;
+    background:#000;
+}
+
+/* selected link */
+a:active {
+    color: gold;
+}
+
+*/
+
+/*
+.myButton {
+    margin: 0 200px 0 650px;
+    position: absolute;
+    width: auto;
+    top: 95px;
+    right: 50px;
+	-moz-box-shadow: 1px 2px 3px 1px #fff6af;
+	-webkit-box-shadow: 1px 2px 3px 1px #fff6af;
+	box-shadow: 1px 2px 3px 1px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	border:2px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 20px;
+	text-decoration:none;
+	text-shadow:1px -3px 5px #ffee66;
+}
+
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+
+.myButton:active {
+    color: red;
+}
+*/
+
+
+/****************************
+GOOGLE MAP
+*****************************/
+/*
+
+#mapDir {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Roboto', sans-serif; 
+    margin: 100px 100px;
+    font-size: 1em;
+    color: #1c63ff;
+    text-align: left;
+    padding: 5px 10px 5px 5px;
+    width: 73%;
+    height: 750px;
+    margin: 350px 0 0 220px;
+    background-color: #fff;
+    opacity: 0.9;
+    filter: alpha(opacity=0.9); /* For IE8 and earlier */
+}
+
+#mapDir span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-style: bold;
+    font-size: 1.3em;
+    color: #000;
+    margin: 4px 4px;
+}
+
+#mapDir h4 {
+    color: #440099;
+}
+
+mapDir p {
+    font-size: 80%;
+    padding: 5px 5px 0 10px;
+    margin-top: px;
+}
+
+*/
+
+
+/*
+.navMenu {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #440099;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px 0 0 25px;
+    margin-bottom: 1px;
+}
+*/
+
+
+.transSide {
+    position: absolute;
+    height: 1316px;
+    width: 200px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 100px;
+    padding-top: 40px;
+    background: #fff;
+    opacity: 0.6;
+    filter: alpha(opacity=0.6); /* For IE8 and earlier */
+}
+
+.transSide ul {
+    margin-top: 15px;
+    list-style-type: none;
+    padding: 0 15px 0 15px;
+    margin-bottom: 40px;
+}
+
+
+
+
+  <!--      
+    <div class="volunteer" id="volunteerPg">
+            <span><h4>Volunteer Opportunities</h4></span>
+            <h4>Become a Volunteer</h4>
+            <p>Participate in the following ways:</p>
+                <ul>
+                    <li>Serve as a Jr. High/High School Mentor</li>
+                    <li>Tutor students after school</li>
+                    <li>Volunteer as a cook or server for the Christmas Celebration (December) or Achievement Ceremony (May)</li>
+                    <li>Organize a school supply or snack drive to provide needed items for student support</li>
+                    </ul>
+            
+                    <p>If you are interested in volunteering for these opportunities, email your request to<a href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a>and information as well as a background check form will be sent to you.</p>
+                    <p>
+                    Pray for Our Success–  As all things come from God, CCC continually needs prayers to continue its work.  Please pray for the CCC students and families as well as for our efforts to educate, empower and inspire their faith and educational development.</p>
+            
+               <div>
+                    <img class="imgVol" src="./img/imgTutorVol.jpg" alt="Woman tutors NDA student." width="550" height="400" / >
+                   <caption>Evan Burks, NDA student, works with SHA tutoring volunteer Courtney Ford.</caption>
+                </div>
+                   
+                <a href="#topPg">back to top</a>
+                    
+            </div>
+    -->
