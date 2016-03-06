@@ -6,14 +6,21 @@
 	<title>Community Catholic Center</title>
 	<meta http-equiv="content-type" 
 		content="text/html;charset=utf-8" />
+	 <meta name="viewport" content="width-device-width, initial-scale-1" />
     <link rel="stylesheet" type="text/css" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic|Roboto:400,400italic,500,500italic,700,700italic,900,900italic' rel="stylesheet" type='text/css'>
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>	    
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />	
+   
 </head>
-    
-<body> 
+    	
+<body ng-app="app">
+                
+<div ng-controller="galleryController"> 
     
     <div>
         <img class="bkgdImgInvrt4" src="img/bkgdImgInvrt4.jpg" />
@@ -22,8 +29,7 @@
     <div class="headerSec" id="topPg">    
         <div class="banner">
             <h1>Catholic Education Tuition Assistance to Louisville's Portland and West End Children
-            </h1>        
-            
+            </h1> 
         </div>
     
     <div class="cccLogo">
@@ -43,30 +49,27 @@
        </div>	
     </div> <!-- end header sec -->
     
+	
     <div class="content"> 
-          
-         <div class="slideShow">  
-             <img src="./img/img1.jpg" alt="Three girls painting."/>
-             <img id="img2"  src="./img/img2.jpg" alt="Boy relaxing under a tree at summer picnic."/>
-             <img id="img3"  src="./img/img3.jpg" alt="Tutor"/>
-             <img id="img4"  src="./img/img4.jpg" alt="Archbishop Joseph E. Kurtz"/> 
-             <img id="img5"  src="./img/img5.jpg" alt="Families eating together."/>
-             <img id="img6"  src="./img/img6.jpg" alt="After school tutoring"/>
-             <img id="img7"  src="./img/img7.jpg" alt="Student with St. X shirt."/>
-             <img id="img8"  src="./img/img8.jpg" alt="Woman mentor with girl mentee."/> 
-             <img id="img9"  src="./img/img9.jpg" alt="Students at Louisville Bats game."/>
-             <img id="img11"  src="./img/img11.jpg" alt="Students perform service."/>
-             <img id="img12"  src="./img/img12.jpg" alt="Students participate in robotics program during summer break."/>
-             <img id="img13"  src="./img/img13.jpg" alt="Fun activities at the summer picinic."/>
-             <img id="img14"  src="./img/img14.jpg" alt="Tutoring."/>
-             <img id="img15"  src="./img/img15.jpg" alt="Male mentor and mentee."/>
-             <img id="img16"  src="./img/img16.jpg" alt="Family enjoying a meal."/>
-        </div>
-        
-        <div> 
-            <img class="lrgImg" src="./img/img7.jpg" />
-        </div>       
+     	
+		<div class="list-group" ng-cloak ng-controller="galleryController as gallery">
 
+		  <!-- Image Gallery  -->
+		  <div class='gallery'>
+
+			<ul class="list-inline thumbs">
+			  <li class="thumbnail" ng-repeat="image in gallery.images">
+				<img  ng-click="thumbClicked()" ng-src="{{image.image}}"  />
+			  </li>
+			</ul>
+		  </div>
+
+			<div id="largeImg"> 
+				<img class="largeImg" ng-src="{{mainImageUrl}}" />
+			 </div>
+      
+		</div>
+		
         <div class="mainBx">
             <div class="mainHdr">
                 <span><h4>Community Catholic Center</h4></span>
@@ -83,19 +86,84 @@
                     <br>
                     <h4>Family Counseling.</h4><h4>Family Advocates.</h4> 
                     <h4>Mentors.</h4>
-                    <h4>Tutors. </h4>                    
+					<h4>Tutors. </h4>
                 </div> 
                 
                 <div id="scholLinks"> 
                 	<ul>
                     	<li><a  href="http://www.schoolchoiceky.org/20162017-application" alt="School Choice Scholarships" target="_blank">Tuition Assistance Application</a></li>
                 	</ul>
-        		</div>              
+        		</div>  
+			
+
+<!-- Button trigger modal -->
+
+			<div>
+				<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" id="hrBtt">CCC Hours
+				</button>
+			</div>
+				
+			<div>
+				<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="hrBtt">Donate
+				</button>
+			</div>
+	
+	
+				
+</div>  <!-- maincols -->
+	
+</div>	<!-- mainbx -->
+
+			
+
+
+      
+<!--	<table>
+		<tr>
+			<th class="day">Monday</th>
+			<th class="time">Office: 8am–4pm</th>
+			<th class="time">Tutoring: 3-5pm</th>
+		</tr>
+		<tr>
+			<td class="day">Tuesday</td>
+			<td class="time">Office: 8am–4pm</td>
+			<td class="time">Social Worker: 1-7pm></td>
+			<td class="time">Office: 8am–4pm</td>
+			<td class="time">Social Worker: 1-7pm></td>
+		</tr>
+		<tr>
+			<td class="day">Wednesday</td>
+			<td class="time">Closed</td>
+		</tr>
+		<tr>
+			<td class="day">Thursday</td>
+			<td>Elementary Education</td>
+			<td class="time">Social Worker: 12-6pm</td>
+		</tr>
+        <tr>
+			<td>Becky</td>
+			<td>Secondary Education</td>
+			<td class="phone">
+			502-387-7369<img src="./img/phone.svg" alt="phone icon" /></td>
+		</tr>
+        <tr>
+			<td>Heidi</td>
+			<td>Executive Director</td>
+			<td class="phone">502-797-6493<img  src="./img/phone.svg" alt="phone icon" />
+</td>
+		</tr>
+	</table>		
+				
+-->			
+				
+	<!--			
 				<div class=hoursBtt>
 					<a  href="hours.html">Hours</a>
 				</div>
+	-->
+				
+				
 	<!--			
-		
 			<a href="#openModal">Open Modal</a>
 				<div id="openModal" class="modalDialog">
 				</div>
@@ -109,7 +177,7 @@
 				<div>
 					<a class="donate"  href="#donatePg">Donate</a>
 				</div>
-            </div><!-- End Main Cols  -->
+            </div><!-- End Main Cols -->
 		</div><!-- End Main Box -->
     
         
@@ -424,7 +492,7 @@
 	</div>
         
       <!--  
-``        <ul class="hours2">
+        <ul class="hours2">
                 <li id="hdhrs">HOURS</li>   
                 <li class="day">Monday</li> 
                 <li class="time">Office:	8am–4pm</li> 
@@ -454,9 +522,49 @@
         <a href="http://facebook.com/???"><img class="fbLogo" src="img/fbLogo.png" width="35" height="35" alt="FaceBook Logo" class="social-icon"><br>Visit us on FaceBook</a>
     </div>
 </footer> 
-      
-        
-<script src="./js/myscripts.js"></script>
+<div>  <!-- End Angularjs Controller-->   
+
+
+<div id="myModal" class="modal fade" role="dialog" higherWider>
+   <div class="modal-title"> 
+	   CCC Hours 
+	  <div>
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body" id="hdhrs">
+				<h4  id="hrHd">CCC Hours</h4>
+				<ul class="hours2">
+					<li class="day">Monday</li> 
+					<li class="time">Office: 8am–4pm</li> 
+					<li class="time">Tutoring: 3-5pm</li> 
+					<li class="day">Tuesday</li> 
+					<li class="time">Office: 8am–4pm</li> 
+					<li class="time">Social Worker: 1-7pm</li> 
+					<li class="time">Tutoring: 3-5pm</li> 
+					<li class="day">Wednesday</li> 
+					<li class="time">Closed</li>
+					<li class="day">Thursday</li>
+					<li class="time">Office: 8am–4pm</li>
+					<li class="time">Social Worker: 12-6pm</li>
+					<li class="time">Tutoring: 3-5pm</li>
+					<li class="day">Friday</li>
+					<li class="time">Closed</li>
+				</ul>
+        	</div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->			
+	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>    	
+	             
+<script type="text/javascript" src="./js/app.js"></script>           
 
 </body>
 	

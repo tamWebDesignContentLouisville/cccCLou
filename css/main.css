@@ -16,6 +16,9 @@
 }
 
 
+
+
+
 /************************
 HEADER
 *************************/
@@ -23,27 +26,28 @@ HEADER
 .headerSec {
 	display: flex;
 	flex-direction: row;
-    display: inline-block;
+    display: inline-block; 
     width: 100%;
     height: 120px;
 }
 
 .banner {
    	display: flex;
+	position: absolute;
     justify-content: flex-end;
     background: #440099;
 	width: 100%;
-    padding: 10px 3px; 
-    font-size: .6em;
-    text-shadow: 1px 1px 4px #000;
     font-family: 'Lato', sans-serif;
     font-style: oblique;
     color: gold;
     border-bottom: solid 3px gold;
 }
 
-.banner h1 {
-    padding-right: 10px; 
+.banner h1 {	
+	font-size: 1.4em;
+	font-weight: bold;
+    text-shadow: 1px 1px 4px #000;
+    padding-right: 15px; 
 }
 
 .cccLogo {
@@ -53,13 +57,6 @@ HEADER
     top: 20px;
 	left: 35px;
 }
-
-#logo{
-/*   height: 108px;
-    width: 180px; 
-    background-size: contain; */
-}
-
 
 
 /****************************
@@ -93,7 +90,6 @@ NAV LINKS
     margin: 2px;
 	border: solid 2px #440099;
 }
-
 
 
 /************************
@@ -130,15 +126,8 @@ a:active {
 
 
 /************************
-TUITION ASSIST
-*************************/
-
-
-
-/************************
 CONTENT
 *************************/
-
 
 .content {   
 	display: flex;
@@ -152,12 +141,9 @@ CONTENT
 BACKGROUND IMAGE
 *************************/
 
-
 .bkgdImgInvrt4 {
     position: fixed;
-    background-image: no repeat;
     width: 100%;
-    top: 0;
 	opacity: .7;
 }
 
@@ -167,37 +153,47 @@ SLIDE SHOW
 *************************/
 
   
-.slideShow {
-    display: inline-flex;
-    position: absolute;
-    width: 45%;
+.gallery{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+    top: 105px;
+    height: 190px;
+	width: 50%;
+	margin-top: 26px;
+    margin-left: 50%;
+}
+
+.list-inline{
+	display: inline-block;
+	overflow-x: scroll;
+	overflow-y: none;
+	white-space: nowrap;
+	width: 100%;
+	height: auto;
+	z-index: 100;
+}
+
+.thumbnail img{
     height: 100px;
-    top: 174px;
-    right: 30px;
-    overflow-x: scroll;
-    z-index: 1001;
+	width: auto;
+	background-size: contain;
+    padding: 0;
+	margin-right: 0;
+	right: 0;
+	cursor: pointer;
+	z-index: 10000;
 }
 
-.slideShow img{
-    height: 100%;
-    width:  auto;
-    background-size: contain;
-    cursor: pointer;
-    border: solid 2px #440099;
-    z-index: 1002;
-}
-
-.lrgImg {
-    position: absolute;
-    width: 45%;
+.largeImg{
+    width: 38%;
     height: auto;
-    top: 140px;
-	right: 30px;
-    margin: 150px 0 0 10px;
-    background-size: contain;
+	margin-left: 730px;
+   	background-size: contain;
     cursor: pointer;
-    border: solid 3px darkblue;
-    z-index: 8;
+	z-index: 100000;
 }
 
 
@@ -209,7 +205,7 @@ MAIN CCC
     display: flex;
     position: absolute;
     width: 43%;
-    height: 440px;
+    height: 500px;
     left: 30px;
     top: 173px;
     flex-direction: column;
@@ -232,8 +228,14 @@ MAIN CCC
     font-style: bold;
     color: #440099;
     font-size: 1.3em;
-    margin: 4px 4px;
-    padding-bottom: 15px;
+    margin: 0 10px;
+    padding: 15px;
+}
+
+span h4 {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
 }
 
 .mainCols {
@@ -248,7 +250,7 @@ MAIN CCC
     height: 400px;
     float: left;
     clear: both;
-    margin:5px 20px 0 10px;
+    margin: 0 20px 0 10px;
     padding: 5px;
 }
 
@@ -261,109 +263,61 @@ MAIN CCC
     height: 400px;
     float: right;
     clear: both;
-    margin:5px 20px 0 10px;
-    padding: 5px;
+    margin: 8px 20px 0 10px;
 }
 
 #m1c2 {
-    padding-top: 5px;
+    padding-top: px;
 }
 
 h4 {
-	padding-bottom: 5px;
+	padding-bottom: px;
 }
 
 /**HOURS BUTTON ON MAIN BOX**/
 
-.hoursBtt {
+.btn btn-primary btn-lg {
 	position: absolute;
 	color: #440099;
 	display: inline-block;
-	top: 0;
+	margin-top: 600px;
 	left: 0;
-	width: 75px;
-	height: 35px;
 	font-family: 'Lato', sans-serif;
 	font-size: .7em;
-	text-align: center;
-	background: #ddd;
-	border: solid 1px #000;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 30px #000;
-    }
+ }
 
-
-/**MODAL WINDOW TO HOURS FROM HOURS BUTTON FROM  MAIN BOX**/
-
-.modalDialog {
-	position: fixed;
-	font-family: 'Lato', sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
-	opacity: 0;
-	-webkit-transion: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-
-.modalDialog:target {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-.modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -0-linear-gradient(#fff, #999);
-}
-
-.close {
-	background: #606061;
-	color:#fff;
-	line-height: 25px;
+hrBtt {
 	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	-moz-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+	display: block;
+	margin-top: 600px;
+	left: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: .7em;
 }
-
 
 .hours2 {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
     font-family: 'Lato', sans-serif;
-    font-size: 2.5em;
+    font-size: 1.7em;
     font-weight: bold;
     color: #440099;
     text-align: center;
     list-style-type: none;
 	width: 100%;
+	height: 1000px;
 	top: 0;
 }
 
 .hrs2list ul {
-	list-style-style: none;
+	list-style-type: none;
+}
+
+#hrHd {
+	font-size: 1.4em;
 }
 
 #hdhrs {
@@ -375,21 +329,58 @@ h4 {
 
 .day {
     font-size: .7em;
-    margin-bottom: 5px;
+	margin-top: 60px;
+	margin: 70px 50px 5px 0;
 }
 
 .time {
     font-size: .6em;
     color: #000;
-    margin-bottom: 10px;
+    margin: 0 50px 10px 0;
 }
 
-.backBtt {
-	font-size: .9em;
-    height: 50px;
-    margin-top: 20px;
-    text-decoration: underline;
-    justify-content: flex-end;
+
+
+/**MODAL WINDOW TO HOURS FROM HOURS BUTTON FROM  MAIN BOX**/
+
+.modal-backdrop {
+    opacity:1.;
+    z-index: -1;
+}
+
+.higherWider {
+	width: 270px;
+}
+
+.modal-title {
+	font-size: 2em;
+	text-align: center;
+	color: #440099;
+}
+
+/*When the modal fills the screen it has an even 2.5% on top and bottom*/
+/*Centers the modal*/
+
+.modal-dialog {
+  	margin: 2.5vh auto;
+	height: 50vh;
+	width: 60%;
+}
+
+/*Sets the maximum height of the entire modal to 95% of the screen height*/
+.modal-content {
+  max-height: 95vh;
+  overflow: scroll;
+}
+
+/*Sets the maximum height of the modal body to 90% of the screen height*/
+.modal-body {
+  min-height: 90vh;
+  max-height: 90vh;
+}
+/*Sets the maximum height of the modal image to 69% of the screen height*/
+.modal-body img {
+  max-height: 69vh;
 }
 
 
@@ -414,6 +405,8 @@ h4 {
         z-index: 1000;
 }
 
+
+
 /**SCHOLARSHIP LINK ON MAIN BOX**/
 
 #scholLinks {
@@ -431,8 +424,8 @@ h4 {
     display: inline-block;
     position: absolute;
 	width: 30%;
-    top: 310px;
-    left: 380px;
+    top: 360px;
+    left: 330px;
     font-size: 1.2em;
     text-decoration: underline;
 	right: 0;
@@ -564,7 +557,6 @@ ABOUT - SECTION 2
     font-size: .9em;
     font-style: oblique;
     padding-top: 5px;
-    width: 100%;
 }
 
 #imgSvc {
@@ -658,14 +650,11 @@ EDUCATE, EMPOWER, INSPIRE
 .empower li,
 .inspire li {
     list-style-type: disc;
-    width: 50%;
     color: #eee;
     font-size: .9em;
     padding: 0 40px 20px 0;
     margin: 0 15px;
     width: 100%;
-    color: #fff;
-	
 }
 
 .educate p,
@@ -700,7 +689,6 @@ EMPOWER
     height: 495px;
     vertical-align: middle;
     top: 0;
-    align: center;
     margin: 300px 0 0 20PX;
     right: 0;
 	padding: 10px;
@@ -771,7 +759,7 @@ VOLUNTEER - LEFT
     flex-direction: row;
     border: solid 2px darkblue;
     width: 1348px;
-    height: 620px;
+    height: 600px;
     top: 0;
     margin: 400px 0 0;
     background: powderblue;
@@ -810,7 +798,7 @@ VOLUNTEER - LEFT
 }
 
 #volLinks {
-	width: 0;
+	width: 50%;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     color: #fff;
@@ -818,8 +806,7 @@ VOLUNTEER - LEFT
     border-radius: 30;
     z-index: 11;
     top: 1640;
-	width: 80%;
-	margin-top: 15px;
+	margin: 35px 0 0 165px;
 	text-decoration: underline;
 }
 
@@ -1032,7 +1019,6 @@ PARTNERS
 	display: flex;
 	flex-direction: column;
 	width: 48%;
-	height:;
 }
 
 .partSec2 {
@@ -1282,9 +1268,9 @@ HEADER - SMALL PHONES
         
     }
     
-    #logo{
+    #logo {
     height: 64px;
-    width:90px;
+    width: 90px;
     background-size: contain;
 }
 
