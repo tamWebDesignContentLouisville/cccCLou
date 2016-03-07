@@ -17,10 +17,10 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css" />	
    
 </head>
-    	
+
 <body ng-app="app">
                 
-<div ng-controller="galleryController"> 
+
     
     <div>
         <img class="bkgdImgInvrt4" src="img/bkgdImgInvrt4.jpg" />
@@ -51,25 +51,8 @@
     
 	
     <div class="content"> 
-     	
-		<div class="list-group" ng-cloak ng-controller="galleryController as gallery">
-
-		  <!-- Image Gallery  -->
-		  <div class='gallery'>
-
-			<ul class="list-inline thumbs">
-			  <li class="thumbnail" ng-repeat="image in gallery.images">
-				<img  ng-click="thumbClicked()" ng-src="{{image.image}}"  />
-			  </li>
-			</ul>
-		  </div>
-
-			<div id="largeImg"> 
-				<img class="largeImg" ng-src="{{mainImageUrl}}" />
-			 </div>
-      
-		</div>
-		
+     
+	<div class="mainBxandCarsl">
         <div class="mainBx">
             <div class="mainHdr">
                 <span><h4>Community Catholic Center</h4></span>
@@ -114,11 +97,30 @@
 	
 </div>	<!-- mainbx -->
 
+		
+	<div ng-controller="galleryController"> 
+		<div class="list-group" ng-cloak ng-controller="galleryController as gallery">
+
+		  <!-- Image Gallery  -->
+		  <div class='gallery'>
+
+			<ul class="list-inline thumbs">
+			  <li class="thumbnail" ng-repeat="image in gallery.images">
+				<img  ng-click="thumbClicked()" ng-src="{{image.image}}"  />
+			  </li>
+			</ul>
+		  </div>
+
+			<div id="largeImg"> 
+				<img class="largeImg" ng-src="{{mainImageUrl}}" />
+			 </div>
+      
+		</div>
+	   </div>  <!-- End Angularjs Controller--> 
+		
+	</div>
 			
-<!-- 			<div>
-					<a class="donate"  href="#donatePg">Donate</a>
-				</div>
-  -->	          
+	          
         
     <div class="about" id="aboutPg">
       <div class="aboutLeft"> 
@@ -194,7 +196,7 @@
             </ul> 
                
             <a class="backBtt" href="#topPg">to top</a>           
-        </div>
+        </div> <!-- end Educate pg -->
         
         <div class="empower" id="empowerPg">
             <h4>Empower</h4>
@@ -208,7 +210,7 @@
             <a class="backBtt" href="#topPg"> 
 				to top</a>
                     
-            </div>
+            </div> <!-- end Empower pg -->
         
         <div class="inspire" id="inspirePg">
             <span><h4>Inspire</h4></span>
@@ -220,8 +222,8 @@
                     <li>Louisville Fire Fighters</li>
                 </ul>      
             <a class="backBtt"href="#topPg">to top</a>         
-            </div>
-        </div>
+            </div> <!-- end Inspire pg -->
+        </div> <!-- end container EEI -->
 	
 		        
     <div class="vol" id="volunteerPg">
@@ -283,14 +285,16 @@
 
         <p>Catholic Community Center is an IRS 501 (c) (3) non-profit organization eligible to receive tax-deductible contributions.</p>
         </form>
-	</div>
+	</div> <!-- end donSec1 -->
+		
 	<div class="donSec2">
          <div><img class="imgDon" src="./img/img20.jpg" alt="Smiling boys." width="400" height="350" />
 		</div>
             <a class="donBkBtt"  href="#topPg">to top</a>
-	  </div>
-   	</div>                 
-   </div>
+		
+	  </div> <!-- end donSec2 -->
+   	</div> <!-- end Donate Sections -->                
+   </div> <!-- end Donate pg -->
     
             
   <div class="partners" id="partnersPg">
@@ -339,10 +343,11 @@
 		</ul>
 		  
         <a class="partBkBtt" href="#topPg">to top</a>
-	</div>    
-   </div>
-</div>
+	</div> <!-- end partSec2 --> 
+   </div> <!-- end partSecs -->
+</div> <!-- end Partners pg -->
         
+	
   <div class="directions" id="directionsPg">
 	<div class="dirTtl">
 		<span>
@@ -371,14 +376,14 @@
             </p>
 			
 			<a class="dirBkBtt" href="#topPg">to top</a>
-		</div>
+		</div> <!-- end dirSec1 -->
 		
         <div class="dirSec2map">   
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.1333578894996!2d-85.80826488513497!3d38.27640139091366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88696d0255d8769b%3A0xfee6ff71c6754636!2s3525+Rudd+Ave%2C+Louisville%2C+KY+40212!5e0!3m2!1sen!2sus!4v1456516592195" width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-		
-	 </div>
-</div>
+			
+		</div> <!-- dirSec2map -->		
+	 </div> <!-- end dirSecs -->
+</div> <!-- end Directions pg -->
 	  
 	  
       <div class="contact" id="contactPg">
@@ -422,52 +427,40 @@
 			<td>Heidi</td>
 			<td>Executive Director</td>
 			<td class="phone">502-797-6493<img  src="./img/phone.svg" alt="phone icon" />
-</td>
+			</td>
 		</tr>
     </table>  
+		  
 		<div class="contBkBtt">
 			<a href="#topPg">to top</a>
-    	</div>
-	</div>
+			
+    	</div> <!-- end contBkBtt -->
+	</div> <!-- end Contact pg -->
         
-      <!--  
-        <ul class="hours2">
-                <li id="hdhrs">HOURS</li>   
-                <li class="day">Monday</li> 
-                <li class="time">Office:	8am–4pm</li> 
-                <li class="time">Tutoring: 3-5pm</li> 
-                <li class="day">Tuesday</li> 
-                <li class="time">Office:	8am–4pm</li> 
-                <li class="time">Social Worker: 1-7pm</li> 
-                <li class="time">Tutoring: 3-5pm</li> 
-                <li class="day">Wednesday</li> 
-                <li class="time">Closed</li>
-                <li class="day">Thursday</li>
-                <li class="time">Office: 8am–4pm</li>
-                <li class="time">Social Worker: 12-6pm</li>
-                <li class="time">Tutoring: 3-5pm</li>
-                <li class="day">Friday</li>
-                <li class="time">Closed</li>
-            </ul>
-        </div>
-    -->
-        
-  </div> <!-- End Content Div -->        
-
+      
+  </div> <!-- End Content -->        
+  
 <footer class="main-footer">  
     <div>
-        <p>Community Catholic Center / 3525 Rudd Ave. Louisville, Ky. / 502.424.9398</p>
-        <p>&copy 2016 Community Catholic Center / Website designed by Tammy Shaw</p>
-        <a href="http://facebook.com/???"><img class="fbLogo" src="img/fbLogo.png" width="35" height="35" alt="FaceBook Logo" class="social-icon"><br>Visit us on FaceBook</a>
-    </div>
+		
+		<ul>
+			<li>3525 Rudd Ave. Louisville, Ky.</li>
+			<li>502.424.9398</li>
+		</ul>
+	</div>
+	<div class="main_footerLn2">
+		<ul>
+			<li> &copy 2016 Community Catholic Center</li>
+			<li>Website designed by Tammy Shaw</li>
+		</ul>
+ <!--       <a href="http://facebook.com/???"><img class="fbLogo" src="./img/fbLogo.png" width="35" height="35" alt="FaceBook Logo" class="social-icon"></a>
+    </div> -->
 </footer> 
-<div>  <!-- End Angularjs Controller-->   
-
 
 <div id="myModal" class="modal fade" role="dialog" higherWider>
    <div class="modal-title"> 
 	   CCC Hours 
-	  <div>
+	</div>
 	<div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
