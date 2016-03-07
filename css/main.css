@@ -434,7 +434,6 @@ span h4 {
     color: #440099;
 }
 
-/* mouse over link */
 #scholLinks a:hover {
     color: green;
 }
@@ -499,9 +498,8 @@ ABOUT CCC
 .about {
     display: flex;
     flex-direction: row;
-    width: 1348px;
+    width: 100%;
     height: 940px;
-    top: 1000px;
     margin: 1000px 0 0;
     background: powderblue;
     border: solid 2px darkblue;
@@ -545,6 +543,7 @@ ABOUT CCC
 #aboutEEIrow{
     display: flex;
     flex-direction: column;
+	width: 100%;
     font-size: 1.3em;
     justify-content: center;
     align-content: space-around;
@@ -572,6 +571,7 @@ ABOUT CCC
     margin-left: 15px;
     font-size: .8em;
     padding: 10px 90px 0 50px;
+	width: 100%;
     
 }
 
@@ -580,7 +580,6 @@ ABOUT CCC
     margin-bottom: 5px
 }
 
-/* both left and right paragraphs  no bullets*/
 .about p {
     font-size: .9em;
     padding: 10px 45px 20px 25px;
@@ -615,7 +614,7 @@ ABOUT - SECTION 2
 }
 
 .aboutCCCsec2 {
-    font-size: 1.1em;
+    font-size: 1.em;
     border-top: solid 3px darkblue;
     width: 100%;
     margin-top: 30px;
@@ -626,11 +625,13 @@ ABOUT - SECTION 2
 #paraRight {
     font-size: .9em;
     padding: 5px 45px 10px 0;
+	width: 100%;
 }
 
 #bulletRight {
-    font-size: .7em;
+    font-size: .9em;
     margin-bottom: 20px;
+	width: 100%;
 }
 
 #bulletRight li {
@@ -666,17 +667,7 @@ EDUCATE, EMPOWER, INSPIRE
     filter: alpha(opacity=0.9);
 	overflow: hidden;
 }
-/*
-.educate span h4,
-.empower span h4, 
-.inspire span h4 {
-    font-size: 1.2em;
-    color: #eee;
-    text-align: center;
-    padding: 5px 0 25px;
-    width: 100%;	
-}
-*/
+
 .educate h4,
 .empower h4, 
 .inspire h4 {
@@ -1356,7 +1347,7 @@ MEDIA QUERIES - SMALL PHONES
         height: 105px;
         width: 42%;
 		right: 0;
-        top: 180px;
+        top: 150px;
         z-index: 99;      
     }    
 	
@@ -1402,7 +1393,7 @@ MEDIA QUERIES - SMALL PHONES
     .mainBx {
         display: flex;
 		top: 180px;
-		height: 1050px;
+		height: 1000px;
         width: 100%;
         opacity: .9;
 		left: 0;
@@ -1431,7 +1422,7 @@ MEDIA QUERIES - SMALL PHONES
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		height: 362px;
+		height: 312px;
 		margin: 0 20px 0 10px;
 		padding: 5px;
 	}
@@ -1442,7 +1433,8 @@ MEDIA QUERIES - SMALL PHONES
 		top: 0;
 		margin-top: 0;
 		left: 0;
-		margin-top: 80px;
+		margin-top: 60px;
+		margin-right:20px;
 		width: 100%;
 		height: 0px;
 		margin: 8px 20px 0 10px;
@@ -1450,11 +1442,6 @@ MEDIA QUERIES - SMALL PHONES
 
 	.mainnCol1 p {
 		padding-bottom: 10px;
-	}
-
-
-	#m1c2 {
-		padding-top: px;
 	}
 
     h4 {
@@ -1467,7 +1454,7 @@ MEDIA QUERIES - SMALL PHONES
 		display: inline-block;
 		position: absolute;
 		width: 60%;
-		top: 700px;
+		top: 640px;
 		left: 50px;
 		font-size: 1.3em;
 		text-decoration: underline;
@@ -1487,14 +1474,13 @@ MEDIA QUERIES - SMALL PHONES
 	#hrBtt {
 		display: flex;
 		flex-direction: column;
-		align-items: center;	
+		align-items: ;	
 		position: absolute;
-		width: 90%;
-		margin-top: 380px;
+		width: 50%;
+		margin-top: 370px;
 		font-family: 'Lato', sans-serif;
-		font-size: 1.8em;
-		font-weight: bold;
-		left: 65px;
+		font-size: 1.4em;
+		font-weight: bold;	
 	}
 
 	#dnBtt {
@@ -1504,11 +1490,11 @@ MEDIA QUERIES - SMALL PHONES
 		align: content: center;
 		align-items: center;
 		position: absolute;
-		width: 70%;
-		margin-left: 19px;
-		margin-top: 480px;
+		width: 50%;
+		margin-left: 65px;
+		margin-top: 450px;
 		font-family: 'Lato', sans-serif;
-		font-size: 1.8em;
+		font-size: 1.4em;
 		font-weight: bold;
 	}
 
@@ -1529,53 +1515,52 @@ MEDIA QUERIES - SMALL PHONES
 	
 	.about {
 		display: flex;
-		flex-direction: row;
-		width: 1348px;
-		height: 940px;
-		top: 1000px;
-		margin: 1000px 0 0;
-		background: powderblue;
-		border: solid 2px darkblue;
-		font-family: 'Roboto', sans-serif;
-		opacity: 0.9;
-		filter: alpha(opacity=0.9);  
-		overflow: hidden;
+		flex-direction: column;
+		width: 100%;
+		height: 1970px;
+		margin: 1300px 0 0;
 	}
 
+	.about span h4 {
+		display: flex;
+		flex-direction: column;
+		font-size: 2.3em;
+		color: #000;
+		text-align: center;
+		width: 100%;
+	}
+	
 	.img17 {
-		width: 100%;
-		height: 325px;
-		padding: 25px;
+		display:  none;
 	}
 
-	.aboutLeft{
+	.aboutLeft {
 		display: flex;
 		flex-direction: column;
-		height: 600 px;
-		width: 48%;
+		height: 600px;
+		width: 100%;
 		font-size: 1.3em;
 	}
 
-	.aboutLeftimg{
-		width: 100%;
-		height: auto;
+	.aboutLeftimg {
+		display: none;
 	}
 
-	.aboutRight{
+	.aboutRight {
 		display: flex;
 		flex-direction: column;
-		width: 48%;
-		margin-left: 20px;
-		font-size: 1.3em;
+		width: 100%;
+		margin: 5px;
 	}
 
-	.aboutTtl{
+	.aboutTtl {
 		width: 100%;    
 	}
 
-	#aboutEEIrow{
+	#aboutEEIrow {
 		display: flex;
 		flex-direction: column;
+		width: 100%;
 		font-size: 1.3em;
 		justify-content: center;
 		align-content: space-around;
@@ -1589,33 +1574,28 @@ MEDIA QUERIES - SMALL PHONES
 		justify-content: center;
 		text-align: center;
 	}
-
-	.about span h4 {
-		font-size: 2.3em;
-		color: #000;
-		text-align: center;
-		padding: 15px;
-		width: 100%;
-	}
-
+	
+/* Section 1 bullets */
 	#sec1 {
 		list-style-type: disc;
 		margin-left: 15px;
 		font-size: .8em;
-		padding: 10px 90px 0 50px;
-
+		padding: 10px 60px 0 50px;
+		width: 100%;
 	}
 
 	#sec1 li {
 		padding-bottom: 10px;
-		margin-bottom: 5px
+		margin-bottom: 5px;
 	}
-
+	
+/* Section 1 paragraph */
 	.about p {
 		font-size: .9em;
-		padding: 10px 45px 20px 25px;
+		padding: 160px 25px 20px 35px;
 	}
-
+	
+/* Header links Educate etc. */
 	.about a {
 		font-size: .9em;
 		width: 30%;
@@ -1625,67 +1605,120 @@ MEDIA QUERIES - SMALL PHONES
 		justify-content: flex-end;
 	}
 
+/* Image */
+	.serviceProj {
+		width: 100%;
+		height: 100%;
+		font-size: .9em;
+		font-style: oblique;
+		padding-top: 5px;
+	}
+/* Img Caption */
+	#imgSvc {
+		font-size: .6em;
+		font-style: oblique;
+		padding: 5px 5px 15px 15px;
+	}
 
-/*********************************
-ABOUT - SECTION 2
-**********************************/
+/* Section 2 */
+	.aboutCCCsec2 {
+		font-size: 1.1em;
+		border-top: none;
+		width: 100%;
+		margin: 420px 0 0 10px;
+		margin-right: 10px;
+		justify-content: center;
+		padding-left: 5px;
+	}
 
-.serviceProj {
-    width: 100%;
-    height: 100%;
-    font-size: .9em;
-    font-style: oblique;
-    padding-top: 5px;
-}
+/* Section 2 bullets */
+	#bulletRight {
+		font-size: .7em;
+		margin-bottom: 20px;
+		width: 100%;
+	}
 
-#imgSvc {
-    font-size: .7em;
-    font-style: oblique;
-    padding: 0 5px 15px 40px;
-}
-
-.aboutCCCsec2 {
-    font-size: 1.1em;
-    border-top: solid 3px darkblue;
-    width: 100%;
-    margin-top: 30px;
-    justify-content: center;
-    padding: 25px;
-}
-
-#paraRight {
-    font-size: .9em;
-    padding: 5px 45px 10px 0;
-}
-
-#bulletRight {
-    font-size: .7em;
-    margin-bottom: 20px;
-}
-
-#bulletRight li {
-    padding-bottom: 5px;
-}
-
+	#bulletRight li {
+		padding-bottom: .6em;
+	}
 
 	
-	
-	
-	
-    
- /************************
-BACKGROUND IMAGES - SMALL PHONES
-*************************/
+	.educate {
+		width: 23%;
+		height: auto;
+		margin: 300px 0 0 0px;
+		padding-top: 15px;
+	}
+
+	.educate h4,
+	.empower h4, 
+	.inspire h4 {
+		font-size: 1.2em;
+		color: lavender;
+		text-align: center;
+		padding: 10px 0 0;
+		width: 100%;
+
+	}
+
+	.educate li,
+	.empower li,
+	.inspire li {
+		list-style-type: disc;
+		color: #eee;
+		font-size: .9em;
+		padding: 0 40px 20px 0;
+		margin: 0 15px;
+		width: 100%;
+	}
+
+	.educate p,
+	.empower p,
+	.inspire p {
+		font-size: .9em;
+		padding: 5px 40px 20px;
+		width: 100%;
+		color: #eee;
+
+	}
+
+	.empower {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		display: block;
+		width: 23%;
+		height: auto;
+		left: 0;
+	}
+
+	.inspire {
+		display: flex;
+		flex-direction: column;
+		width: 23%;
+		height: auto;
+		top: 0;
+		right: 0;
+		margin: 300px 0 0 20PX;
+		padding-top: 10px;
+	}
+
+	.inspire a {
+		font-size: .9em;
+		width: 50%;
+		height: 50px;
+		color: #fff;  
+		margin-top: 30px;
+		text-decoration: underline;
+		justify-content: flex-end;
+	}
+
+
+ 
    
     
     
-    .bkgdImgInvrt {
-        display: none;
-    }
-    
-     .bkgdImgInvrt2 {
-        display: none;
-    }
+   
     
     .main-footer {
         height: 70px; 
