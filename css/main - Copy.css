@@ -194,7 +194,7 @@ MAIN CCC
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-style: bold;
     color: #440099;
     margin: 0 10px;
@@ -202,7 +202,7 @@ MAIN CCC
 }
 
 span h4 {
-	font-size: 2.6em;
+	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
 }
@@ -266,51 +266,16 @@ span h4 {
 }
 */
 
-#scholLinks {
-	display: flex;
-	flex-direction: column;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    color: powderblue;
-    text-align: center;
-    border-radius: 30;
-    z-index: 11;
-    top: 140;
-}
-
-#scholLinks a {
-    display: flex;
-	flex-direction: column;
-    position: absolute;
-	width: 20%;
-    top: 370px;
-    left: 370px;
-    font-size: 1.2em;
-    text-decoration: underline;
-	margin-top: 20px;
-    border-radius: 30px navyblue;
-    z-index: 999;
-}
-
-#scholLinks a:visited {
-    color: #440099;
-}
-
-#scholLinks a:hover {
-    color: green;
-}
-
 #hrBtt {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	position: absolute;
 	width: 30%;
-	left: 60px;
-	top: 530px;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4em;
 	font-weight: bold;
+	left: 70px;
 }
 
 #dnBtt {
@@ -319,14 +284,11 @@ span h4 {
 	position: absolute;
 	justify-content: center;
 	width: 23%;
-	top: 530px;
-	left: 350px;
 	align-items: center;
-	margin-left: 50px;
+	margin-left: 70px;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4em;
 	font-weight: bold;
-	z-index: 1999;
 }
 
 
@@ -554,18 +516,10 @@ ABOUT CCC
 }
 
 .aboutLeft{
- /*   display: flex;
+    display: flex;
     flex-direction: column;
     height: 600 px;
     width: 48%;
-    font-size: 1.3em;	
-*/
-	
-	display: flex;
-    flex-direction: column;
-    width: 48%;
-	height: 600px;
-    margin-left: 20px;
     font-size: 1.3em;
 }
 
@@ -573,7 +527,6 @@ ABOUT CCC
     width: 100%;
     height: auto;
 }
-
 
 .aboutRight{
     display: flex;
@@ -583,11 +536,7 @@ ABOUT CCC
     font-size: 1.3em;
 }
 
-.aboutTtl_L{
-    display: none;   
-}
-
-.aboutTtl_R{
+.aboutTtl{
     width: 100%;    
 }
 
@@ -696,9 +645,6 @@ EDUCATE, EMPOWER, INSPIRE
 
 
 .containerEEI {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
     width: 1300px;
     top: 400px;
     bottom: 0;
@@ -706,10 +652,8 @@ EDUCATE, EMPOWER, INSPIRE
 }
 
 .educate {
-	display: flex;
-	flex-direction: column;
-  
-    width: 100%;
+    display: inline-block;
+    width: 30%;
     height: 910px;
     vertical-align: middle;
     left: 0;
@@ -781,9 +725,8 @@ EMPOWER
 *****************************/
 
 .empower {
-	display: flex;
-	flex-direction: column;
-    width: 100%;
+    display: inline-block;
+    width: 30%;
     height: 495px;
     vertical-align: middle;
     top: 0;
@@ -822,9 +765,8 @@ INSPIRE
 *****************************/
 
 .inspire {
-	display: flex;
-	flex-direction: column;
-    width: 100%;
+    display: inline-block;
+    width: 30%;
     height: 375px;
     vertical-align: middle;
     top: 0;
@@ -860,7 +802,7 @@ VOLUNTEER - LEFT
     flex-direction: row;
     border: solid 2px darkblue;
     width: 100%;
-    height: 630px;
+    height: 600px;
     top: 0;
     margin: 400px 0 0;
     background: powderblue;
@@ -1291,9 +1233,8 @@ CONTACT
 	height: 50px;
 }
 
-.phone img{
-	margin-left: 10px;
-	
+.phone {
+	padding-right: 13px;
 }
 
 .contBkBtt {
@@ -1339,9 +1280,7 @@ FOOTER
 	left: 0;
 	bottom: 0;
 	width: 100%; 
-	height: 70px;
-	padding: 10px 0;
-	flex-wrap: wrap;
+	height: 60px;
 	justify-content: center;
 	font-family: 'Lato', sans-serif;
     color: #fff;
@@ -1440,34 +1379,79 @@ MEDIA QUERIES - SMALL PHONES
 		background: none;
 	}
 
-	
+/*
+	.largeImg{
+		position: absolute;
+		width: 38%;
+		height: auto;
+		margin-top: 70px;
+		margin-left: 15px;
+		background-size: contain;
+		cursor: pointer;
+		border: solid 1px #440099;
+		z-index: 8;
+	}
+*/
+
     .mainBx {
+        display: flex;
 		top: 180px;
-		height: 1100px;
+		height: 1000px;
         width: 100%;
+        opacity: .9;
 		left: 0;
+        right: 0;
+        background: 00e0d5;
     }
     
     .mainBx span {
-        font-size: 70%;
+        display: flex;
+        justify-content: flex-start;
+        color: black;
+        font-size: 60%;
+		width: 100%;
     }
     
     .mainCols {
-		height: auto;
+        flex-wrap: wrap;
+		height: 100%;
+        font-size: 80%;
         padding-right: 5px;
+        color: #000;
 		font-size: 1em;
     }
 	
    .mainCol1 {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
-		height: auto;
+		height: 312px;
+		margin: 0 20px 0 10px;
+		padding: 5px;
 	}
 
 	.mainCol2 {
+		display: flex;
+		flex-direction: column;
+		top: 0;
+		margin-top: 0;
+		left: 0;
+		margin-top: 60px;
+		margin-right:20px;
 		width: 100%;
-		height: auto;
-		margin: 0 30px 0 15px;
+		height: 0px;
+		margin: 8px 20px 0 10px;
 	}
+
+	.mainnCol1 p {
+		padding-bottom: 10px;
+	}
+
+    h4 {
+        font-size: 100%;
+		padding: 0;
+		margin: 5px;
+    }
 
 	#scholLinks a {
 		display: inline-block;
@@ -1477,7 +1461,7 @@ MEDIA QUERIES - SMALL PHONES
 		left: 50px;
 		font-size: 1.3em;
 		text-decoration: underline;
-		margin-top: 90px;
+		margin-top: 20px;
 		border-radius: 30px navyblue;
 		z-index: 999;
 	}
@@ -1491,50 +1475,61 @@ MEDIA QUERIES - SMALL PHONES
 	}
 	
 	#hrBtt {
+		display: flex;
+		flex-direction: column;
+		align-items: ;	
+		position: absolute;
 		width: 50%;
-		height: 75px;
-		margin-top: 330px;
+		margin-top: 370px;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.4em;
+		font-weight: bold;	
 	}
 
 	#dnBtt {
-		width: 50%;
-		height: 75px;
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		left: 10px;
-		margin-top: 430px;
-		color: #fff;
-	}
-	
-	#dnBtt a {
-		color: #fff;
-		align-items: flex-start;
+		align: content: center;
+		align-items: center;
+		position: absolute;
+		width: 50%;
+		margin-left: 65px;
+		margin-top: 450px;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.4em;
+		font-weight: bold;
 	}
 
+/*
+	.bkgdImgInvrt4 {
+		position: fixed;
+		width: 100%;
+		margin-top: 80px;
+		opacity: .7;
+		background-image:url(bkgdImgInvert4.jpg);
+		background-repeat:repeat-y;
+	}
+*/
 	
 	.bkgdImgInvrt4 {
 		display: none;
 	}
 	
-	
 	.about {
+		display: flex;
 		flex-direction: column;
-		height: auto;
-		margin: 1400px 0 0;
-	}
-	
-	.aboutTtl_L{
-		display: flex;   
-		flex-direction: column;
-		margin-right: 50px;
-	}
-
-	.aboutTtl_R{
-		display: none;   
+		width: 100%;
+		height: 1970px;
+		margin: 1300px 0 0;
 	}
 
 	.about span h4 {
-		font-size: 2em;
+		display: flex;
+		flex-direction: column;
+		font-size: 2.3em;
 		color: #000;
+		text-align: center;
 		width: 100%;
 	}
 	
@@ -1543,150 +1538,233 @@ MEDIA QUERIES - SMALL PHONES
 	}
 
 	.aboutLeft {
-		height: auto;
+		display: flex;
+		flex-direction: column;
+		height: 600px;
 		width: 100%;
-		font-size: 1.em;
+		font-size: 1.3em;
 	}
 
 	.aboutLeftimg {
 		display: none;
 	}
-	
-	#aboutEEIrow {
-		justify-content: center;
-		padding-right: 30px;
-	}
 
-
-	/* About Former Right Side  Now Bottom */
-	
-	.aboutRight{
+	.aboutRight {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
-		height: auto;
-		margin: 0;
+		margin: 5px;
+	}
+
+	.aboutTtl {
+		width: 100%;    
+	}
+
+	#aboutEEIrow {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		font-size: 1.3em;
+		justify-content: center;
+		align-content: space-around;
+	}
+
+	#aboutEEIrow li {
+		list-style-type: none;
+		color: #440099; 
+		font-size: 1.2em;
+		font-weight: bold;
+		justify-content: center;
+		text-align: center;
 	}
 	
+/* Section 1 bullets */
+	#sec1 {
+		list-style-type: disc;
+		margin-left: 15px;
+		font-size: .8em;
+		padding: 10px 60px 0 50px;
+		width: 100%;
+	}
+
+	#sec1 li {
+		padding-bottom: 10px;
+		margin-bottom: 5px;
+	}
+	
+/* Section 1 paragraph */
+	.about p {
+		font-size: .9em;
+		padding: 160px 25px 20px 35px;
+	}
+	
+/* Header links Educate etc. */
+	.about a {
+		font-size: .9em;
+		width: 30%;
+		height: 50px;
+		margin-top: 20px;
+		text-decoration: underline;
+		justify-content: flex-end;
+	}
+
 /* Image */
 	.serviceProj {
-		height: auto;
+		width: 100%;
+		height: 100%;
+		font-size: .9em;
+		font-style: oblique;
+		padding-top: 5px;
+	}
+/* Img Caption */
+	#imgSvc {
+		font-size: .6em;
+		font-style: oblique;
+		padding: 5px 5px 15px 15px;
 	}
 
 /* Section 2 */
 	.aboutCCCsec2 {
 		font-size: 1.1em;
-		height: auto;
+		border-top: none;
+		width: 100%;
+		margin: 420px 0 0 10px;
+		margin-right: 10px;
+		justify-content: center;
+		padding-left: 5px;
 	}
 
 /* Section 2 bullets */
-	#bulletRight {	margin-left: 15px;
-		font-size: .8em;
-		padding: 0 35px 0 20px;
+	#bulletRight {
+		font-size: .7em;
+		margin-bottom: 20px;
+		width: 100%;
 	}
+
 	#bulletRight li {
-		padding-bottom: 5px;
-		margin-bottom: 5px;
+		padding-bottom: .6em;
 	}
 
 	
-	.containerEEI {
-		flex-direction: column;
-		width: auto;
-		margin: 100px 0;
-	 }
-
 	.educate {
-		margin: 0;
+		width: 23%;
+		height: auto;
+		margin: 300px 0 0 0px;
+		padding-top: 15px;
 	}
 
 	.educate h4,
 	.empower h4, 
 	.inspire h4 {
-		padding: 10px 0 8px 0;
-	}
-	
-	.educate ul {
-		height: auto;
+		font-size: 1.2em;
+		color: lavender;
+		text-align: center;
+		padding: 10px 0 0;
+		width: 100%;
+
 	}
 
 	.educate li,
 	.empower li,
 	.inspire li {
-		padding: 8px 40px 8px 0;
-	}
-
-/*	.educate a {
-		width: 100%;
-		height: auto;
-	}
-*/	
-	.educate a {
+		list-style-type: disc;
+		color: #eee;
 		font-size: .9em;
-		width: 25%;
-		height: auto;
-		margin: 30px 0;
+		padding: 0 40px 20px 0;
+		margin: 0 15px;
+		width: 100%;
+	}
+
+	.educate p,
+	.empower p,
+	.inspire p {
+		font-size: .9em;
+		padding: 5px 40px 20px;
+		width: 100%;
+		color: #eee;
+
+	}
+
+	.empower {
+		display: flex;
+		flex-direction: column;
 		justify-content: flex-start;
-
+		display: block;
+		width: 23%;
+		height: auto;
+		left: 0;
 	}
-
-	
-	.empower {		height: auto;
-		margin: 100px 0 0 0;
-	}
-
 
 	.inspire {
-		height: 420px;
-		margin: 100px 0 0;
+		display: flex;
+		flex-direction: column;
+		width: 23%;
+		height: auto;
+		top: 0;
+		right: 0;
+		margin: 300px 0 0 20PX;
+		padding-top: 10px;
 	}
 
 	.inspire a {
 		font-size: .9em;
-		width: 25%;
-		height: auto;
+		width: 50%;
+		height: 50px;
 		color: #fff;  
 		margin-top: 30px;
-		justify-content: flex-start;
+		text-decoration: underline;
+		justify-content: flex-end;
 	}
-
-
-
 
 
 	 .vol {
+		display: flex;
 		flex-direction: column;
+		border: solid 2px darkblue;
+		width: 100%;
 		height: auto;
-		margin: 100px 0 0;
+		top: 0;
+		margin: 400px 0 0;
+		background: powderblue;
+		font-family: 'Roboto', sans-serif;
+		opacity: 0.9;
+		filter: alpha(opacity=0.9);
+		overflow: hidden;
 	}
 
 	.volLeft {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
-		font-size: 1.1em;
-	}
-	
-	#paypalGraphic {
-		width: 60%;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
+		font-size: 1.3em;
 	}
 
 	.vol span h4 {
 		font-size: 1.7em;
-		padding-bottom: 5px;
+		text-align: center;
+		width: 100%;
 	}
 
-	p.volSec1para {
-		font-size: 1.1em;
+	.volSec1para p {
+		font-size: 1em;
 	}
 
-	.volSec1 {
-		margin: 0 45px 15px 45px;
+	.volSec1 ul {
+		list-style-type: disc;
+		margin-left: 35px;
+		font-size: .8em;
+		padding: 5px 40px 0 20px;
+		width: auto;
 	}
-	
+
 	#volLinks {
 		width: auto;
 		top: 1640;
-		margin: 15px 0 15px;
+		margin: 35px 0 065px;
+	}
+
+	#volLinks a:visited {
+		color: #440099;
 	}
 
 	#volLinks a:hover {
@@ -1698,35 +1776,38 @@ MEDIA QUERIES - SMALL PHONES
 	}
 
 	.volRight {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 		height: auto;
+		font-size: 1.3em;
 	}
 
 	.volCCCsec2 {
+		width: 100%;
 		margin-left: 0;
-		padding: 5px 25px;
+		padding: 25px;
 	}
-	
-	.volBkBtt{
-		font-size: 1.1em;
-	}
-
 	
 	.donateBx {
+		width: 100%;
 		height: auto;
-		margin: 100px 0 0;
-		padding-right: 15px;
+		margin: 300px 0px 0 0px;
 	}
 
 	.donateBx span h4 {
+		text-align: center;
 		padding: 0;
 		padding-top: 20px;
 	}
 
 	.donateBx p {
+		display: flex;
 		flex-direction: column;
+		font-size: 1.1em;
 		margin-top: 1px;
 		padding: 5px 0 0 10px;
+		width: 100%;
 	}
 
 	.donBthSecs {
@@ -1735,69 +1816,83 @@ MEDIA QUERIES - SMALL PHONES
 	}
 
 	.donSec1 {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
-		padding-left: 10px;
+		padding-top: 15px;
 	}
 
 	.donSec2 {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 	}
 
 	.imgDon {
+		width: 100%;
 		height: auto;
-		margin-left: 0;
-		padding: 5px 0 15px 20px;
+		margin-left: 20px;
+		padding: 35px 0 15px 20px;
 	}
-	
-	
-	.donBkBtt {
-		font-size: 1.5em;
-		width: 30%;
-		height: 50px;
-		text-decoration: underline;
-	}
-
 
 
 	.partners {
+		display: flex;
+		flex-direction: column;
+		border: solid 2px darkblue;
+		width: 100%;
 		height: auto;
-		margin: 100px 0 0;
+		margin: 340px 0 0;
 	}
 
-	
+	.partners span h4 {
+		padding: 30px 15px 15px;
+	}
+
 	/*subheads*/
 	.partners h4 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		font-size: 1.8em;
 		text-align: center;
-		padding: 5px 0 5px 5px;
+		padding: 15px 0 5px 5px;
 	}
 
 	.partners p {
+		flex-direction: column;
 		font-size: 1.2em;
 		line-height: 1.3;
+		padding: 5px 25px 10px;
+		width: 100%;
 	}
 
 	.partners li {
 		font-size: 1.1em;
 		line-height: 1.2;
+		padding-bottom: 15px;
 		margin: 0 5px;
+		padding: 5px;
 	}
 
 	.partSecs {
+		display: flex;
 		flex-direction: column;
 	}
 
 	.partSec1 {
+		display: flex;
 		width: 100%;
 	}
 
 	.partSec2 {
+		display: flex;
 		width: 100%;
 	}
 
 
 	.directions {
 		height: auto;
-		margin: 100px 0;
 	}
 
 	.directions span h4 {
@@ -1820,14 +1915,17 @@ MEDIA QUERIES - SMALL PHONES
 	}
 
 	.dirBkBtt {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
 		font-size: 1.4em;
 		width: 100%;
 		height: auto;
 		text-decoration: underline;
-		height: 50px;
-		margin: 0;	
+		justify-content: flex-end;
 	}
 
+    
 	.contact {
 		display: flex;
 		flex-direction: column;
@@ -1835,7 +1933,7 @@ MEDIA QUERIES - SMALL PHONES
 		border: solid 2px darkblue;
 		width: 100%;
 		height: auto;
-		margin: 100px 0 0;
+		margin: 430px 0 0;
 		background: powderblue;
 		font-family: 'Roboto', sans-serif;
 		opacity: 0.9;
@@ -1866,7 +1964,7 @@ MEDIA QUERIES - SMALL PHONES
 		width: 100%;
 		margin-bottom: 50px;
 		width: 100%;
-		font-size: 1.1em;
+		font-size: .6em;
 	}
 
 	.conTbl td,
@@ -1881,11 +1979,13 @@ MEDIA QUERIES - SMALL PHONES
 	}
 
 	.contBkBtt {
+		display: flex;
 		font-size: 1em;
-		width: 100%;
+		width: 30%;
 		height: 50px;
+		margin: 20px 0 0 620px;
 		text-decoration: underline;
-		margin: 0;
+		justify-content: flex-end;
 	}
 
 	
@@ -1894,10 +1994,10 @@ MEDIA QUERIES - SMALL PHONES
     .main-footer {
         height: 70px; 
         width: 100%;
-        font-size: 70%;
+        font-size: 75%;
         position: fixed;
         padding: 0;
-		align-items: center;
+		line-spacing: 1.4;
     }
 
 }
@@ -1916,7 +2016,178 @@ MEDIA QUERIES - PHABLETS
 @media (min-width: 415px)
     and (max-width: 740px){
     
- /********* End Phablets *********/   
+    
+/****************************
+HEADER - PHABLETS
+*****************************/
+    .banner {
+        text-align: center;
+        padding-left: 10px;
+    }
+    
+    .cccLogo {
+        top: 83px;
+        left: 10px;
+        
+    }
+    
+    #logo{
+    height: 64px;
+    width:90px;
+    background-size: contain;
+		}
+
+    
+/****************************
+TUITION ASSIST - PHABLETS
+*****************************/
+       
+    #scholLinks {
+        text-align:;
+    }
+
+    #scholLinks a {
+        width: 50%;
+        font-size: 95%;
+        top: 180px;
+        left: 0;
+        padding: 0;
+    }
+    
+    
+/************************
+SLIDE SHOW - PHABLETS
+*************************/
+    
+    .slideShow {
+        display: none;
+    }
+
+    .slideShow img {
+        display: none;
+    }
+    
+    .lrgImg {
+        display: none;
+    }
+    
+    
+/************************
+NAV LINKS - PHABLETS
+*************************/
+
+  
+    .navPhone2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        font-family: 'Lato', sans-serif;
+        font-size: .8em;
+        font-weight: bold;
+        color: rgba();
+        height: 125px;
+        width: 120px;
+        margin: 0;
+        top: 90px;
+        right: 10px;
+        z-index: 99;  
+         
+    }
+    
+    .navPhone2 ul {
+        color: #;
+        padding: 0 5px;
+        list-style-type: none;
+        border-color: #;
+    }
+    
+    .navPhone2 li {
+        width: 100%;
+        color: #;
+        text-size: .4em;
+        text-align: center;
+        background: #;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+/************************
+ABOUT CCC - PHABLETS
+*************************/
+
+    .txtMissn {
+        display: flex:
+        margin: 0 auto;
+        margin-top: 0;
+        width: 100%;
+        opacity: .9;
+        right: 0px;
+        background: 00e0d5;
+    }
+    
+    .txtMissn span {
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 70%;
+        margin: 4px 4px;
+    }
+    
+    .missnCols {
+        flex-wrap: wrap;
+        font-size: 70%;
+        padding-right: 0px;
+        color: #000;
+    }
+    .missnCol1 {
+        width: 55%;
+        float: left;
+        clear: both;
+        margin:0px 0px 0 0px;
+        padding: 5px;
+    } 
+    
+    .missnCol2 {
+        width: 39%;
+        float: right;
+        clear: both;
+        margin: 0px 0px 0px 0px;
+        padding: 5px;
+    }
+    
+    h4 {
+        font-size: 100%;
+    }
+    
+    
+    
+ /************************
+BACKGROUND IMAGES - PHABLETS
+*************************/
+   
+    
+    
+    .bkgdImgInvrt {
+        display: none;
+    }
+    
+     .bkgdImgInvrt2 {
+        display: none;
+    }
+    
+    .main-footer {
+        height: 70px; 
+        width: 100%;
+        font-size: 75%;
+        position: fixed;
+        padding: 0;
+        position: absolute;
+    }
+
+}
+
+/********* End Phablets MQ *********/
 
 
 
@@ -1924,7 +2195,31 @@ MEDIA QUERIES - PHABLETS
 
 @media (min-width: 741px) and (max-width: 1080px) {
         
-
+.banner {
+        font-size: ;
+        text-align: right;
+        padding: 2px;
+    }
+        
+    .cccLogo {
+       position: absolute; 
+        margin-top: 0 5px 5px 0;
+        width: 100%;
+        top: 10px;
+        left: 10px;
+        padding-left: 15px;
+       max-width: 25%;
+    }
+    
+  
+    .main-footer {
+        height: 60px; 
+        width: 100%;
+        font-size: 75%;
+        padding: 5px;
+    }
+         
+} 
 
 /********* End Tablets MQ *********/
 

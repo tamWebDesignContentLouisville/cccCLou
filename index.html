@@ -71,13 +71,13 @@
                     <h4>Mentors.</h4>
 					<h4>Tutors. </h4>
                 </div> 
-                
+               
                 <div id="scholLinks"> 
                 	<ul>
                     	<li><a  href="http://www.schoolchoiceky.org/20162017-application" alt="School Choice Scholarships" target="_blank">Tuition Assistance Application</a></li>
                 	</ul>
         		</div>  
-			
+				
 				<!-- Button trigger modal -->
 				
 			<div class="bttMnBx">
@@ -86,11 +86,11 @@
 					<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" id="hrBtt">CCC Hours
 					</button>
 				</div>
-					
+				
 <!-- Button trigger donate page -->
 				<div>
-					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="dnBtt">Donate
-					</button>
+					<button class="btn btn-primary btn-lg"  id="dnBtt"><a href="#donatePg">Donate
+						</a></button>
 				</div>
 			</div>		
 </div>  <!-- maincols -->
@@ -127,6 +127,18 @@
           <div class="aboutLeftimg">
           <img class="img17" src="./img/img17.jpg" alt="Girl smiling with other students in the background." width="700" height="300"></a>
           </div>
+		
+		  <div class="aboutTtl_L">
+            <span><h4>About CCC</h4></span> 
+            
+            <ul id="aboutEEIrow">
+                
+                <li>  <a href="#educatePg">Educate</a></li>
+                <li>  <a href="#empowerPg">Empower</a></li>
+                <li>  <a href="#inspirePg">Inspire</a></li>
+              </ul>
+            
+            </div>
         
             <div class="aboutCCCtxtLeft">
             <p>Community Catholic Center is dedicated to making a quality Catholic education available and accessible to children living in a community where no Catholic schools are present. First and foremost CCC works with the family to meet the tuition needs of the students; however, through a holistic model CCC also works to improve the students’ overall well-being by incorporating education and personal development activities.</p>
@@ -140,7 +152,7 @@
         </div> <!-- end aboutLeft  -->
         
         <div class="aboutRight">       
-            <div class="aboutTtl">
+            <div class="aboutTtl_R">
             <span><h4>About CCC</h4></span> 
             
             <ul id="aboutEEIrow">
@@ -181,8 +193,9 @@
         <div class="educate" id="educatePg">
             <h4>Educate</h4>
             <p>When families come to CCC seeking tuition assistance in sending their children to Catholic schools, CCC works with the family to create a successful partnership.  CCC and the parents enter into an annual contract to guide the partnership.  Listed below are parent commitments in the contract.
-                <h4>Family Commitment</h4>
-            </p>
+			</p>
+                <h4 id="family">Family Commitment</h4>
+            
             <ul>
                 <li>Parents will pay their share of tuition directly to the school.  CCC is not responsible for any unpaid tuition, fees, or School Choice Money.  Failure to pay tuition/fees will result in being release from CCC’s program.</li>
                 <li>Parents will pay all fees and book bills.</li>
@@ -230,17 +243,17 @@
       <div class="volLeft"> 
 			<span><h4>Volunteer Opportunities</h4></span> 
 			
-            <p #volSec1>Participate in the following ways:</p>
+            <p class="volSec1para">Participate in the following ways:</p>
         
-        <ul id="volSec1">
+        <ul class="volSec1">
 			<li>Serve as a Jr. High/High School Mentor</li>
 			<li>Tutor students after school</li>
 			<li>Volunteer as a cook or server for the Christmas Celebration (December) or Achievement Ceremony (May)</li>	
 			<li>Organize a school supply or snack drive to provide needed items for student support</li>
         </ul>
 				
-		<p id="volSec1">If you are interested in volunteering for these opportunities, email your request to<a class="mlTo" href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a>and information as well as a background check form will be sent to you.</p>
-        <p>
+		<p class="volSec1para">If you are interested in volunteering for these opportunities, email your request to<a class="mlTo" href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a>and information as well as a background check form will be sent to you.</p>
+        <p class="volSec1para">
          Pray for Our Success–  As all things come from God, CCC continually needs prayers to continue its work.  Please pray for the CCC students and families as well as for our efforts to educate, empower and inspire their faith and educational development
 				</p>
 		  
@@ -278,7 +291,7 @@
 
         <input name="hosted_button_id" type="hidden" value="Y8XDY586A8526"><br>
 
-        <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_donateCC_LG.gif" type="image"><br>
+        <input id="paypalGraphic" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_donateCC_LG.gif" type="image"><br>
         
         <img src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0"></p>
         <p>Contact Heidi Imberi-Hamilton,&nbsp;Executive Director, at 502.424.9398&nbsp;if you are interested in giving your gifts in stocks or&nbsp;bequests.</p>
@@ -290,8 +303,9 @@
 	<div class="donSec2">
          <div><img class="imgDon" src="./img/img20.jpg" alt="Smiling boys." width="400" height="350" />
 		</div>
-            <a class="donBkBtt"  href="#topPg">to top</a>
-		
+		<div>
+			<a class="donBkBtt"  href="#topPg">to top</a>
+		</div>
 	  </div> <!-- end donSec2 -->
    	</div> <!-- end Donate Sections -->                
    </div> <!-- end Donate pg -->
@@ -348,15 +362,19 @@
 </div> <!-- end Partners pg -->
         
 	
-  <div class="directions" id="directionsPg">
-	<div class="dirTtl">
+  <div class="directionsPg" id="partnersPg">
+	<div class="directions">
+	  <div class="dirTtl">
 		<span>
 			 <h4>Directions</h4></span>
 	  </div>
-	 <h4> Driving Directions to Community Catholic Center
-		 3525 Rudd Avenue</h4>
 	<div class="dirSecs">
 		<div class="dirSec1">
+			
+	 		<h3> Driving Directions to<br> Community Catholic Center<br>
+		 3525 Rudd Avenue</h3>
+
+		
             
             <ul>
                 <li>If coming from I-64 heading west, take the 22nd Street exit.</li> 
@@ -374,8 +392,9 @@
 
             <p>Street parking is available in front of  Lehmann Hall.   Parking is also available between the church and Lehmann.
             </p>
-			
+		   <div>
 			<a class="dirBkBtt" href="#topPg">to top</a>
+			</div>
 		</div> <!-- end dirSec1 -->
 		
         <div class="dirSec2map">   
@@ -383,7 +402,8 @@
 			
 		</div> <!-- dirSec2map -->		
 	 </div> <!-- end dirSecs -->
-</div> <!-- end Directions pg -->
+	</div> <!-- end Directions flex -->
+</div> <!-- end DirectionsPg -->
 	  
 	  
       <div class="contact" id="contactPg">
@@ -395,13 +415,13 @@
 	
 		<table class="conTbl">
 		<tr>
-			<th>Staff Member</th>
+			<th>Staff </th>
 			<th>Position</th>
 			<th class="phone">Phone</th>
 		</tr>
 		<tr>
 			<td>Rae</td>
-			<td>Office Manager</td>
+			<td>Office Mgr.</td>
 			<td class="phone">
 			502-424-9398<img src="./img/phone.svg" alt="phone icon" /></td>
 		</tr>
