@@ -63,7 +63,7 @@
                     <p>Community Catholic Center Inc., a 501(c) (3) non-profit organization, works in the Portland and West End neighborhood of Louisville, Kentucky, to assist families in providing a Catholic education to their children.</p>
                     <p>Several Catholic elementary schools and high schools partner with CCC to provide a comprehensive Catholic education to the children in our program.
                     </p>
-                </div>
+					
                 <div class="mainCol2" id="m1c2">
                     <p>With generous support from donors, CCC provides financial assistance for tuition at local Catholic schools and enrichment opportunities to further develop the students in the program.</p>
                     <br>
@@ -71,18 +71,18 @@
                     <h4>Mentors.</h4>
 					<h4>Tutors. </h4>
                 </div> 
-               
+               </div>  <!-- maincols -->
+			
+			<div class="mainBxFtr">
                 <div id="scholLinks"> 
                 	<ul>
                     	<li><a  href="http://www.schoolchoiceky.org/20162017-application" alt="School Choice Scholarships" target="_blank">Tuition Assistance Application</a></li>
                 	</ul>
         		</div>  
-				
+			
 				<!-- Button trigger modal -->
 				
 			<div class="bttMnBx">
-				
-				<div>
 					<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" id="hrBtt">CCC Hours
 					</button>
 				</div>
@@ -90,35 +90,39 @@
 <!-- Button trigger donate page -->
 				<div>
 					<button class="btn btn-primary btn-lg"  id="dnBtt"><a href="#donatePg">Donate
-						</a></button>
+					</a></button>
 				</div>
-			</div>		
-</div>  <!-- maincols -->
+				
+				
+				<a class="mainBkBtt" href="#topPg">to top</a>
+				
+					
+             </div>
+				
+				
+		</div>	<!--end mainbxFtr -->
 	
-</div>	<!-- mainbx -->
+</div>	<!-- end mainbx -->
 
-		
-	<div ng-controller="galleryController"> 
+	<div class="carousel">
 		<div class="list-group" ng-cloak ng-controller="galleryController as gallery">
 
 		  <!-- Image Gallery  -->
 		  <div class='gallery'>
-
 			<ul class="list-inline thumbs">
 			  <li class="thumbnail" ng-repeat="image in gallery.images">
-				<img  ng-click="thumbClicked()" ng-src="{{image.image}}"  />
+				<img  ng-click="thumbClicked()" ng-src="{{image.image}}" />
 			  </li>
 			</ul>
 		  </div>
-
-			<div id="largeImg"> 
+			<div> 
 				<img class="largeImg" ng-src="{{mainImageUrl}}" />
 			 </div>
-      
-		</div>
+
 	   </div>  <!-- End Angularjs Controller--> 
-		
-	</div>
+	</div>	 <!-- End carousel -->
+ 
+ </div> <!-- End mainBxandCarsl  -->
 			
 	          
         
@@ -254,13 +258,9 @@
 				
 		<p class="volSec1para">If you are interested in volunteering for these opportunities, email your request to<a class="mlTo" href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a>and information as well as a background check form will be sent to you.</p>
         <p class="volSec1para">
-         Pray for Our Success–  As all things come from God, CCC continually needs prayers to continue its work.  Please pray for the CCC students and families as well as for our efforts to educate, empower and inspire their faith and educational development
+         Pray for Our Success–  As all things come from God, CCC continually needs prayers to continue its work.  Please pray for the CCC students and families as well as for our efforts to educate, empower and inspire their faith and educational development.
 				</p>
-		  
-		  <div id="volLinks"> 
-			<a  href="" target="_blank">Volunteer Application</a>
-		</div>              
-				
+		 
         </div> <!-- end volLeft  -->
         
         <div class="volRight">  
@@ -270,8 +270,12 @@
 				</div>
 				<div id="volCap">
                    <caption class="volCap">Evan Burks, NDA student, works with SHA tutoring volunteer Courtney Ford.</caption>
-                </div>
-               
+                </div>	
+				 
+			  <div id="volLinks"> 
+				<a  href="" target="_blank">Volunteer Application</a>
+				</div>              
+				           
                 <a class="volBkBtt" href="#topPg">to top</a>
             </div> <!-- end volCCCsec2-->
        </div> <!-- end volRight --> 
@@ -289,10 +293,12 @@
 
         <p>Donations can be sent to CCC,&nbsp;PO Box 11065, Louisville, KY&nbsp;40251 or by clicking below.<br>
 
+		<p>
         <input name="hosted_button_id" type="hidden" value="Y8XDY586A8526"><br>
 
         <input id="paypalGraphic" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_donateCC_LG.gif" type="image"><br>
-        
+        </p>
+		
         <img src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0"></p>
         <p>Contact Heidi Imberi-Hamilton,&nbsp;Executive Director, at 502.424.9398&nbsp;if you are interested in giving your gifts in stocks or&nbsp;bequests.</p>
 
@@ -356,9 +362,10 @@
 			<li>Renee Yates</li>
 		</ul>
 		  
-        <a class="partBkBtt" href="#topPg">to top</a>
+       
 	</div> <!-- end partSec2 --> 
    </div> <!-- end partSecs -->
+ <a class="partBkBtt" href="#topPg">to top</a>	  
 </div> <!-- end Partners pg -->
         
 	
@@ -408,11 +415,9 @@
 	  
       <div class="contact" id="contactPg">
 		<div class="conTtl">
-            <span><h4>Contact Us</h4></span>
+            <span><h4>Contact Our Staff</h4></span>
 		</div>
-        <div class="conSub">CCC Staff
-		  </div>
-	
+       
 		<table class="conTbl">
 		<tr>
 			<th>Staff </th>
@@ -459,22 +464,24 @@
         
       
   </div> <!-- End Content -->        
-  
-<footer class="main-footer">  
-    <div>
+   
+<footer>   
+<div class="main-footer line">
 		
 		<ul>
 			<li>3525 Rudd Ave. Louisville, Ky.</li>
 			<li>502.424.9398</li>
 		</ul>
 	</div>
-	<div class="main_footerLn2">
+	
+	<div class="main_footerLn2 line">
 		<ul>
 			<li> &copy 2016 Community Catholic Center</li>
 			<li>Website designed by Tammy Shaw</li>
 		</ul>
  <!--       <a href="http://facebook.com/???"><img class="fbLogo" src="./img/fbLogo.png" width="35" height="35" alt="FaceBook Logo" class="social-icon"></a>
     </div> -->
+	</div>
 </footer> 
 
 <div id="myModal" class="modal fade" role="dialog" higherWider>

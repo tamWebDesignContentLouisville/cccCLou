@@ -22,6 +22,19 @@
 body {
 	height: 100%;
 }
+
+.backBtt {
+	text-align: center;
+    font-size: 1.3em;
+    text-decoration: underline;
+	width: 100px;
+	margin-top:20px;
+	margin-left: 100px;
+	
+   
+}
+
+
 /************************
 HEADER
 *************************/
@@ -29,9 +42,8 @@ HEADER
 .headerSec {
 	display: flex;
 	flex-direction: row;
-    display: inline-block; 
     width: 100%;
-    height: 80px;
+    height: 180px;
 }
 
 .banner {
@@ -136,10 +148,10 @@ CONTENT
 .content {   
 	display: flex;
     flex-direction: column;
-	position: relative;
     width: 100%;
     overflow:auto;
-	padding-bottom: 180px
+	padding-bottom: 180px;
+		
 }
 
 
@@ -160,7 +172,9 @@ MAIN BOX AND CAROUSEL
 
 .mainBxandCarsl {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	width: 100%;
+	height: 800px;
 }
 
 
@@ -171,20 +185,16 @@ MAIN CCC
 
 .mainBx {
     display: flex;
-    position: absolute;
-	flex-direction: row;
+  	flex-direction: column; 
     width: 48%;
-    height: 650px;
+    height: 790px;
     left: 30px;
     top: 103px;
-    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
-    text-align: left;
-    padding: 5px 10px 5px 5px;
+    margin: 0px 10px 5px 5px;
     background-color: powderblue;
     border: solid 2px darkblue;
-    z-index: 8;
     opacity: 0.9;
     filter: alpha(opacity=0.7); 
 	overflow: hidden;
@@ -202,134 +212,105 @@ MAIN CCC
 }
 
 span h4 {
-	font-size: 2.6em;
+	font-size: 2.4em;
 	font-weight: bold;
 	text-align: center;
 }
 
 .mainCols {
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     color: #000;
+	height: 370px;
 }
 
 .mainCol1 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
     width: 46%;
     height: 400px;
-    float: left;
-    clear: both;
     margin: 0 20px 0 10px;
-    padding: 5px;
+    padding: 0 15px;
 }
 
-.mainnCol1 p {
-    padding-bottom: 10px;
+p {
+	font-size: 1.1em;
 }
 
 .mainCol2 {
-    width: 46%;
-    height: 400px;
-    float: right;
-    clear: both;
-    margin: 8px 20px 0 10px;
-}
-
-#m1c2 {
-    padding-top: px;
-}
-
-/**HOURS BUTTON ON MAIN BOX**/
-
-
-/*.btn btn-primary btn-lg {
-	position: absolute;
-	color: #440099;
-	display: inline-block;
-	margin-top: 600px;
-	left: 0;
-	font-family: 'Lato', sans-serif;
-	font-size: .7em;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 30px #000;
- }
-
-.bttMnBx {
-	display: flex;
-	flex-direction: column;	
-	align-items:center;
-	position: absolute;
-	width: 48%;
-	left: 0;
-	font-family: 'Lato', sans-serif;
-	font-size: .7em;
-}
-*/
-
-#scholLinks {
 	display: flex;
 	flex-direction: column;
+    width: 100%;
+    height: 350px;
+    margin: 8px 0px 0 20px;
+}
+
+
+
+/**SCHOLARSHIP LINK ON MAIN BOX**/
+.mainBxFtr{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin-left: 20%;
+	height: 350px;
+	justify-items: center;
+}
+
+#scholLinks {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+	width: 85%;
     color: powderblue;
-    text-align: center;
+	margin-bottom: 30px;
     border-radius: 30;
-    z-index: 11;
-    top: 140;
 }
 
 #scholLinks a {
-    display: flex;
-	flex-direction: column;
-    position: absolute;
-	width: 20%;
-    top: 370px;
-    left: 370px;
     font-size: 1.2em;
     text-decoration: underline;
-	margin-top: 20px;
-    border-radius: 30px navyblue;
-    z-index: 999;
 }
 
-#scholLinks a:visited {
-    color: #440099;
-}
 
-#scholLinks a:hover {
-    color: green;
-}
-
+/**BUTTONS ON MAIN BOX**/
 #hrBtt {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	position: absolute;
-	width: 30%;
-	left: 60px;
-	top: 530px;
+	.center-block();
+	margin-left: 100px;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4em;
 	font-weight: bold;
 }
 
 #dnBtt {
+	.center-block();
+	margin: 40px 0 0 100px;
 	display: flex;
 	flex-direction: row;
-	position: absolute;
-	justify-content: center;
-	width: 23%;
-	top: 530px;
-	left: 350px;
-	align-items: center;
-	margin-left: 50px;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4em;
 	font-weight: bold;
-	z-index: 1999;
+}
+
+#dnBtt a {
+	align-items: center;
+	color: #fff;
+}
+
+.mainBkBtt {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	justify-content: flex-start;
+	margin-top: 10px;
+    font-size: 1.3em;
+    text-decoration: underline;
+	z-index: 1009;
 }
 
 
+/**HOURS FOR MODAL PAGE**/
 .hours2 {
 	position: absolute;
 	margin-left: auto;
@@ -418,82 +399,28 @@ span h4 {
 
 
 
-/**DONATE BUTTON ON MAIN BOX**/
-/*
-.donate {
-    position: absolute;
-        display: inline-block;
-        top: 0;
-        right: 0;
-        width: 63px;
-        height: 25px;
-        padding-bottom: 25px;
-        font-family: 'Lato', sans-serif;
-        font-color: #fff;
-        font-size: .8em;
-        text-align: center;
-        background: #ddd;
-        border: solid 2px #000;
-        border-bottom-left-radius: 30px #000;
-        z-index: 1000;
-}
-*/
-
-
-/**SCHOLARSHIP LINK ON MAIN BOX**/
-
-#scholLinks {
-	width: 0;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-	width: 0;
-    color: powderblue;
-    text-align: center;
-    border-radius: 30;
-    z-index: 11;
-    top: 140;
-}
-
-#scholLinks a {
-    display: inline-block;
-    position: absolute;
-	width: 20%;
-    top: 370px;
-    left: 370px;
-    font-size: 1.2em;
-    text-decoration: underline;
-	right: 0;
-	margin-top: 20px;
-    border-radius: 30px navyblue;
-    z-index: 999;
-}
-
-#scholLinks a:visited {
-    color: #440099;
-}
-
-#scholLinks a:hover {
-    color: green;
-}
-
 /************************
 SLIDE SHOW
 *************************/
 
-  
+ 
+.carousel{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 650px;
+	
+} 
+
 .gallery{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: flex-end;
 	flex-wrap: nowrap;
-    top: 105px;
-    height: 150px;
-	width: 48%;
-	right: 0;
-	margin-top: 79px;
-    margin-left: 52%;
-	margin-right: 0;
+    height: 130px;
+	width: 100%;
+	
 }
 
 .list-inline{
@@ -501,9 +428,9 @@ SLIDE SHOW
 	overflow-x: scroll;
 	overflow-y:hidden;
 	white-space: nowrap;
-	width: 100%;
+	width: 90%;
 	height: 120px;
-	z-index: 100;
+	
 }
 
 .thumbnail img{
@@ -514,17 +441,14 @@ SLIDE SHOW
 	margin-right: 0;
 	right: 0;
 	cursor: pointer;
-	z-index: 10000;
+	overflow: hidden;
 }
 
 .largeImg{
-	position: absolute;
-    width: 38%;
+
+    width: 90%;
     height: auto;
-	margin-left: 760px;
-   	background-size: contain;
-    cursor: pointer;
-	z-index: 100;
+	margin-left: 10%;
 }
 
 
@@ -537,8 +461,8 @@ ABOUT CCC
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 940px;
-    margin: 1000px 0 0;
+    height: 1040px;
+    margin: 800px 0 0;
     background: powderblue;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
@@ -549,33 +473,20 @@ ABOUT CCC
 
 .img17 {
     width: 100%;
-    height: 325px;
+    height: auto;
     padding: 25px;
 }
 
-.aboutLeft{
- /*   display: flex;
-    flex-direction: column;
-    height: 600 px;
-    width: 48%;
-    font-size: 1.3em;	
-*/
-	
+.aboutLeft {
 	display: flex;
     flex-direction: column;
     width: 48%;
-	height: 600px;
+	height: auto;
     margin-left: 20px;
     font-size: 1.3em;
 }
 
-.aboutLeftimg{
-    width: 100%;
-    height: auto;
-}
-
-
-.aboutRight{
+.aboutRight {
     display: flex;
     flex-direction: column;
     width: 48%;
@@ -583,66 +494,46 @@ ABOUT CCC
     font-size: 1.3em;
 }
 
-.aboutTtl_L{
+.aboutTtl_L {
     display: none;   
 }
 
-.aboutTtl_R{
-    width: 100%;    
+.aboutTtl_R {
+    width: 100%;  
+	padding-top: 15px;
+	
 }
 
-#aboutEEIrow{
+#aboutEEIrow {
     display: flex;
     flex-direction: column;
 	width: 100%;
-    font-size: 1.3em;
+	font-size: 1.4em;
     justify-content: center;
     align-content: space-around;
 }
 
 #aboutEEIrow li {
     list-style-type: none;
-    color: #440099; 
-    font-size: 1.2em;
+    color: #440099;
     font-weight: bold;
     justify-content: center;
     text-align: center;
 }
 
 .about span h4 {
-    font-size: 2.3em;
-    color: #000;
-    text-align: center;
+    font-size: 2.2em;
     padding: 15px;
-    width: 100%;
 }
 
 #sec1 {
     list-style-type: disc;
-    margin-left: 15px;
-    font-size: .8em;
-    padding: 10px 90px 0 50px;
+    font-size: 1.1em;
 	width: 100%;
-    
 }
 
 #sec1 li {
-    padding-bottom: 10px;
-    margin-bottom: 5px
-}
-
-.about p {
-    font-size: .9em;
-    padding: 10px 45px 20px 25px;
-}
-
-.about a {
-    font-size: .9em;
-	width: 30%;
-    height: 50px;
-    margin-top: 20px;
-    text-decoration: underline;
-    justify-content: flex-end;
+    padding-bottom: 10px;margin: 0 40px 0 5px;
 }
 
     
@@ -659,13 +550,13 @@ ABOUT - SECTION 2
 }
 
 #imgSvc {
-    font-size: .7em;
+    font-size: .8em;
     font-style: oblique;
     padding: 0 5px 15px 40px;
 }
 
 .aboutCCCsec2 {
-    font-size: 1.em;
+    font-size: 1em;
     border-top: solid 3px darkblue;
     width: 100%;
     margin-top: 30px;
@@ -674,13 +565,13 @@ ABOUT - SECTION 2
 }
 
 #paraRight {
-    font-size: .9em;
+    font-size: 1em;
     padding: 5px 45px 10px 0;
 	width: 100%;
 }
 
 #bulletRight {
-    font-size: .9em;
+    font-size: 1em;
     margin-bottom: 20px;
 	width: 100%;
 }
@@ -701,24 +592,21 @@ EDUCATE, EMPOWER, INSPIRE
 	align-items: baseline;
     width: 1300px;
     top: 400px;
-    bottom: 0;
     margin: 0 auto;
 }
 
 .educate {
 	display: flex;
 	flex-direction: column;
-  
     width: 100%;
-    height: 910px;
+    height: auto;
     vertical-align: middle;
-    left: 0;
-    margin: 300px 0 0 40px;
-	padding-top: 15px;
+    margin: 300px 0 0 20px;
+	padding-top: 10px;
     background: #440099;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
-    color: #eee;
+    color: #fff;
     opacity: 0.9;
     filter: alpha(opacity=0.9);
 	overflow: hidden;
@@ -727,18 +615,26 @@ EDUCATE, EMPOWER, INSPIRE
 .educate h4,
 .empower h4, 
 .inspire h4 {
-    font-size: 1.2em;
-    color: lavender;
+    font-size: 2em;
+    color: palevioletred;
     text-align: center;
     padding: 10px 0 0;
     width: 100%;
-	
+}
+
+.educate p,
+.empower p,
+.inspire p {
+    font-size: 1.2em;
+    padding: 5px 40px 20px;
+    width: 100%;
+    color: #eee;
 }
 
 .educate ul {
     list-style-type: disc;
     width: 100%;
-    color: #eee;
+    color: #fff;
     padding-right: 10px;
 
 }
@@ -747,32 +643,21 @@ EDUCATE, EMPOWER, INSPIRE
 .empower li,
 .inspire li {
     list-style-type: disc;
-    color: #eee;
-    font-size: .9em;
+    color: #fff;
+	font-size: 1.2em;
     padding: 0 40px 20px 0;
     margin: 0 15px;
     width: 100%;
 }
 
-.educate p,
-.empower p,
-.inspire p {
-    font-size: .9em;
-    padding: 5px 40px 20px;
-    width: 100%;
-    color: #eee;
-	
-}
-
 .educate a {
-    font-size: .9em;
-    width: 50%;
-    height: 50px;
+    font-size: 1.1em;
+    width: 40%;
+    height: 60px;
     color: #fff;  
     margin-top: 30px;
     text-decoration: underline;
     justify-content: flex-end;
-	
 }
 
 
@@ -784,12 +669,12 @@ EMPOWER
 	display: flex;
 	flex-direction: column;
     width: 100%;
-    height: 495px;
+    height: auto;
     vertical-align: middle;
     top: 0;
-    margin: 300px 0 0 20PX;
-    right: 0;
+    margin: 300px 0 0 30px;
 	padding: 10px;
+	color: #fff;
     background: #440099;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
@@ -807,7 +692,7 @@ EMPOWER
 }
 
 .empower a {
-    font-size: .9em;
+    font-size: 1.1em;
     width: 50%;
     height: 50px;
     color: #fff;  
@@ -825,14 +710,12 @@ INSPIRE
 	display: flex;
 	flex-direction: column;
     width: 100%;
-    height: 375px;
+    height: auto;
     vertical-align: middle;
-    top: 0;
-    right: 0;
-    align: center;
-    margin: 300px 0 0 20PX;
+    margin: 300px 0 0 20px;
 	padding-top: 10px;
     background: #440099;
+	color: #fff;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
     opacity: 0.9;
@@ -841,7 +724,7 @@ INSPIRE
 }
 
 .inspire a {
-    font-size: .9em;
+    font-size: 1.1em;
     width: 50%;
     height: 50px;
     color: #fff;  
@@ -860,8 +743,7 @@ VOLUNTEER - LEFT
     flex-direction: row;
     border: solid 2px darkblue;
     width: 100%;
-    height: 630px;
-    top: 0;
+    height: auto;
     margin: 400px 0 0;
     background: powderblue;
     font-family: 'Roboto', sans-serif;
@@ -879,47 +761,27 @@ VOLUNTEER - LEFT
 
 
 .vol span h4 {
-    font-size: 2.3em;
+    font-size: 2.1em;
     color: #000;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     width: 100%;
 }
 
 /* both left and right paragraphs - no bullets*/
 .vol p {
-    font-size: .9em;
-    padding: 10px 45px 5px 45px;
+    font-size: 1.1em;
+    padding: 10px 45px 5px 30px;
 }
 
-#volSec1 {
+.volSec1 {
     list-style-type: disc;
     margin-left: 35px;
-    font-size: .8em;
-    padding: 0 90px 5px 50px;
+    font-size: 1.1em;
+    padding: 15px 90px 5px 50px;
 	width: auto;
 }
 
-#volLinks {
-	width: auto;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 30;
-    z-index: 11;
-    top: 1640;
-	margin: 35px 0 0 165px;
-	text-decoration: underline;
-}
-
-#volLinks a:visited {
-    color: #440099;
-}
-
-#volLinks a:hover {
-    color: gold;
-}
- 
 
 /****************************
 VOLUNTEER - RIGHT
@@ -946,19 +808,43 @@ VOLUNTEER - RIGHT
 }
 
 #volCap {
-    font-size: .7em;
+    font-size: .9em;
     font-style: oblique;
     width: 92%;
 	text-align: center;
 	padding-bottom: 30px;
 }
 
+#volLinks {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	align-items: flex-start;
+	width:  100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30;
+    z-index: 11;
+    top: 1640;
+	margin: 35px 0 0 165px;
+	text-decoration: underline;
+}
+
+#volLinks a:visited {
+    color: #440099;
+}
+
+#volLinks a:hover {
+    color: magenta;
+}
+
 .volBkBtt{
-	display:flex;
-    font-size: .9em;
-	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+    font-size: 1.1em;
+	width: 100%;
     height: 50px;
-	right: 0;
     text-decoration: underline;
     justify-content: center;
 }
@@ -976,9 +862,8 @@ DONATE
 	display: flex;
 	flex-direction: column;
     width: 100%;
-    height: 520px;
-    top: 0;
-    margin: 300px 0px 0 0px;
+    height: 560px;
+    margin: 300px 0 0;
     background: powderblue;
     border: solid 2px darkblue;
     font-family: 'Roboto', sans-serif;
@@ -993,41 +878,43 @@ donTtl {
 }
 
 .donateBx span h4 {
-    font-size: 2.3em;
+    font-size: 2.8em;
     color: #000;
     text-align: center;
     padding: 15px;
     width: 100%;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 
 .donateBx h4 {
     font-size: 2.3em;
     color: #440099;
     text-align: center;
-    padding-bottom: 25px;
-    width: 50%;
-}
-
-.donateBx p {
-	display: flex;
-	flex-direction: row;
-    font-size: 1.1em;
-	margin-top: 15px;
-    padding: 5px 35px;
-    width: 100%;
-}
-
-.donBthSecs {
-	display: flex;
-	flex-direction: row;
 }
 
 .donSec1 {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
-	padding-top: 15px;
+	width: 45%;
+	margin: 15px 35px 0 0;
+}
+
+.donateBx p {
+	display: flex;
+	flex-direction: row;
+    font-size: 1.4em;
+	margin: 10px 70px 0 30px;
+    width: 100%;
+}
+
+#paypalGraphic {
+	margin: 0 auto;
+}
+
+.donBthSecs {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
 
 .donSec2 {
@@ -1039,8 +926,7 @@ donTtl {
 .imgDon {
 	width: 100%;
 	height: auto;
-	margin-left: 20px;
-	padding: 35px 0 15px 20px;
+	margin: 70px 0 0 80px;
 }
 
 .donBkBtt {
@@ -1062,7 +948,7 @@ PARTNERS
 	flex-direction: column;
     border: solid 2px darkblue;
     width: 100%;
-    height: 720px;
+    height: auto;
     top: 0;
     margin: 340px 0 0;
     background: powderblue;
@@ -1073,7 +959,7 @@ PARTNERS
 }
 
 .partners span h4 {
-    font-size: 2.3em;
+    font-size: 2.8em;
     color: #000;
     text-align: center;
     padding: 30px 15px 40px;
@@ -1088,16 +974,14 @@ PARTNERS
 	align-content: flex-end;
     font-size: 2em;
     color: #440099;
-    text-align: left;
-    padding: 0 0 25px 35px;
+    justify-content: center;
 }
 
 .partners p {
 	display: flex;
 	flex-direction: row;
-    font-size: 1.1em;
-	line-height: 1.3;
-    padding: 5px 25px 10px;
+    font-size: 1.4em;
+	margin: 5px 50px 0 30px;
     width: 100%;
 }
 
@@ -1106,10 +990,9 @@ PARTNERS
 }
 
 .partners li {
-	padding-bottom: 15px;
     margin: 0 35px;
     padding: 5px;
-	font-size: 1em;
+	font-size: 1.4em;
 }
 
 .partSecs {
@@ -1120,13 +1003,14 @@ PARTNERS
 .partSec1 {
 	display: flex;
 	flex-direction: column;
-	width: 48%;
+	width: 46%;
 }
 
 .partSec2 {
 	display: flex;
 	flex-direction: column;
-	width: 48%;
+	width: 46%;
+	margin-left: 80px;
 }
 
 .partBkBtt {
@@ -1146,7 +1030,7 @@ DIRECTIONS
 	display: flex;
 	flex-direction: column;
     width: 100%;
-    height: 800px;
+    height: auto;
     margin: 380px 0 0;
     background: powderblue;
     border: solid 2px darkblue;
@@ -1161,7 +1045,7 @@ DIRECTIONS
 	justify-content: center;
 	height: auto;
 	flex-direction: column;
-    font-size: 2.3em;
+    font-size: 2.8em;
     color: #000;
     text-align: center;
     padding: 30px 15px 0 40px;
@@ -1170,12 +1054,11 @@ DIRECTIONS
 
 .dirSecs h3 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 100%;
-	line-height: 1.2;
+	height: auto;
     color: #440099;
     text-align: center;
-	margin-top: 5px;
 }
 
 .directions ul {
@@ -1188,12 +1071,12 @@ DIRECTIONS
     list-style-type: disc;
     width: 90%;
     padding: 15px;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	margin-left: 20px;
 }
 
 .directions p {
-    font-size: 1.1em;
+    font-size: 1.4em;
     padding: 0px 40px;
     width: 95%;
 }
@@ -1217,15 +1100,15 @@ DIRECTIONS
     display: flex;
 	flex-direction: column;
     width: 100%;
-    height: 100%;
-	margin-top: 0;
+    height: auto;
+	margin-top: 55px;
 }
 
 .dirBkBtt {
     font-size: 1.4em;
     width: 30%;
     height: 50px;
-	margin-left: 320px;
+	margin-left: 550px;
     margin-top: 20px;
 	text-decoration: underline;
     justify-content: flex-end;
@@ -1255,33 +1138,20 @@ CONTACT
 .conTtl {
 	display: flex;
 	flex-direction: column;
-    font-size: 1.8em;
     color: #000;
     text-align: center;
-    padding: 30px 15px 15px;
-}
-
-.conSub {
-	display: flex;
-	flex-direction: column;
-    font-size: 2.8em;
-	font-weight: bold;
-    color: #440099;
-    text-align: center;
-    padding-bottom: 45px;
+    margin: 30px 15px 15px;
 }
 
 .conTbl {
 	width: 100%;
-	margin-bottom: 50px;
+	margin: 50px 0;
 	width: 45%;
 }
 
 .conTbl td,
 .conTbl th{
-	font-size: 1.2em;
-	text-align: left;
-	padding-right: 0px;
+	font-size: 1.4em;
 	margin-bottom: 10px;
 	text-align: center;
 }
@@ -1299,11 +1169,11 @@ CONTACT
 .contBkBtt {
 	display: flex;
 	font-size: 1em;
-    width: 30%;
+    width: 100%;
     height: 50px;
-	margin: 20px 0 0 620px;
+	margin: 20px 0 0 15px;
 	text-decoration: underline;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 
@@ -1311,35 +1181,35 @@ CONTACT
 FOOTER
 *****************************/
 
-/*
+
 .fbLogo {
-	height: 2%;
-	width: 2%;
+	height: 20%;
+	width: 20%;
     border-radius: 10px;
     z-index: 1003;
 }
 
 .fbLogo a {
-	display: none;
+	display: inline;
 }
-*/
 
-.main-footerLn2{
+
+.main_footerLn2{
 	display: flex;
 	flex-direction: column;
 	font-size: 80%;
 	
 }
 
-.main-footer {
-    display: flex;
+footer {
+/*    display: flex;*/
 	flex-direction: column;
 	line-height: 1;
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%; 
-	height: 70px;
+	height: 90px;
 	padding: 10px 0;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -1349,27 +1219,31 @@ FOOTER
 	line-height: .8;
     border-top: solid 3px darkblue;
 	text-align: center;
-	background: #222;
-	z-index: 1005;
-
+	background: #6b6b6b;
 }
 
-.main-footer ul {
-	list-style-type: none;
-	display: flex;
-        flex-direction: row;
+.line{
+	display: block;
+}
+.line>ul>li{
+	display: inline-block;
+	padding: 1rem;
+}
+.main-footer ul,
+. main_footerLn2 ul {
+	list-style-type: disc;
+	display: inline-block;
+    flex-direction: row;
 	width: 100%;
 	justify-content: space-around;
 	align-content: flex-start;
 }
 
-/****************************
-*****************************
-MEDIA QUERIES - SMALL PHONES
-*****************************
-*****************************/
+/**************************
+MEDIA QUERIES - PHONES
+***************************/
 
-@media (max-width: 414px){
+@media (max-width: 767px){
     
 	.banner h1 {
 		font-size: 1.2em;
@@ -1378,16 +1252,16 @@ MEDIA QUERIES - SMALL PHONES
 	}
     
     .cccLogo {
-        top: 128px;
-        left: 10px;
+        top: 108px;
+        left: 20px;
     }
     
     #logo {
-		height: 94px;
+		height: 84px;
 		width: 140px;
 		background-size: contain;
 	}
-
+	
     .gallery {
         display: none;
     }
@@ -1400,117 +1274,94 @@ MEDIA QUERIES - SMALL PHONES
         display: none;
     }
     
+	.largeImg {
+		display: none;
+	}
+	
     .navPhone2 {
-        display: flex;
         flex-direction: column;
-        position: absolute;
-        font-family: 'Roboto', sans-serif;
-        font-size: .9em;
-        font-weight: bold;
-		line-height: 1.2;
-        height: 105px;
+        font-size: 2.8em;
+        height: auto;
         width: 42%;
-		right: 0;
-        top: 150px;
-        z-index: 99;      
+		padding-top: 30px;
     }    
 	
 	.navPhone2 ul {
-		color: none;
-		list-style-type: none;
 		padding: 0 5px;
-		border-color: rgba();
 	}
 	
     .navPhone2 li {
-        width: 100%;
-        text-size: .4em;
+        font-size: .4em;
         text-align: center;
 		border: none;
 		float: none;
     }
-	
-	a:hover, {
-		display: none;
-		color: gold;
-	}
-	
-	a:focus {
-		display: none;
-		background: none;
-	}
 
 	
-    .mainBx {
-		top: 180px;
-		height: 1100px;
-        width: 100%;
-		left: 0;
-    }
-    
-    .mainBx span {
-        font-size: 70%;
-    }
-    
-    .mainCols {
-		height: auto;
-        padding-right: 5px;
-		font-size: 1em;
-    }
+	.bkgdImgInvrt4 {
+		display: none;
+	}
 	
-   .mainCol1 {
+	.mainBxandCarsl {
+		flex-direction: column;
+		height: auto;
+		margin-top: 200px;
+	}
+
+    .mainBx {
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+		padding: 0 20px 5px 15px;
+	}
+
+	span h4 {
+		font-size: 2.3em;
+	}
+
+	.mainCols {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.mainCol1 {
+		flex-direction: column;
 		width: 100%;
 		height: auto;
 	}
 
 	.mainCol2 {
-		width: 100%;
 		height: auto;
-		margin: 0 30px 0 15px;
+		margin: 0 30px 30px 0;
 	}
 
-	#scholLinks a {
-		display: inline-block;
-		position: absolute;
-		width: 60%;
-		top: 640px;
-		left: 50px;
-		font-size: 1.3em;
-		text-decoration: underline;
-		margin-top: 90px;
-		border-radius: 30px navyblue;
-		z-index: 999;
+	.mainBxFtr{
+		width: 100%;
+		margin-left: 0;
+		height: 400px;
 	}
 
-	#scholLinks a:visited {
-		color: #440099;
+	#scholLinks {
+		margin-left: 5px;
+		width: 100%;
 	}
 
-	#scholLinks a:hover {
-		color: gold;
-	}
-	
 	#hrBtt {
-		width: 50%;
-		height: 75px;
-		margin-top: 330px;
+	.center-block();
+		margin-left: 100px;
 	}
 
 	#dnBtt {
-		width: 50%;
-		height: 75px;
-		justify-content: center;
-		left: 10px;
-		margin-top: 430px;
-		color: #fff;
+		.center-block();
+		margin: 40px 0 0 100px;
 	}
 	
-	#dnBtt a {
-		color: #fff;
-		align-items: flex-start;
+	.mainBkBtt {
+		width: 90%;
+		margin-top: 30px;
 	}
 
-	
+
 	.bkgdImgInvrt4 {
 		display: none;
 	}
@@ -1519,16 +1370,20 @@ MEDIA QUERIES - SMALL PHONES
 	.about {
 		flex-direction: column;
 		height: auto;
-		margin: 1400px 0 0;
+		margin: 0;
 	}
 	
-	.aboutTtl_L{
-		display: flex;   
+	.aboutTtl_L {
+		display: flex;
 		flex-direction: column;
-		margin-right: 50px;
+		text-align: center;
 	}
 
-	.aboutTtl_R{
+	.img17 {
+		display:  none;
+	}
+
+	.aboutTtl_R {
 		display: none;   
 	}
 
@@ -1536,12 +1391,9 @@ MEDIA QUERIES - SMALL PHONES
 		font-size: 2em;
 		color: #000;
 		width: 100%;
+		padding: 15px 30px 5px 0;
 	}
 	
-	.img17 {
-		display:  none;
-	}
-
 	.aboutLeft {
 		height: auto;
 		width: 100%;
@@ -1552,39 +1404,39 @@ MEDIA QUERIES - SMALL PHONES
 		display: none;
 	}
 	
-	#aboutEEIrow {
-		justify-content: center;
-		padding-right: 30px;
+	.about p {
+		font-size: 1.1em;
+		padding: 10px 45px 5px 5px;
 	}
 
-
-	/* About Former Right Side  Now Bottom */
+	#aboutEEIrow {
+		justify-content: center;
+		padding: 0 30px 0 0;
+	}
 	
 	.aboutRight{
 		width: 100%;
 		height: auto;
 		margin: 0;
 	}
-	
-/* Image */
+
 	.serviceProj {
 		height: auto;
 	}
 
-/* Section 2 */
 	.aboutCCCsec2 {
 		font-size: 1.1em;
 		height: auto;
 	}
 
-/* Section 2 bullets */
-	#bulletRight {	margin-left: 15px;
-		font-size: .8em;
-		padding: 0 35px 0 20px;
+	
+	
+	#paraRight {
+		font-size: 1.1em;
 	}
+
 	#bulletRight li {
-		padding-bottom: 5px;
-		margin-bottom: 5px;
+		font-size: 1.1em;
 	}
 
 	
@@ -1596,6 +1448,7 @@ MEDIA QUERIES - SMALL PHONES
 
 	.educate {
 		margin: 0;
+		height: auto;
 	}
 
 	.educate h4,
@@ -1625,17 +1478,17 @@ MEDIA QUERIES - SMALL PHONES
 		height: auto;
 		margin: 30px 0;
 		justify-content: flex-start;
-
 	}
 
 	
-	.empower {		height: auto;
+	.empower {		
+		height: auto;
 		margin: 100px 0 0 0;
 	}
 
 
 	.inspire {
-		height: 420px;
+		height: auto;
 		margin: 100px 0 0;
 	}
 
@@ -1647,12 +1500,10 @@ MEDIA QUERIES - SMALL PHONES
 		margin-top: 30px;
 		justify-content: flex-start;
 	}
-
-
-
-
-
+	
+	
 	 .vol {
+		 display: flex;
 		flex-direction: column;
 		height: auto;
 		margin: 100px 0 0;
@@ -1660,41 +1511,30 @@ MEDIA QUERIES - SMALL PHONES
 
 	.volLeft {
 		width: 100%;
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
 	
-	#paypalGraphic {
-		width: 60%;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.vol span h4 {
-		font-size: 1.7em;
-		padding-bottom: 5px;
-	}
-
 	p.volSec1para {
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
 
 	.volSec1 {
-		margin: 0 45px 15px 45px;
+		margin: 0 0 0 5px;
 	}
 	
 	#volLinks {
-		width: auto;
-		top: 1640;
-		margin: 15px 0 15px;
+		align-items: flex-start;
+		width:  10%;
+		text-align: center;
+		margin: 0 0 0 80px;
 	}
-
+	
 	#volLinks a:hover {
-		color: green;
+		color: magenta;
 	}
 	
 	#volLinks a:focus {
-		display: none;
+		display: green;
 	}
 
 	.volRight {
@@ -1703,8 +1543,9 @@ MEDIA QUERIES - SMALL PHONES
 	}
 
 	.volCCCsec2 {
+		flex-direction: column;
 		margin-left: 0;
-		padding: 5px 25px;
+		padding: 5px 2px 2px 15px;
 	}
 	
 	.volBkBtt{
@@ -1713,30 +1554,31 @@ MEDIA QUERIES - SMALL PHONES
 
 	
 	.donateBx {
-		height: auto;
+		flex-direction: column;
 		margin: 100px 0 0;
-		padding-right: 15px;
+		width: 100%;
+		height: auto;
 	}
 
 	.donateBx span h4 {
-		padding: 0;
-		padding-top: 20px;
+		padding: 20px 0 0;
 	}
 
 	.donateBx p {
 		flex-direction: column;
-		margin-top: 1px;
-		padding: 5px 0 0 10px;
 	}
-
+	
 	.donBthSecs {
-		display: flex;
-		flex-direction: column;
-	}
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
 
 	.donSec1 {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
-		padding-left: 10px;
+		padding-right: 50px;
 	}
 
 	.donSec2 {
@@ -1744,74 +1586,56 @@ MEDIA QUERIES - SMALL PHONES
 	}
 
 	.imgDon {
-		height: auto;
 		margin-left: 0;
-		padding: 5px 0 15px 20px;
-	}
+	}	
 	
-	
-	.donBkBtt {
-		font-size: 1.5em;
-		width: 30%;
-		height: 50px;
-		text-decoration: underline;
-	}
-
-
-
 	.partners {
-		height: auto;
 		margin: 100px 0 0;
+		height: auto;
+	}
+
+	.partners span h4 {
+		padding: 30px 15px  40px;
 	}
 
 	
-	/*subheads*/
 	.partners h4 {
+		flex-direction: column;
 		text-align: center;
-		padding: 5px 0 5px 5px;
 	}
 
 	.partners p {
-		font-size: 1.2em;
-		line-height: 1.3;
+		flex-direction: column;
+		width: 90%;
 	}
-
-	.partners li {
-		font-size: 1.1em;
-		line-height: 1.2;
-		margin: 0 5px;
-	}
-
+	
 	.partSecs {
 		flex-direction: column;
 	}
 
 	.partSec1 {
+		flex-direction: column;
 		width: 100%;
 	}
 
 	.partSec2 {
+		flex-direction: column;
 		width: 100%;
+		margin-left: 0;
+		height: auto;
 	}
 
+	.partBkBtt {
+		width: 80px;
+	}
 
+	
 	.directions {
-		height: auto;
 		margin: 100px 0;
 	}
 
-	.directions span h4 {
-		padding: 30px 0 0;
-	}
-
-	.dirSecs h3 {
-		flex-direction: column;
-		line-height: 1.3;
-		font-size: 1.6em;
-	}
-	
 	.directions p {
-		font-size: 1.2em;
+		font-size: 1.4em;
 		padding: 0 30px;
 	}
 
@@ -1821,52 +1645,24 @@ MEDIA QUERIES - SMALL PHONES
 
 	.dirBkBtt {
 		font-size: 1.4em;
-		width: 100%;
-		height: auto;
-		text-decoration: underline;
-		height: 50px;
-		margin: 0;	
+		width: 30%;
 	}
 
+
 	.contact {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		border: solid 2px darkblue;
-		width: 100%;
-		height: auto;
 		margin: 100px 0 0;
-		background: powderblue;
-		font-family: 'Roboto', sans-serif;
-		opacity: 0.9;
-		filter: alpha(opacity=0.9);
-		overflow: hidden;
 	}
 
 	.conTtl {
-		display: flex;
-		flex-direction: column;
 		font-size: 1.1em;
-		color: #000;
-		text-align: center;
-		padding: 30px 15px 15px;
-	}
-
-	.conSub {
-		display: flex;
-		flex-direction: column;
-		font-size: 2em;
-		font-weight: bold;
-		color: #440099;
-		text-align: center;
-		padding-bottom: 25px;
+		padding: 0;
+		margin-bottom: 0;
 	}
 
 	.conTbl {
 		width: 100%;
-		margin-bottom: 50px;
-		width: 100%;
-		font-size: 1.1em;
+		margin-bottom: 30px;
+		font-size: .9em;
 	}
 
 	.conTbl td,
@@ -1887,9 +1683,6 @@ MEDIA QUERIES - SMALL PHONES
 		text-decoration: underline;
 		margin: 0;
 	}
-
-	
-   
     
     .main-footer {
         height: 70px; 
@@ -1902,196 +1695,289 @@ MEDIA QUERIES - SMALL PHONES
 
 }
     
-/********* End Phones MQ *********/
+/***** End  PHONES MQ *****/
 
 
 
-        
-/****************************
-*****************************
-MEDIA QUERIES - PHABLETS
-*****************************
-*****************************/
+/**************************
+MEDIA QUERIES - MEDIUM
+***************************/
 
-@media (min-width: 415px)
-    and (max-width: 740px){
-    
- /********* End Phablets *********/   
+@media (min-width: 767px) and (max-width: 1050px){
+	
+	.bkgdImgInvrt4 {
+		display: none;
+	}
+	
+	.cccLogo {
+		position: absolute; 
+		width: 14%;
+		top: 100px;
+		left: 15px;
+	}
+	
+	
+	.mainBx {
+		width: 70%;
+		height: 1160px;
+		margin-left: 0;
+		padding: 0 20px 5px 15px;
+		margin-top: 70px;
+	}
+
+	span h4 {
+		font-size: 2.3em;
+	}
+
+	.mainCols {
+		flex-direction: row;
+		height: auto;
+	}
+
+	.mainCol1 {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+
+	.mainCol2 {
+		height: auto;
+		margin: 0 30px 60px 0;
+	}
+
+	.mainBxFtr{
+		width: 100%;
+		margin-left: 0;
+		height: 400px;
+	}
+
+	#scholLinks {
+		margin-left: 5px;
+		width: 100%;
+	}
+
+	#hrBtt {
+	.center-block();
+		margin-left: 100px;
+	}
+
+	#dnBtt {
+		.center-block();
+		margin: 40px 0 0 100px;
+	}
+	
+	.mainBkBtt {
+		width: 90%;
+		margin-top: 30px;
+	}
+
+	
+	.gallery{
+		margin-top: 70px;
+	}
+
+	
+	.about {
+		height: auto;
+	}
+	
+	
+	.containerEEI {
+		flex-direction: column;
+		width: auto;
+		margin: 100px 0;
+	 }
+
+	.educate {
+		margin: 0;
+		height: auto;
+	}
+
+	.educate h4,
+	.empower h4, 
+	.inspire h4 {
+		padding: 10px 0 8px 0;
+	}
+	
+	.educate ul {
+		height: auto;
+	}
+
+	.educate li,
+	.empower li,
+	.inspire li {
+		padding: 8px 40px 8px 0;
+	}
+
+	.educate a {
+		font-size: .9em;
+		width: 25%;
+		height: auto;
+		margin: 30px 0;
+		justify-content: flex-start;
+	}
+
+	
+	.empower {		
+		height: auto;
+		margin: 100px 0 0 0;
+	}
 
 
+	.inspire {
+		height: auto;
+		margin: 100px 0 0;
+	}
 
-/********* Tablets *********/
+	.inspire a {
+		font-size: .9em;
+		width: 25%;
+		height: auto;
+		color: #fff;  
+		margin-top: 30px;
+		justify-content: flex-start;
+	}
+	
 
-@media (min-width: 741px) and (max-width: 1080px) {
-        
+	.vol {
+		height: auto;
+		margin: 50px 0 0 0;
+	}
+	
+	.vol p {
+		font-size: 1.1em;
+		padding: 10px 45px 5px 30px;
+	}
+	
+	.volSec1 {
+		list-style-type: disc;
+		margin-left: 35px;
+		font-size: 1.1em;
+		width: auto;
+	}
+	
+	.imgVol {
+		width: 100%;
+		margin-top: 155px;
+	}
 
+	#volLinks {
+		top: 1640;
+		margin: 35px 0 0 15px;
+		text-decoration: underline;
+	}
 
-/********* End Tablets MQ *********/
+	
+	.donateBx {
+		height: auto;
+		margin-top: 100px;
+	}
 
+	#paypalGraphic {
+		margin: 0 auto;
+		width: 60%;
+		height: 60%;
+	}
 
+	.donBkBtt {
+		display: flex;
+		font-size: 1.3em;
+		width: 50%;
+		height: 90px;
+		text-decoration: underline;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
 
+	
+	.partners {
+		margin: 120px 0 0;
+	}
 
-/****************************
-EXTRA CODE????
-*****************************/
+	.partners h4 {
+		text-align: center;
+	}
 
-/*
-.donateBtn ul {
-    list-style-type: none;   
+	.partSec1 {
+		width: 43%;
+	}
+
+	.partSec2 {
+		width: 43%;
+	}
+
+	
+	.directions {
+		margin: 100px 0 0;
+	}
+
+	.dirSec1 {
+		display: flex;
+		flex-direction: column;
+		width: 48%;
+		height: auto;
+	}
+
+	.dirSec2map {
+		display: flex;
+		flex-direction: column;
+		width: 48%;
+		height: 48%;
+		margin-top: 55px;
+	}
+
+	
+	.dirBkBtt {
+		margin-left: 200px;
+		margin-top: 20px;
+	}
+
+	
+	.contact {
+		margin: 100px 0 0;
+	}
+	
+	.conTbl {
+		width: 100%;
+		margin: 50px 0;
+		width: 85%;
+	}	
+
 }
 
-.donateBtn li {
-    postion: absolute;
-    text-size: .6em; 
-    color: #fff;
+
+/***** END MEDIUM MQ *****/
+
+
+
+/**************************
+MEDIA QUERIES - LARGE
+***************************/
+
+@media (min-width: 1051px) and (max-width: 1280px){
+
+	.mainCol1 {
+		width: 98%;
+		height: auto;
+	}
+
+	.mainCol2 {
+		width: 98%;
+		height: auto;
+		margin-left: 0;
+	}
+
+	#scholLinks {
+		width: 120%;
+		margin-bottom: 30px;
+	}
+
+	#scholLinks a {
+		font-size: 1.2em;
+	}
+
+
+
 }
-
-a {
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 10px;
-    color: #000;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-a:link {
-    color: #440099;
-}  
-
-a:visited {
-    color: #440099;
-}
-
-a:hover, a:focus {
-    color: gold;
-    background:#000;
-}
-
-a:active {
-    color: gold;
-}
-
-.myButton {
-    margin: 0 200px 0 650px;
-    position: absolute;
-    width: auto;
-    top: 95px;
-    right: 50px;
-	-moz-box-shadow: 1px 2px 3px 1px #fff6af;
-	-webkit-box-shadow: 1px 2px 3px 1px #fff6af;
-	box-shadow: 1px 2px 3px 1px #fff6af;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
-	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
-	background-color:#ffec64;
-	-moz-border-radius:20px;
-	-webkit-border-radius:20px;
-	border-radius:20px;
-	border:2px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:13px 20px;
-	text-decoration:none;
-	text-shadow:1px -3px 5px #ffee66;
-}
-
-.myButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
-	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
-	background-color:#ffab23;
-}
-
-.myButton:active {
-    color: red;
-}
-*/
-
-
-/****************************
-GOOGLE MAP
-*****************************/
-/*
-
-#mapDir {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    font-family: 'Roboto', sans-serif; 
-    margin: 100px 100px;
-    font-size: 1em;
-    color: #1c63ff;
-    text-align: left;
-    padding: 5px 10px 5px 5px;
-    width: 73%;
-    height: 750px;
-    margin: 350px 0 0 220px;
-    background-color: #fff;
-    opacity: 0.9;
-    filter: alpha(opacity=0.9); 
-}
-
-#mapDir span {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-style: bold;
-    font-size: 1.3em;
-    color: #000;
-    margin: 4px 4px;
-}
-
-#mapDir h4 {
-    color: #440099;
-}
-
-mapDir p {
-    font-size: 80%;
-    padding: 5px 5px 0 10px;
-    margin-top: px;
-}
-
-.navMenu {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #440099;
-    text-align: center;
-    list-style-type: none;
-    padding: 5px 0 0 25px;
-    margin-bottom: 1px;
-}
-
-.transSide {
-    position: absolute;
-    height: 1316px;
-    width: 200px;
-    margin: 0;
-    top: 0;
-    left: 0;
-    bottom: 100px;
-    padding-top: 40px;
-    background: #fff;
-    opacity: 0.6;
-    filter: alpha(opacity=0.6); 
-}
-
-.transSide ul {
-    margin-top: 15px;
-    list-style-type: none;
-    padding: 0 15px 0 15px;
-    margin-bottom: 40px;
-}
-*/
+		
+/***** END LARGE MQ *****/
