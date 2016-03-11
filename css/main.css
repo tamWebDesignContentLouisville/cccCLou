@@ -1956,6 +1956,24 @@ MEDIA QUERIES - LARGE
 
 @media (min-width: 1051px) and (max-width: 1280px){
 
+	
+	.mainBx {
+		display: flex;
+		flex-direction: column; 
+		width: 48%;
+		height: 990px;
+		left: 30px;
+		top: 103px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.1em;
+		margin: 0px 10px 5px 5px;
+		background-color: powderblue;
+		border: solid 2px darkblue;
+		opacity: 0.9;
+		filter: alpha(opacity=0.7); 
+		overflow: hidden;
+	}
+
 	.mainCol1 {
 		width: 98%;
 		height: auto;
@@ -1976,7 +1994,47 @@ MEDIA QUERIES - LARGE
 		font-size: 1.2em;
 	}
 
+	.about {
+		height: auto;
+		margin: 400px 0 0;
+	}
 
+	
+	.containerEEI {
+		top: 400px;
+		width: 100%;
+	}
+	
+	.educate {
+		margin: 300px 0 0 0;
+	}
+
+	.vol {
+		margin: 300px 0 0;
+	}
+	
+	
+	.donateBx {
+		height: auto;
+	}
+	
+	
+	.dirBkBtt {
+		width: 100%;
+		height: 50px;
+		margin-left: 50px;
+		margin-top: 20px;
+	}
+
+	.contact {
+		margin: 330px 0 0;
+	}
+
+	.conTbl {
+		width: 100%;
+		margin: 50px 0;
+		width: 65%;
+	}
 
 }
 		
