@@ -13,19 +13,26 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	
+	<script src="js/skrollr.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css" />	
    
 </head>
 
 <body ng-app="app">
-                
 
-    
     <div>
-        <img class="bkgdImgInvrt4" src="img/bkgdImgInvrt4.jpg" />
+        <img id="prlx_lyr_0" 
+			 src="img/bkgdImgInvrt4.jpg" />
     </div>
-        
+	
+	<div>
+		<img id="prlx_lyr_1" id="pencils" src="img/pencils.jpg"  alt="pencils" />
+	</div>
+	
+	<div>	
+		<img id="prlx_lyr_2" id="boyWithBook" src="./img/boyWithBook.jpg" alt="boywithBook" />
+	</div>
+    
     <div class="headerSec" id="topPg">    
         <div class="banner">
             <h1>Catholic Education Tuition Assistance to Louisville's Portland and West End Children
@@ -461,26 +468,28 @@
 			
     	</div> <!-- end contBkBtt -->
 	</div> <!-- end Contact pg -->
+	
+	<div id="images"></div>
+	<!--End Flickr images-->
         
       
   </div> <!-- End Content -->        
    
 <footer>   
-<div class="main-footer line">
-		
+<div class="mainFooter line">
+	<div>
 		<ul>
-			<li>3525 Rudd Ave. Louisville, Ky.</li>
+			<li>3525 Rudd Ave. Louisville, Ky.</li><br>
 			<li>502.424.9398</li>
 		</ul>
 	</div>
-	
+	<a href="http://facebook.com/communitycatholiccenter/?fref=ts"><img class="fbLogo" src="./img/fbLogo.png" width="35" height="35" alt="FaceBook Logo" class="social-icon"></a>
 	<div class="main_footerLn2 line">
 		<ul>
-			<li> &copy 2016 Community Catholic Center</li>
+			<li> &copy 2016 Community Catholic Center</li><br>
 			<li>Website designed by Tammy Shaw</li>
 		</ul>
- <!--       <a href="http://facebook.com/???"><img class="fbLogo" src="./img/fbLogo.png" width="35" height="35" alt="FaceBook Logo" class="social-icon"></a>
-    </div> -->
+    </div>
 	</div>
 </footer> 
 
@@ -523,7 +532,7 @@
 	
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>    	
 	             
-<script type="text/javascript" src="./js/app.js"></script>           
+<script type="text/javascript" src="./js/app.js"></script>        <script type="text/javascript" src="./js/main.js"></script>
 
 </body>
 	

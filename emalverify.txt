@@ -1,0 +1,59 @@
+
+Methods
+Here are the methods you can use
+json
+e.g. http://isemail.info/json/test@example.com
+Returns comprehensive information about test@example.com as JSON data.
+jsonp=callback
+e.g. http://isemail.info/jsonp=myFunction/test@example.com
+Returns a valid line of Javascript calling the function myFunction with comprehensive information abouttest@example.com.
+xml
+e.g. http://isemail.info/xml/test@example.com
+Returns comprehensive information about test@example.com as XML data.
+html
+e.g. http://isemail.info/html/test@example.com
+Returns comprehensive information about test@example.com in HTML format (this is the default).
+basic
+basic
+
+e.g. http://isemail.info/basic/test@example.com
+Returns brief, basic information about test@example.com as an HTML fragment.
+valid
+Valid
+e.g. http://isemail.info/valid/test@example.com
+Returns 1 for a valid RFC 5321 Mailbox, 0 otherwise.
+diagnosis
+Diagnosis
+e.g. http://isemail.info/diagnosis/test@example.com
+Returns the specific diagnostic text for this address.
+category
+Category
+e.g. http://isemail.info/category/test@example.com
+Returns the general diagnostic category for this address.
+numeric
+Numeric
+e.g. http://isemail.info/numeric/test@example.com
+Returns the specific diagnosis for this address as an integer.
+constant
+Constant
+e.g. http://isemail.info/constant/test@example.com
+Returns the specific diagnosis for this address as a constant name.
+categoryconstant
+categoryconstant
+e.g. http://isemail.info/categoryconstant/test@example.com
+Returns the general diagnostic category for this address as a constant name.
+smtp
+stmp
+e.g. http://isemail.info/smtp/test@example.com
+Returns the likely SMTP extended return code for this address as text.
+reference
+reference
+e.g. http://isemail.info/reference/test@example.com
+Returns any relevant passages from the RFCs that help to support the diagnosis for this address.
+Behaviour note
+What if you are testing an address that is the same as a method name? Here's what happens:
+http://isemail.info/<method> tests <method> as if it was an address.
+http://isemail.info/<method>/ (note the trailing slash) tests the empty string and returns the results in the format specified by <method>.
+Top of Form
+Bottom of Form
+
