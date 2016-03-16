@@ -1,4 +1,4 @@
-          /* HEADER */
+/***** HEAD *****/
 
 
 * {
@@ -10,7 +10,6 @@
 }
 
 @font-face {
-    font-family: 'Slabo 27px', serif;
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -28,14 +27,11 @@ body {
     font-size: 1.3em;
     text-decoration: underline;
 	width: 100px;
-	margin-top:20px;
-	margin-left: 100px; 
+	margin: 20px 0 0 100px;
 }
 
 
-/************************
-HEADER
-*************************/
+/***** HEADER *****/
 
 .headerSec {
 	display: flex;
@@ -73,9 +69,7 @@ HEADER
 }
 
 
-/****************************
-NAV LINKS
-*****************************/
+/***** NAV LINKS *****/
 
  .navPhone2 {
 	display: flex;
@@ -87,7 +81,7 @@ NAV LINKS
 	font-weight: bold;
 	height: 45px;
 	width: 100%;
-	top: 65px;
+	top: 105px;
 	right: 10px;
 	z-index: 5; 
 }
@@ -99,19 +93,17 @@ NAV LINKS
 
 .navPhone2 li {
     float: left;
+	margin: 2px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    margin: 2px;
 	border: solid 2px #440099;
 	background: powderblue;
 }
 
 
-/************************
-NAV ANCHORS
-*************************/
+/***** NAV LINKS *****/
 
-a {
+.navPhone2 a {
     font-size: 1.3em;
     font-weight: bold;
     padding: 10px;
@@ -128,20 +120,13 @@ a:visited {
     color: #ff1cd5;
 }
 
-/* mouse over link */
 a:hover {
-    color: green;
-}
-
-/* selected link */
-a:active {
-    color: red;
+    color: #ff1cd5;
 }
 
 
-/************************
-CONTENT
-*************************/
+
+/***** CONTENT *****/
 
 .content {   
 	display: flex;
@@ -149,22 +134,20 @@ CONTENT
     width: 100%;
     overflow:auto;
 	position:absolute;
-	padding-bottom: 180px;
+	padding-bottom: 95px;
 }
 
 
-/************************
-BACKGROUND IMAGES
-*************************/
+/***** BACKGROUND IMAGES *****/
 
 #prlx_lyr_0 {
 	background-image: url('bkgdImgInvrt4');
 	background-repeat: repeat-x;
 	width: auto;
-	height: 100%;
+	height: 80%;
 	position: fixed;
 	z-index: -1;
-	opacity: .7;
+	opacity: .2;
 }
 
 #prlx_lyr_1,
@@ -176,9 +159,7 @@ BACKGROUND IMAGES
 }
 
 
-/************************
-MAIN BOX AND CAROUSEL
-*************************/
+/***** MAIN BOX AND CAROUSEL *****/
 
 .mainBxandCarsl {
 	display: flex;
@@ -188,9 +169,7 @@ MAIN BOX AND CAROUSEL
 
 
 
-/************************
-MAIN CCC
-*************************/
+/***** MAIN CCC *****/
 
 .mainBx {
     display: flex;
@@ -201,7 +180,7 @@ MAIN CCC
     top: 103px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
-    margin: 0px 10px 5px 5px;
+    margin: 0 10px 5px 5px;
     background-color: powderblue;
     border: solid 2px darkblue;
     opacity: 0.9;
@@ -253,12 +232,13 @@ p {
 	flex-direction: column;
     width: 100%;
     height: 350px;
-    margin: 8px 0px 0 20px;
+    margin: 8px 0 0 20px;
 }
 
 
 
-/**SCHOLARSHIP LINK ON MAIN BOX**/
+/***** SCHOLARSHIP LINK ON MAIN BOX *****/
+
 .mainBxFtr{
 	display: flex;
 	flex-direction: column;
@@ -283,7 +263,7 @@ p {
 }
 
 
-/**BUTTONS ON MAIN BOX**/
+/***** BUTTONS ON MAIN BOX *****/
 #hrBtt {
 	.center-block();
 	margin-left: 100px;
@@ -319,7 +299,7 @@ p {
 }
 
 
-/**HOURS FOR MODAL PAGE**/
+/***** HOURS FOR MODAL PAGE *****/
 .hours2 {
 	position: absolute;
 	margin-left: auto;
@@ -352,7 +332,6 @@ p {
 
 .day {
     font-size: .7em;
-	margin-top: 60px;
 	margin: 70px 50px 5px 0;
 }
 
@@ -362,9 +341,7 @@ p {
     margin: 0 50px 10px 0;
 }
 
-
-
-/**MODAL WINDOW TO HOURS FROM HOURS BUTTON FROM  MAIN BOX**/
+/***** MODAL WINDOW FROM  MAIN BOX *****/
 
 .modal-backdrop {
     opacity:1.;
@@ -381,37 +358,29 @@ p {
 	color: #440099;
 }
 
-/*When the modal fills the screen it has an even 2.5% on top and bottom*/
-/*Centers the modal*/
-
 .modal-dialog {
   	margin: 2.5vh auto;
 	height: 50vh;
 	width: 60%;
 }
 
-/*Sets the maximum height of the entire modal to 95% of the screen height*/
 .modal-content {
   max-height: 95vh;
   overflow: scroll;
 }
 
-/*Sets the maximum height of the modal body to 90% of the screen height*/
 .modal-body {
   min-height: 90vh;
   max-height: 90vh;
 }
-/*Sets the maximum height of the modal image to 69% of the screen height*/
+
 .modal-body img {
   max-height: 69vh;
 }
 
 
 
-/************************
-SLIDE SHOW
-*************************/
-
+/***** SLIDE SHOW *****/
  
 .carousel{
 	display: flex;
@@ -461,17 +430,8 @@ SLIDE SHOW
 }
 
 
-/****************************
-FLICKR IMAGES
-*****************************/
 
-#images {
-	
-}
-
-/****************************
-ABOUT CCC
-*****************************/
+/***** ABOUT CCC *****/
 
 .about {
     display: flex;
@@ -493,19 +453,12 @@ ABOUT CCC
     padding: 25px;
 }
 
-.aboutLeft {
+.aboutLeft,
+.aboutRight {
 	display: flex;
     flex-direction: column;
     width: 48%;
 	height: auto;
-    margin-left: 20px;
-    font-size: 1.3em;
-}
-
-.aboutRight {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
     margin-left: 20px;
     font-size: 1.3em;
 }
@@ -549,13 +502,12 @@ ABOUT CCC
 }
 
 #sec1 li {
-    padding-bottom: 10px;margin: 0 40px 0 5px;
+    padding-bottom: 10px;
+	margin: 0 40px 0 5px;
 }
 
     
-/*********************************
-ABOUT - SECTION 2
-**********************************/
+/***** ABOUT SECTION 2 *****/
 
 .serviceProj {
     width: 100%;
@@ -597,10 +549,7 @@ ABOUT - SECTION 2
 }
 
 
-/****************************
-EDUCATE, EMPOWER, INSPIRE
-*****************************/
-
+/***** EDUCATE EMPOWER INSPIRE *****/
 
 .containerEEI {
 	display: flex;
@@ -610,6 +559,9 @@ EDUCATE, EMPOWER, INSPIRE
     top: 400px;
     margin: 0 auto;
 }
+
+
+/***** EDUCATE *****/
 
 .educate {
 	display: flex;
@@ -677,9 +629,7 @@ EDUCATE, EMPOWER, INSPIRE
 }
 
 
-/****************************
-EMPOWER
-*****************************/
+/***** EMPOWER *****/
 
 .empower {
 	display: flex;
@@ -718,9 +668,7 @@ EMPOWER
 }
 
 
-/****************************
-INSPIRE
-*****************************/
+/***** INSPIRE *****/
 
 .inspire {
 	display: flex;
@@ -750,9 +698,7 @@ INSPIRE
 }
 
 
-/*******************************
-VOLUNTEER - LEFT
-********************************/
+/***** VOLUNTEER *****/
 
 .vol {
     display: flex;
@@ -767,6 +713,8 @@ VOLUNTEER - LEFT
     filter: alpha(opacity=0.9);
 	overflow: hidden;
 }
+
+/***** VOLUNTEER SECTION 1 *****/
 
 .volLeft {
     display: flex;
@@ -784,7 +732,6 @@ VOLUNTEER - LEFT
     width: 100%;
 }
 
-/* both left and right paragraphs - no bullets*/
 .vol p {
     font-size: 1.1em;
     padding: 10px 45px 5px 30px;
@@ -799,9 +746,7 @@ VOLUNTEER - LEFT
 }
 
 
-/****************************
-VOLUNTEER - RIGHT
-*****************************/
+/***** VOLUNTEER RIGHT *****/
 
 .volRight {
     display: flex;
@@ -870,9 +815,7 @@ VOLUNTEER - RIGHT
 }
 
 
-/****************************
-DONATE
-*****************************/
+/***** DONATE *****/
 
 .donateBx {
 	display: flex;
@@ -955,9 +898,7 @@ donTtl {
 }
 
 
-/****************************
-PARTNERS
-*****************************/
+/***** PARTNERS *****/
 
 .partners {
 	display: flex;
@@ -1031,16 +972,14 @@ PARTNERS
 
 .partBkBtt {
     font-size: 1.4em;
-    width: 40%;
+    width: 20%;
     height: 50px;
-    margin-top: 20px;
+    margin: 20px 0 0 530px;
 	text-decoration: underline;
-    justify-content: flex-end;
+	text-align: right:
 }
 
-/****************************
-DIRECTIONS
-*****************************/
+/***** DIRECTIONS *****/
 
 .directions {
 	display: flex;
@@ -1124,17 +1063,14 @@ DIRECTIONS
     font-size: 1.4em;
     width: 30%;
     height: 50px;
-	margin-left: 550px;
-    margin-top: 20px;
+	margin: 20 0 0 550px;
 	text-decoration: underline;
     justify-content: flex-end;
 }
 
 
 
-/****************************
-CONTACT
-*****************************/
+/***** CONTACT *****/
 
 .contact {
 	display: flex;
@@ -1184,7 +1120,7 @@ CONTACT
 
 .contBkBtt {
 	display: flex;
-	font-size: 1em;
+	font-size: 1.6em;
     width: 100%;
     height: 50px;
 	margin: 20px 0 0 15px;
@@ -1193,32 +1129,24 @@ CONTACT
 }
 
 
-/****************************
-FLICKR IMAGES
-*****************************/
+/***** FLIKR IMAGES *****/
 
 #images {
-	position: absolute;
 	width: 100%;
 	height: 110px;
-	margin-top: 50px;
-	padding-bottom: 120px;
-	left: 50%;
-	margin-left: -599px;
-	overflow: contain;
+	margin: 50px 0 200px;
+	padding-left: 5%;
 }
 
 
 
-/****************************
-FOOTER
-*****************************/
-
+/***** FOOTER *****/
 
 .fbLogo {
-	width: 15%;
+	width: 55px;
 	height: auto;
-    border-radius: 10px;
+    border-radius: 0;
+	padding-left: 20px;
     z-index: 1010;
 }
 
@@ -1226,23 +1154,14 @@ FOOTER
 	display: inline;
 }
 
-.mainFooterLn2{
-	display: flex;
-	flex-direction: column;
-	font-size: 80%;
-}
-
 footer {
    display: flex;
 	flex-direction: column;
-	line-height: 1;
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%; 
-	height: 120px;
-	padding: 10px 0;
-	flex-wrap: wrap;
+	height: 95px;
 	justify-content: center;
 	font-family: 'Lato', sans-serif;
     color: #fff;
@@ -1253,23 +1172,19 @@ footer {
 	background: #6b6b6b;
 }
 
-
-.main-footer ul,
-.main_footerLn2 ul {
+.line ul {
 	list-style-type: none;
-	display: flex;
-    flex-direction: row;
-	width: 100%;
-	justify-content: space-around;
 }
 
 .line {
-	display: block;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: center;
+	font-size: 1em;
 }
-.line>ul>li{
-	display: inline-block;
-	padding: 1rem;
-}
+
+
 
 /**************************
 MEDIA QUERIES - PHONES
@@ -1328,7 +1243,7 @@ MEDIA QUERIES - PHONES
         font-size: 2.8em;
         height: auto;
         width: 42%;
-		padding-top: 30px;
+		padding-top: 0;
     }    
 	
 	.navPhone2 ul {
@@ -1506,11 +1421,7 @@ MEDIA QUERIES - PHONES
 		padding: 8px 40px 8px 0;
 	}
 
-/*	.educate a {
-		width: 100%;
-		height: auto;
-	}
-*/	
+	
 	.educate a {
 		font-size: .9em;
 		width: 25%;
@@ -1722,49 +1633,12 @@ MEDIA QUERIES - PHONES
 		text-decoration: underline;
 		margin: 0;
 	}
-	footer{
-		font-size: 1.2 rem;
-		
+	
+	.line {
+		font-size: 1rem;
 	}
 	
-	.main-footer {
-		height: 110px;
-		padding: 0 0 5px;
-	}
 	
-	.fbLogo {
-		display:none;
-	}
-
-	.fbLogo a {
-		display: inline;
-	}
-
-	.main_footerLn2{
-		display: flex;
-		flex-direction: column;
-		padding: 0 0 20px;
-	}
-
-	.line{
-		display: block;
-		width: 45%;
-		line-height: 1.4rem;
-	}
-
-	.line>ul>li{
-		display: inline-block;
-		list-style: none;
-	}
-
-	.main-footer ul,
-	.main_footerLn2 ul {
-		display: inline-block;
-		flex-direction: row;
-		list-style: none;
-		width: 100%;
-	}
-
 }
     
 /***** End  PHONES MQ *****/
@@ -1797,9 +1671,8 @@ MEDIA QUERIES - MEDIUM
 	.mainBx {
 		width: 70%;
 		height: 1160px;
-		margin-left: 0;
+		margin: 70px 0 0;
 		padding: 0 20px 5px 15px;
-		margin-top: 70px;
 	}
 
 	span h4 {
@@ -1989,24 +1862,16 @@ MEDIA QUERIES - MEDIUM
 	}
 
 	.dirSec1 {
-		display: flex;
-		flex-direction: column;
-		width: 48%;
-		height: auto;
+		width: 100%;
 	}
 
 	.dirSec2map {
-		display: flex;
-		flex-direction: column;
-		width: 48%;
-		height: 48%;
-		margin-top: 55px;
+		display: none;
 	}
 
 	
 	.dirBkBtt {
-		margin-left: 200px;
-		margin-top: 20px;
+		margin: 20px 0 0 200px;
 	}
 
 	
@@ -2015,17 +1880,11 @@ MEDIA QUERIES - MEDIUM
 	}
 	
 	.conTbl {
-		width: 100%;
-		margin: 50px 0;
 		width: 85%;
 	}	
 
 	.fbLogo {
-		width: 20%;
-		height: auto;
-		left: 50%;
-		border-radius: 4px;
-		z-index: 1010;
+		width: 40%;
 	}
 
 }
@@ -2045,18 +1904,7 @@ MEDIA QUERIES - LARGE
 	.mainBx {
 		display: flex;
 		flex-direction: column; 
-		width: 48%;
 		height: 990px;
-		left: 30px;
-		top: 103px;
-		font-family: 'Roboto', sans-serif;
-		font-size: 1.1em;
-		margin: 0px 10px 5px 5px;
-		background-color: powderblue;
-		border: solid 2px darkblue;
-		opacity: 0.9;
-		filter: alpha(opacity=0.7); 
-		overflow: hidden;
 	}
 
 	.mainCol1 {
@@ -2075,18 +1923,13 @@ MEDIA QUERIES - LARGE
 		margin-bottom: 30px;
 	}
 
-	#scholLinks a {
-		font-size: 1.2em;
-	}
-
+	
 	.about {
-		height: auto;
 		margin: 400px 0 0;
 	}
 
 	
 	.containerEEI {
-		top: 400px;
 		width: 100%;
 	}
 	
@@ -2105,10 +1948,7 @@ MEDIA QUERIES - LARGE
 	
 	
 	.dirBkBtt {
-		width: 100%;
-		height: 50px;
-		margin-left: 50px;
-		margin-top: 20px;
+		margin: 20px 0 0 50px;
 	}
 
 	.contact {
@@ -2122,10 +1962,9 @@ MEDIA QUERIES - LARGE
 	}
 	
 	.fbLogo {
-		width: 20%;
+		width: 40%;
 	}
-
-
+	
 }
 		
 /***** END LARGE MQ *****/
