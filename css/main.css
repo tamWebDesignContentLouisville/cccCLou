@@ -140,11 +140,10 @@ a:hover {
 
 /***** BACKGROUND IMAGES *****/
 
+#prlx_lyr_4,
 #prlx_lyr_0 {
-	background-image: url('bkgdImgInvrt4');
-	background-repeat: repeat-x;
-	width: auto;
-	height: 80%;
+	width: 50%;
+	height: auto;
 	position: fixed;
 	z-index: -1;
 	opacity: .5;
