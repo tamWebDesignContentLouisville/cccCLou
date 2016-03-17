@@ -34,8 +34,6 @@
 	   description: "This is image8"
 	  },{image: "./img/img9.jpg",
 	   description: "This is image9"
-	  },{image: "./img/img10.jpg",
-	   description: "This is image10"
 	  },{image: "./img/img11.jpg",
 	   description: "This is image11"	
 	  },{image: "./img/img12.jpg",
