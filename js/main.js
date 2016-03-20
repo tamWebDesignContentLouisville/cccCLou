@@ -11,6 +11,16 @@ function parallax(){
 }
 window.addEventListener("scroll", parallax, false);
 
+
+
+
+$('#volSub').on('click', function () {
+    $('.volForm').find('input:text').val(''); 
+    $('input:checkbox').removeAttr('checked');
+	$("form").trigger("reset");	
+});
+
+
 $( document ).ready(function() {
 	$("#image").empty();		
 	$.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",

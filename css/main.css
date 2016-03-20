@@ -77,11 +77,11 @@ body {
 	justify-content: flex-end;
 	position: absolute;
 	font-family: 'Lato', sans-serif;
-	font-size: .8em;
+	font-size: .9em;
 	font-weight: bold;
 	height: 45px;
 	width: 100%;
-	top: 105px;
+	top: 125px;
 	right: 10px;
 	z-index: 5; 
 }
@@ -134,7 +134,6 @@ a:hover {
     width: 100%;
     overflow:auto;
 	position:absolute;
-	padding-bottom: 95px;
 }
 
 
@@ -163,7 +162,7 @@ a:hover {
 .mainBxandCarsl {
 	display: flex;
 	flex-direction: row;
-	height: 800px;
+	height: auto;
 }
 
 
@@ -174,7 +173,7 @@ a:hover {
     display: flex;
   	flex-direction: column; 
     width: 48%;
-    height: 790px;
+    height: auto;
     left: 30px;
     top: 103px;
     font-family: 'Roboto', sans-serif;
@@ -195,7 +194,7 @@ a:hover {
     font-style: bold;
     color: #440099;
     margin: 0 10px;
-    padding: 15px;
+    padding: 25px;
 }
 
 span h4 {
@@ -209,7 +208,7 @@ span h4 {
     flex-direction: row;
     flex-wrap: wrap;
     color: #000;
-	height: 370px;
+	height: auto;
 }
 
 .mainCol1 {
@@ -217,7 +216,7 @@ span h4 {
 	flex-direction: column;
 	flex-wrap: wrap;
     width: 46%;
-    height: 400px;
+    height: auto;
     margin: 0 20px 0 10px;
     padding: 0 15px;
 }
@@ -230,7 +229,7 @@ p {
 	display: flex;
 	flex-direction: column;
     width: 100%;
-    height: 350px;
+    height: auto;
     margin: 8px 0 0 20px;
 }
 
@@ -243,7 +242,7 @@ p {
 	flex-direction: column;
 	width: 60%;
 	margin-left: 20%;
-	height: 350px;
+	height: auto;
 	justify-items: center;
 }
 
@@ -253,7 +252,6 @@ p {
 	width: 85%;
     color: powderblue;
 	margin-bottom: 30px;
-    border-radius: 30;
 }
 
 #scholLinks a {
@@ -265,7 +263,7 @@ p {
 /***** BUTTONS ON MAIN BOX *****/
 #hrBtt {
 	.center-block();
-	margin-left: 100px;
+	margin-left: 80px;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4em;
 	font-weight: bold;
@@ -422,7 +420,6 @@ p {
 }
 
 .largeImg{
-
     width: 90%;
     height: auto;
 	margin-left: 10%;
@@ -583,7 +580,7 @@ p {
 .empower h4, 
 .inspire h4 {
     font-size: 2em;
-    color: #8b7500;
+    color: palevioletred;
     text-align: center;
     padding: 10px 0 0;
     width: 100%;
@@ -747,6 +744,30 @@ p {
 
 /***** VOLUNTEER RIGHT *****/
 
+form div + div {
+	margin-bottom: 1em;
+}
+
+label {
+	padding-bottom: 8px;
+}
+
+input {
+	padding-bottom: 3px;
+	margin-left: 10px;
+}
+
+.volQ {
+	text-align: left;
+	width: 70px;
+	left: 0;
+}
+
+#volSub {
+	border-radius: 30;
+}
+
+
 .volRight {
     display: flex;
     flex-direction: column;
@@ -759,20 +780,6 @@ p {
     margin-left: 40px;
     justify-content: center;
     padding: 25px;
-}
-
-.imgVol {
-    width: 95%;
-    height: 100%;
-	margin-top: 15px;
-}
-
-#volCap {
-    font-size: .9em;
-    font-style: oblique;
-    width: 92%;
-	text-align: center;
-	padding-bottom: 30px;
 }
 
 #volLinks {
@@ -798,6 +805,21 @@ p {
 #volLinks a:hover {
     color: #ff1cd5;
 }
+
+.imgVol {
+    width: 95%;
+    height: 100%;
+	margin-top: 15px;
+}
+
+#volCap {
+    font-size: .9em;
+    font-style: oblique;
+    width: 92%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
 
 .volBkBtt {
 	display: flex;
@@ -919,7 +941,7 @@ donTtl {
     color: #000;
     text-align: center;
     padding: 30px 15px 40px;
-    width: 100%;
+    width: 95%;
 	justify-content: center;
 }
 	
@@ -936,7 +958,8 @@ donTtl {
 	display: flex;
 	flex-direction: row;
     font-size: 1.4em;
-	margin: 5px 50px 0 30px;
+	margin: 5px 70px 0 30px;
+padding-right: 20px;
     width: 100%;
 }
 
@@ -972,7 +995,7 @@ donTtl {
     font-size: 1.4em;
     width: 20%;
     height: 50px;
-    margin: 20px 0 0 530px;
+    margin: 0 0 5px 5px;
 	text-decoration: underline;
 	text-align: right:
 }
@@ -1190,23 +1213,22 @@ MEDIA QUERIES - PHONES
 
 @media (max-width: 767px){
     
-	#prlx_lyr_0 {
-		display: none;
-	}
-
+	#prlx_lyr_4,
+	#prlx_lyr_0,
 	#prlx_lyr_1,
 	#prlx_lyr_2 {
 		display: none;
 	}
 	
+	
 	.banner {
-		margin-bottom: 100px;
+		margin-bottom: 80px;
 	}
 	
 	.banner h1 {
-		font-size: 1.2em;
+		font-size: 1.4em;
         text-align: center;
-        padding-left: 10px;
+        padding-left: 20px;
 	}
     
     .cccLogo {
@@ -1220,7 +1242,11 @@ MEDIA QUERIES - PHONES
 		background-size: contain;
 	}
 	
-    .gallery {
+	.carousel {
+		display: none;
+	}
+	
+	.gallery {
         display: none;
     }
 	
@@ -1251,6 +1277,7 @@ MEDIA QUERIES - PHONES
     .navPhone2 li {
         font-size: .4em;
         text-align: center;
+		padding-bottom: 15px;
 		border: none;
 		float: none;
 		background: none;
@@ -1261,16 +1288,20 @@ MEDIA QUERIES - PHONES
 		display: none;
 	}
 	
+	
 	.mainBxandCarsl {
 		flex-direction: column;
-		height: auto;
 		margin-top: 200px;
+	}
+	
+	carousel {
+		none;
 	}
 
     .mainBx {
 		width: 100%;
 		height: auto;
-		margin-left: 0;
+		margin: 100px 0 0;
 		padding: 0 20px 5px 15px;
 	}
 
@@ -1295,9 +1326,10 @@ MEDIA QUERIES - PHONES
 	}
 
 	.mainBxFtr{
+		.center()
 		width: 100%;
 		margin-left: 0;
-		height: 400px;
+		height: 300px;
 	}
 
 	#scholLinks {
@@ -1306,25 +1338,24 @@ MEDIA QUERIES - PHONES
 	}
 
 	#hrBtt {
-	.center-block();
 		margin-left: 100px;
 	}
 
 	#dnBtt {
-		.center-block();
 		margin: 40px 0 0 100px;
 	}
 	
 	.mainBkBtt {
 		width: 90%;
-		margin-top: 30px;
+		margin-top: 0;
 	}
-	
+		
 	
 	.about {
 		flex-direction: column;
+    	margin: 100px 0 0;
 		height: auto;
-		margin: 0;
+		top: 0;
 	}
 	
 	.aboutTtl_L {
@@ -1579,7 +1610,8 @@ MEDIA QUERIES - PHONES
 
 	
 	.directions {
-		margin: 100px 0;
+		margin: 100px 0 0;
+		height: auto;
 	}
 
 	.directions p {
@@ -1636,10 +1668,13 @@ MEDIA QUERIES - PHONES
 		font-size: 1rem;
 	}
 	
+	#images {
+		display: none;
+	}
 	
 }
     
-/***** End  PHONES MQ *****/
+/***** END SMALL PHONES MQ *****/
 
 
 
@@ -1647,17 +1682,9 @@ MEDIA QUERIES - PHONES
 MEDIA QUERIES - MEDIUM
 ***************************/
 
-@media (min-width: 767px) and (max-width: 1050px){
+@media (min-width: 767px) and (max-width: 979px){
 	
-	#prlx_lyr_0 {
-		display: none;
-	}
-
-	#prlx_lyr_1,
-	#prlx_lyr_2 {
-		display: none;
-	}
-
+	
 	.cccLogo {
 		position: absolute; 
 		width: 14%;
@@ -1665,10 +1692,9 @@ MEDIA QUERIES - MEDIUM
 		left: 15px;
 	}
 	
-	
 	.mainBx {
 		width: 70%;
-		height: 1160px;
+		height: auto;
 		margin: 70px 0 0;
 		padding: 0 20px 5px 15px;
 	}
@@ -1696,7 +1722,7 @@ MEDIA QUERIES - MEDIUM
 	.mainBxFtr {
 		width: 100%;
 		margin-left: 0;
-		height: 400px;
+		height: auto;
 	}
 
 	#scholLinks {
@@ -1720,13 +1746,9 @@ MEDIA QUERIES - MEDIUM
 	}
 
 	
-	.gallery {
-		margin-top: 70px;
-	}
-
-	
 	.about {
 		height: auto;
+		margin: 350px 0 0;
 	}
 	
 	
@@ -1789,7 +1811,7 @@ MEDIA QUERIES - MEDIUM
 
 	.vol {
 		height: auto;
-		margin: 50px 0 0 0;
+		margin: 100px 0 0 0;
 	}
 	
 	.vol p {
@@ -1823,8 +1845,8 @@ MEDIA QUERIES - MEDIUM
 
 	#paypalGraphic {
 		margin: 0 auto;
-		width: 60%;
-		height: 60%;
+		width: 70%;
+		height: 70%;
 	}
 
 	.donBkBtt {
@@ -1840,6 +1862,7 @@ MEDIA QUERIES - MEDIUM
 	
 	.partners {
 		margin: 120px 0 0;
+		height: auto;
 	}
 
 	.partners h4 {
@@ -1854,6 +1877,13 @@ MEDIA QUERIES - MEDIUM
 		width: 43%;
 	}
 
+	.partBkBtt {
+		font-size: 1.4em;
+		width: 20%;
+		height: 50px;
+		padding: 20px 0 0 80px;
+		text-align: right:
+	}
 	
 	.directions {
 		margin: 100px 0 0;
@@ -1884,6 +1914,11 @@ MEDIA QUERIES - MEDIUM
 	.fbLogo {
 		width: 40%;
 	}
+	
+	
+	#images {
+		display: none;
+	}
 
 }
 
@@ -1896,13 +1931,12 @@ MEDIA QUERIES - MEDIUM
 MEDIA QUERIES - LARGE
 ***************************/
 
-@media (min-width: 1051px) and (max-width: 1280px){
+@media (min-width: 980px) and (max-width: 1199px){
 
-	
 	.mainBx {
 		display: flex;
 		flex-direction: column; 
-		height: 990px;
+		height: auto;
 	}
 
 	.mainCol1 {
@@ -1924,6 +1958,7 @@ MEDIA QUERIES - LARGE
 	
 	.about {
 		margin: 400px 0 0;
+		height: auto;
 	}
 
 	
@@ -1963,6 +1998,51 @@ MEDIA QUERIES - LARGE
 		width: 40%;
 	}
 	
+	
+	.images {
+		display: none;
+	}
+	
 }
 		
 /***** END LARGE MQ *****/
+
+
+
+/**************************
+MEDIA QUERIES - X-LARGE
+***************************/
+
+@media (max-width: 1300px) {
+	
+	.mainBx {
+		display: flex;
+		flex-direction: column; 
+		height: auto;
+	}
+
+	.mainCol1 {
+		width: 98%;
+		height: auto;
+	}
+
+	.mainCol2 {
+		width: 98%;
+		height: auto;
+		margin-left: 0;
+	}
+
+	#scholLinks {
+		width: 120%;
+		margin-bottom: 30px;
+	}
+	
+	
+	#images {
+		display: none;
+	}
+	
+	
+}
+
+/***** END X-LARGE MQ *****/

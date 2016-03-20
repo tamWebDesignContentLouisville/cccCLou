@@ -6,7 +6,8 @@
 	<title>Community Catholic Center</title>
 	<meta http-equiv="content-type" 
 		content="text/html;charset=utf-8" />
-	 <meta name="viewport" content="width=device-width, initial-scale=1" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="shortcut icon" href="./img/favicon.ico">	
     <link rel="stylesheet" type="text/css" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic|Roboto:400,400italic,500,500italic,700,700italic,900,900italic' rel="stylesheet" type='text/css'>
 
@@ -49,7 +50,6 @@
 
     <div class="navPhone2">
          <ul>
-            <li><a href="#indexPg">Home</a></li>
             <li ><a href="#aboutPg">About</a></li>
             <li ><a href="#volunteerPg">Volunteer</a></li>
             <li ><a href="#donatePg">Donate</a></li>
@@ -278,37 +278,47 @@
             <div class="volCCCsec2">
 				
 				<div>
-					<form name="volForm">
-					<label>Volunteer Interests:</label><br>
-						<input type="checkbox" id="tutor" value="interest_ttr" name="user-int">
-					<label class="light" for="tutor">Tutor</label><br>
+					<form name="volForm" action="mailto:tammy@protempus.com" method="post" enctype="text/plain">
+					<h4>Volunteer Interests:</h4>
+							
+					<label>
+					</label><br>
+					<input ng-model="volTyps" type="checkbox" id="tutor" value="interest_tutor" name="user-int">
+						
+					<label class="volQ" for="tutor">Tutor</label><br>
 					
 					<label>
-						<input type="checkbox" id="mentor" value="interest_mntr" name="user-int">
-					<label class="light" for="mentor">Mentor</label><br>
+					<input type="checkbox" id="mentor" value="interest_mentor" name="user-int">
+					<label class="volQ" for="mentor">Mentor</label><br>
 					
 					<label class="name" for="name">Name: </label>
 					<input type="text" id="name" name="user_name">
 					<br>
 					
-					<label class="email" for="email">E-mail: </label><input type="text" id="mail" name=
+					<label class="email" for="email">E-mail: </label>
+					<input type="text" id="mail" name=
 					"user_email">
 					<br>
 					
-					<label class="phone" for="phone">Phone: </label><input type="text" id="phone" name=
+					<label class="phone" for="phone">Phone: </label>
+					<input type="text" id="phone" name=
 					"user_phone">
 					<br>
 					
-					<button type="submit">Submit</button>
+					<button type="submit" id="volSub">Submit</button>
 						
 					<form method="post" action="mailto:tammy@protempus.com" >
-					<input type="submit" value="Send Email" /> 
+		
 				<!--		
 					<form method="post" action="mailto:heidi@communitycatholiccenter.org" >
 					<input type="submit" value="Send Email" /> 
-				-->		
-					
+				-->						
 					</form>
+						
+				<div id="volLinks"> 
+				<a  href="volunteer.html" target="_blank">Volunteer Application</a>
+				</div>              
+				           
 				</div>
 				
                 <div>
@@ -318,10 +328,6 @@
                    <caption class="volCap">Evan Burks, NDA student, works with SHA tutoring volunteer Courtney Ford.</caption>
                 </div>	
 				 
-			  <div id="volLinks"> 
-				<a  href="" target="_blank">Volunteer Application</a>
-				</div>              
-				           
                 <a class="volBkBtt" href="#topPg">to top</a>
             </div> <!-- end volCCCsec2-->
        </div> <!-- end volRight --> 
@@ -407,16 +413,16 @@
 			<li>Chuck Willenbrink</li>
 			<li>Renee Yates</li>
 		</ul>
-		  
-       
+	<div>	  
+       <a class="partBkBtt" href="#topPg">to top</a>
+		</div>
 	</div> <!-- end partSec2 --> 
    </div> <!-- end partSecs -->
- <a class="partBkBtt" href="#topPg">to top</a>	  
+ 	  
 </div> <!-- end Partners pg -->
         
 	
-  <div class="directionsPg" id="directionsPg">
-	<div class="directions">
+  <div class="directions" id="directionsPg">
 	  <div class="dirTtl">
 		<span>
 			 <h4>Directions</h4></span>
@@ -455,7 +461,6 @@
 			
 		</div> <!-- dirSec2map -->		
 	 </div> <!-- end dirSecs -->
-	</div> <!-- end Directions flex -->
 </div> <!-- end DirectionsPg -->
 	  
 	  
