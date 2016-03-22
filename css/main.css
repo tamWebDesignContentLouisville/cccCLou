@@ -199,7 +199,7 @@ a:hover {
 
 span h4 {
 	font-size: 2.4em;
-	font-weight: bold;
+	font-wehight: bold;
 	text-align: center;
 }
 
@@ -216,7 +216,7 @@ span h4 {
 	flex-direction: column;
 	flex-wrap: wrap;
     width: 46%;
-    height: auto;
+    height: 390px;
     margin: 0 20px 0 10px;
     padding: 0 15px;
 }
@@ -225,12 +225,13 @@ p {
 	font-size: 1.1em;
 }
 
+
 .mainCol2 {
 	display: flex;
 	flex-direction: column;
     width: 100%;
-    height: auto;
-    margin: 8px 0 0 20px;
+    height: 350px;
+    margin: 5px 0 0 20px;
 }
 
 
@@ -2027,6 +2028,7 @@ MEDIA QUERIES - X-LARGE
 	}
 
 	.mainCol2 {
+		flex-direction: column;
 		width: 98%;
 		height: auto;
 		margin-left: 0;
