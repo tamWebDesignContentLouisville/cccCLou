@@ -53,7 +53,7 @@ body {
 }
 
 .banner h1 {	
-	font-size: 1.4em;
+	font-size: 1.3em;
 	font-weight: bold;
     text-shadow: 1px 1px 4px #000;
     padding-right: 15px; 
@@ -63,9 +63,15 @@ body {
 
 .cccLogo {
     position: absolute;
-    width: 14%;
-    top: 20px;
-	left: 35px;
+    width: 18%;
+	margin-top: 0;
+	left: 45px;
+}
+
+#logo {
+	height: 104px;
+	width: 200px;
+	background-size: contain;
 }
 
 
@@ -77,12 +83,12 @@ body {
 	justify-content: flex-end;
 	position: absolute;
 	font-family: 'Lato', sans-serif;
-	font-size: .9em;
+	font-size: 1em;
 	font-weight: bold;
 	height: 45px;
 	width: 100%;
-	top: 125px;
-	right: 10px;
+	top: 105px;
+	right: 25px;
 	z-index: 5; 
 }
          
@@ -194,12 +200,12 @@ a:hover {
     font-style: bold;
     color: #440099;
     margin: 0 10px;
-    padding: 25px;
+    padding: 15px;
 }
 
 span h4 {
 	font-size: 2.4em;
-	font-wehight: bold;
+	font-weight: bold;
 	text-align: center;
 }
 
@@ -216,7 +222,7 @@ span h4 {
 	flex-direction: column;
 	flex-wrap: wrap;
     width: 46%;
-    height: 390px;
+    height: auto;
     margin: 0 20px 0 10px;
     padding: 0 15px;
 }
@@ -225,15 +231,13 @@ p {
 	font-size: 1.1em;
 }
 
-
 .mainCol2 {
 	display: flex;
 	flex-direction: column;
     width: 100%;
-    height: 350px;
-    margin: 5px 0 0 20px;
+    height: autp;
+    margin: 8px 0px 0 20px;
 }
-
 
 
 /***** SCHOLARSHIP LINK ON MAIN BOX *****/
@@ -385,7 +389,6 @@ p {
 	flex-direction: column;
 	width: 50%;
 	height: 650px;
-	
 } 
 
 .gallery {
@@ -1227,7 +1230,7 @@ MEDIA QUERIES - PHONES
 	}
 	
 	.banner h1 {
-		font-size: 1.4em;
+		font-size: 1.2em;
         text-align: center;
         padding-left: 20px;
 	}
@@ -1312,12 +1315,12 @@ MEDIA QUERIES - PHONES
 
 	.mainCols {
 		flex-direction: column;
+		width: 100%;
 		height: auto;
 	}
 
 	.mainCol1 {
 		flex-direction: column;
-		width: 100%;
 		height: auto;
 	}
 
@@ -1684,7 +1687,7 @@ MEDIA QUERIES - MEDIUM
 ***************************/
 
 @media (min-width: 767px) and (max-width: 979px){
-	
+	}
 	
 	.cccLogo {
 		position: absolute; 
