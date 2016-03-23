@@ -53,7 +53,7 @@ body {
 }
 
 .banner h1 {	
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-weight: bold;
     text-shadow: 1px 1px 4px #000;
     padding-right: 15px; 
@@ -63,15 +63,9 @@ body {
 
 .cccLogo {
     position: absolute;
-    width: 18%;
-	margin-top: 0;
-	left: 45px;
-}
-
-#logo {
-	height: 104px;
-	width: 200px;
-	background-size: contain;
+    width: 14%;
+    top: 20px;
+	left: 35px;
 }
 
 
@@ -88,7 +82,7 @@ body {
 	height: 45px;
 	width: 100%;
 	top: 105px;
-	right: 25px;
+	right: 10px;
 	z-index: 5; 
 }
          
@@ -140,6 +134,7 @@ a:hover {
     width: 100%;
     overflow:auto;
 	position:absolute;
+	padding-bottom: 95px;
 }
 
 
@@ -200,7 +195,7 @@ a:hover {
     font-style: bold;
     color: #440099;
     margin: 0 10px;
-    padding: 15px;
+    padding: 25px;
 }
 
 span h4 {
@@ -234,10 +229,11 @@ p {
 .mainCol2 {
 	display: flex;
 	flex-direction: column;
-    width: 100%;
-    height: autp;
-    margin: 8px 0px 0 20px;
+    width: 46%;
+    height: auto;
+    margin: 8px 0 0 20px;
 }
+
 
 
 /***** SCHOLARSHIP LINK ON MAIN BOX *****/
@@ -389,6 +385,7 @@ p {
 	flex-direction: column;
 	width: 50%;
 	height: 650px;
+	
 } 
 
 .gallery {
@@ -1230,7 +1227,7 @@ MEDIA QUERIES - PHONES
 	}
 	
 	.banner h1 {
-		font-size: 1.2em;
+		font-size: 1.4em;
         text-align: center;
         padding-left: 20px;
 	}
@@ -1315,18 +1312,19 @@ MEDIA QUERIES - PHONES
 
 	.mainCols {
 		flex-direction: column;
-		width: 100%;
 		height: auto;
 	}
 
 	.mainCol1 {
 		flex-direction: column;
+		width: 100%;
 		height: auto;
 	}
 
 	.mainCol2 {
 		height: auto;
-		margin: 0 30px 30px 0;
+		margin: 0 30px 30px;
+		padding-left: 25px;
 	}
 
 	.mainBxFtr{
@@ -1687,7 +1685,7 @@ MEDIA QUERIES - MEDIUM
 ***************************/
 
 @media (min-width: 767px) and (max-width: 979px){
-	}
+	
 	
 	.cccLogo {
 		position: absolute; 
@@ -1721,6 +1719,7 @@ MEDIA QUERIES - MEDIUM
 	.mainCol2 {
 		height: auto;
 		margin: 0 30px 60px 0;
+		padding-left: 25px;
 	}
 
 	.mainBxFtr {
@@ -1951,7 +1950,7 @@ MEDIA QUERIES - LARGE
 	.mainCol2 {
 		width: 98%;
 		height: auto;
-		margin-left: 0;
+		padding-left: 25px;
 	}
 
 	#scholLinks {
@@ -2031,16 +2030,18 @@ MEDIA QUERIES - X-LARGE
 	}
 
 	.mainCol2 {
-		flex-direction: column;
 		width: 98%;
 		height: auto;
 		margin-left: 0;
+		padding-left: 25px;
 	}
 
 	#scholLinks {
 		width: 120%;
 		margin-bottom: 30px;
 	}
+	
+	
 	
 	
 	#images {
