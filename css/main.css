@@ -132,9 +132,8 @@ a:hover {
 	display: flex;
     flex-direction: column;
     width: 100%;
-    overflow:auto;
-	position:absolute;
-	padding-bottom: 95px;
+    overflow: auto;
+	position: absolute;
 }
 
 
@@ -743,19 +742,49 @@ p {
 }
 
 
+
 /***** VOLUNTEER RIGHT *****/
 
+
+.volFrmCls{
+	width: 60%;
+	height: auto;
+}
+
 form div + div {
-	margin-bottom: 1em;
+	margin-bottom: 1em; 
+}
+
+.frmLn {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+}
+
+#mentor,
+#tutor {
+	background: lightyellow;
+	margin-right: 5px;
+	width: 5%;
+	
 }
 
 label {
-	padding-bottom: 8px;
+	margin-right: 10px;
 }
 
 input {
+	justify-content: flex-end;
 	padding-bottom: 3px;
-	margin-left: 10px;
+	height: 30px;
+	float: right;
+	background: lavender;
+}
+
+.name,
+.phone2,
+.email {
+	margin-left: 0px;
 }
 
 .volQ {
@@ -766,6 +795,8 @@ input {
 
 #volSub {
 	border-radius: 30;
+	background: yellow;
+	font-weight: bold;
 }
 
 
@@ -1137,7 +1168,48 @@ padding-right: 20px;
 
 .phone img{
 	margin-left: 10px;
-	
+}
+
+
+form div + div {
+	margin-bottom: 10px; 
+}
+
+.conFm {
+	font-size: 1.3em;
+}
+
+.conFm span {
+	text-align: center;
+	font-weight: bold;
+}
+
+span {
+	bottom: 50px;
+}
+
+input {
+	margin: 0 0 20px 0;
+	float: right;
+	background: lavender;
+}
+
+.name,
+.phone2,
+.email {
+	margin-left: 20px;
+}
+
+.conQ {
+	text-align: left;
+	width: 270px;
+	left: 0;
+}
+
+#conSub {
+	border-radius: 30;
+	background: yellow;
+	font-weight: bold;
 }
 
 .contBkBtt {
@@ -1503,21 +1575,64 @@ MEDIA QUERIES - PHONES
 		margin: 0 0 0 5px;
 	}
 	
-	#volLinks {
-		align-items: flex-start;
-		width:  10%;
-		text-align: center;
-		margin: 0 0 0 80px;
+	#volLinks {display: none;
 	}
 	
-	#volLinks a:hover {
-		color: #ff1cd5;
-	}
 	
-	#volLinks a:focus {
-		display: green;
+	.volFrmCls{
+		width: 60%;
+		height: auto;
 	}
 
+	form div + div {
+		margin-bottom: 1em; 
+	}
+
+	.frmLn {
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+	}
+
+	#mentor,
+	#tutor {
+		background: lightyellow;
+		margin-right: 5px;
+		width: 5%;
+
+	}
+
+	label {
+		margin-right: 10px;
+	}
+
+	input {
+		justify-content: flex-end;
+		padding-bottom: 3px;
+		height: 30px;
+		float: right;
+		background: lavender;
+	}
+
+	.name,
+	.phone2,
+	.email {
+		margin-left: 0px;
+	}
+
+	.volQ {
+		text-align: left;
+		width: 70px;
+		left: 0;
+	}
+
+	#volSub {
+		border-radius: 30;
+		background: yellow;
+		font-weight: bold;
+	}
+	
+	
 	.volRight {
 		width: 100%;
 		height: auto;
@@ -1532,7 +1647,7 @@ MEDIA QUERIES - PHONES
 	.volBkBtt {
 		font-size: 1.1em;
 	}
-
+	
 	
 	.donateBx {
 		flex-direction: column;
@@ -1632,9 +1747,15 @@ MEDIA QUERIES - PHONES
 
 
 	.contact {
-		margin: 100px 0 0;
+		margin: 100px 0 0 10px;
+		height: auto;
+		padding: 20px;
 	}
-
+	
+	.contact span {
+		margin: 0 50px;
+	}
+	
 	.conTtl {
 		font-size: 1.1em;
 		padding: 0;
@@ -1657,6 +1778,33 @@ MEDIA QUERIES - PHONES
 		text-decoration: underline;
 		height: 50px;
 	}
+	
+	
+	
+	input {
+		margin: 0 0 20px 0;
+		float: right;
+		background: lavender;
+	}
+
+	.name,
+	.phone2,
+	.email {
+		margin-left: 20px;
+	}
+
+	.conQ {
+		text-align: left;
+		width: 270px;
+		left: 0;
+	}
+
+	#conSub {
+		border-radius: 30;
+		background: yellow;
+		font-weight: bold;
+	}
+
 
 	.contBkBtt {
 		font-size: 1em;
@@ -1840,6 +1988,61 @@ MEDIA QUERIES - MEDIUM
 		text-decoration: underline;
 	}
 
+
+	.volFrmCls{
+		width: 0%;
+		height: auto;
+	}
+
+	form div + div {
+		margin-bottom: 1em; 
+	}
+
+	.frmLn {
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+	}
+
+	#mentor,
+	#tutor {
+		background: lightyellow;
+		margin-right: 5px;
+		width: 5%;
+
+	}
+
+	label {
+		margin-right: 10px;
+	}
+
+	input {
+		justify-content: flex-end;
+		padding-bottom: 3px;
+		height: 30px;
+		float: right;
+		background: lavender;
+	}
+
+	.name,
+	.phone2,
+	.email {
+		margin-left: 0px;
+	}
+
+	.volQ {
+		text-align: left;
+		width: 70px;
+		left: 0;
+	}
+
+	#volSub {
+		border-radius: 30;
+		background: yellow;
+		font-weight: bold;
+	}
+
+
 	
 	.donateBx {
 		height: auto;
@@ -1908,6 +2111,8 @@ MEDIA QUERIES - MEDIUM
 	
 	.contact {
 		margin: 100px 0 0;
+		height: auto;
+		padding-bottom: 50px;
 	}
 	
 	.conTbl {
@@ -1917,7 +2122,7 @@ MEDIA QUERIES - MEDIUM
 	.fbLogo {
 		width: 40%;
 	}
-	
+
 	
 	#images {
 		display: none;
@@ -2001,6 +2206,12 @@ MEDIA QUERIES - LARGE
 		width: 40%;
 	}
 	
+	 
+	.contact {
+		height: auto;
+		padding-bottom: 50px;
+	}
+	
 	
 	.images {
 		display: none;
@@ -2042,6 +2253,10 @@ MEDIA QUERIES - X-LARGE
 	}
 	
 	
+	.contact {
+		height: auto;
+		padding-bottom: 50px;
+	}
 	
 	
 	#images {

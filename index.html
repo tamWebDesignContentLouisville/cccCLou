@@ -266,7 +266,7 @@
 			<li>Organize a school supply or snack drive to provide needed items for student support</li>
         </ul>
 				
-		<p class="volSec1para">If you are interested in volunteering for these opportunities, email your request to<a class="mlTo" href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a>and information as well as a background check form will be sent to you.</p>
+		<p class="volSec1para">If you are interested in volunteering for these opportunities, email your request to <a class="mlTo" href="mailto:heidi@communitycatholiccenter.org">Heidi at Community Catholic Center</a> and information as well as a background check form will be sent to you.</p>
         <p class="volSec1para">
          Pray for Our Success–  As all things come from God, CCC continually needs prayers to continue its work.  Please pray for the CCC students and families as well as for our efforts to educate, empower and inspire their faith and educational development.
 				</p>
@@ -277,32 +277,34 @@
             <div class="volCCCsec2">
 				
 				<div>
-					<form name="volForm" action="mailto:tammy@protempus.com" method="post" enctype="text/plain">
+					<form class = "volFrmCls" name="volForm" action="mailto:tammy@protempus.com" method="post" enctype="text/plain">
 					<h4>Volunteer Interests:</h4>
-							
-					<label>
-					</label><br>
+										
+					<div class="frmLn">	
 					<input ng-model="volTyps" type="checkbox" id="tutor" value="interest_tutor" name="user-int">
-						
-					<label class="volQ" for="tutor">Tutor</label><br>
+					<label class="volQ" for="tutor">Tutor</label>
 					
-					<label>
-					<input type="checkbox" id="mentor" value="interest_mentor" name="user-int">
-					<label class="volQ" for="mentor">Mentor</label><br>
+					</div>
+					<div class="frmLn">						
+					<input type="checkbox" id="mentor" value="interest_mentor" name="user-int"><label class="volQ" for="mentor">Mentor</label>						
+					</div>
+					<div class="frmLn">						
 					
-					<label class="name" for="name">Name: </label>
+					<label class="name" for="name">Name  </label>
 					<input type="text" id="name" name="user_name">
-					<br>
+					</div>
+					<div class="frmLn">	
 					
-					<label class="email" for="email">E-mail: </label>
-					<input type="text" id="mail" name=
+					<label class="email" for="email">Email  </label>
+					<input type="text" id="email" name=
 					"user_email">
-					<br>
+					</div>
+					<div class="frmLn">	
 					
-					<label class="phone" for="phone">Phone: </label>
-					<input type="text" id="phone" name=
+					<label class="phone2" for="phone2">Phone  </label>
+					<input type="text" id="phone2" name=
 					"user_phone">
-					<br>
+					</div>
 					
 					<button type="submit" id="volSub">Submit</button>
 						
@@ -504,7 +506,39 @@
 			<td class="phone">502-797-6493<img  src="./img/phone.svg" alt="phone icon" />
 			</td>
 		</tr>
-    </table>  
+    </table>
+		  
+		  <div class="conFm">
+			  <span class="conFm"> Fill out the form below for periodic CCC information.</span>
+			  
+			  <form name="conForm" action="mailto:tammy@protempus.com" method="post" enctype="text/plain">
+				  
+				<div class="conQ">	
+				  <label class="name" for="name">Name  </label>
+					<input type="text" id="name" name="user_name">
+					<br>
+					
+					<label class="email" for="email">Email  </label>
+					<input type="email" id="mail" name=
+					"user_mail">
+					<br>
+					
+					<label class="phone2" for="phone">Phone  </label>
+					<input type="text" id="phone2" name=
+					"user_phone">
+					<br>
+					
+					<button type="submit" id="conSub">Submit</button>
+						
+					<form method="post" action="mailto:tammy@protempus.com" >
+		
+				<!--		
+					<form method="post" action="mailto:heidi@communitycatholiccenter.org" >
+					<input type="submit" value="Send Email" /> 
+				-->		</div>				
+					</form>
+			  
+		  </div>
 		  
 		<div class="contBkBtt">
 			<a href="#topPg">to top</a>
