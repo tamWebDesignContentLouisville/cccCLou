@@ -129,11 +129,10 @@ a:hover {
 /***** CONTENT *****/
 
 .content {   
-	display: flex;
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    overflow: auto;
-	position: absolute;
+    
+
 }
 
 
@@ -243,7 +242,7 @@ p {
 	width: 60%;
 	margin-left: 20%;
 	height: auto;
-	justify-items: center;
+	justify-content: center;
 }
 
 #scholLinks {
@@ -341,7 +340,7 @@ p {
 /***** MODAL WINDOW FROM  MAIN BOX *****/
 
 .modal-backdrop {
-    opacity:1.;
+    opacity: 1.0;
     z-index: -1;
 }
 
@@ -410,13 +409,13 @@ p {
 
 .thumbnail img {
     height: 100px;
-	width: auto;
-	background-size: contain;
+    width: auto;
+    background-size: contain;
     padding: 0;
-	margin-right: 0;
-	right: 0;
-	cursor: pointer;
-	overflow: hidden;
+    margin-right: 0;
+    right: 0;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .largeImg{
@@ -615,7 +614,7 @@ p {
 }
 
 .educate a {
-    font-size: 1.1em;
+    font-size: 1.4em;
     width: 40%;
     height: 60px;
     color: #fff;  
@@ -654,7 +653,7 @@ p {
 }
 
 .empower a {
-    font-size: 1.1em;
+    font-size: 1.4em;
     width: 50%;
     height: 50px;
     color: #fff;  
@@ -684,7 +683,7 @@ p {
 }
 
 .inspire a {
-    font-size: 1.1em;
+    font-size: 1.4em;
     width: 50%;
     height: 50px;
     color: #fff;  
@@ -760,6 +759,10 @@ form div + div {
 	flex-direction: row;
 	width: 80%;
 }
+.frmLn label{
+	padding-top: 5px;
+}
+
 
 #mentor,
 #tutor {
@@ -784,7 +787,8 @@ input {
 .name,
 .phone2,
 .email {
-	margin-left: 0px;
+	margin-left: 0;
+
 }
 
 .volQ {
@@ -823,9 +827,8 @@ input {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     text-align: center;
-    border-radius: 30;
     z-index: 11;
-    top: 1640;
+    top: 1640px;
 	margin: 35px 0 0 165px;
 	text-decoration: underline;
 }
@@ -943,7 +946,7 @@ donTtl {
 
 .donBkBtt {
 	display: flex;
-    font-size: 1.3em;
+    font-size: 1.4em;
 	width: 30%;
     height: 50px;
     text-decoration: underline;
@@ -1029,7 +1032,7 @@ padding-right: 20px;
     height: 50px;
     margin: 0 0 5px 5px;
 	text-decoration: underline;
-	text-align: right:
+	text-align: right;
 }
 
 /***** DIRECTIONS *****/
@@ -1116,7 +1119,7 @@ padding-right: 20px;
     font-size: 1.4em;
     width: 30%;
     height: 50px;
-	margin: 20 0 0 550px;
+	margin: 20px 0 0 550px;
 	text-decoration: underline;
     justify-content: flex-end;
 }
@@ -1137,7 +1140,7 @@ padding-right: 20px;
     font-family: 'Roboto', sans-serif;
     opacity: 0.9;
     filter: alpha(opacity=0.9);
-	overflow: hidden;
+	
 }
 
 .conTtl {
@@ -1165,7 +1168,6 @@ padding-right: 20px;
 	text-decoration: underline;
 	height: 50px;
 }
-
 .phone img{
 	margin-left: 10px;
 }
@@ -1174,9 +1176,17 @@ padding-right: 20px;
 form div + div {
 	margin-bottom: 10px; 
 }
+#flckr{
+	height: 220px;
+	width: 100%;
+ 	margin-top: 0;
+	padding-top: 0;	
+	
+}
+
 
 .conFm {
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 .conFm span {
@@ -1368,7 +1378,7 @@ MEDIA QUERIES - PHONES
 	}
 	
 	carousel {
-		none;
+            display: none;
 	}
 
     .mainBx {
@@ -1456,7 +1466,7 @@ MEDIA QUERIES - PHONES
 	.aboutLeft {
 		height: auto;
 		width: 100%;
-		font-size: 1.em;
+		font-size: 1.0em;
 	}
 
 	.aboutLeftimg {
@@ -1588,11 +1598,7 @@ MEDIA QUERIES - PHONES
 		margin-bottom: 1em; 
 	}
 
-	.frmLn {
-		display: flex;
-		flex-direction: row;
-		width: 80%;
-	}
+
 
 	#mentor,
 	#tutor {
@@ -1627,7 +1633,7 @@ MEDIA QUERIES - PHONES
 	}
 
 	#volSub {
-		border-radius: 30;
+		border-radius: 30px;
 		background: yellow;
 		font-weight: bold;
 	}
@@ -1800,7 +1806,7 @@ MEDIA QUERIES - PHONES
 	}
 
 	#conSub {
-		border-radius: 30;
+		border-radius: 30px;
 		background: yellow;
 		font-weight: bold;
 	}
@@ -1983,7 +1989,7 @@ MEDIA QUERIES - MEDIUM
 	}
 
 	#volLinks {
-		top: 1640;
+		top: 1640px;
 		margin: 35px 0 0 15px;
 		text-decoration: underline;
 	}
@@ -1998,11 +2004,6 @@ MEDIA QUERIES - MEDIUM
 		margin-bottom: 1em; 
 	}
 
-	.frmLn {
-		display: flex;
-		flex-direction: row;
-		width: 80%;
-	}
 
 	#mentor,
 	#tutor {
@@ -2037,7 +2038,7 @@ MEDIA QUERIES - MEDIUM
 	}
 
 	#volSub {
-		border-radius: 30;
+		border-radius: 30px;
 		background: yellow;
 		font-weight: bold;
 	}
@@ -2088,7 +2089,7 @@ MEDIA QUERIES - MEDIUM
 		width: 20%;
 		height: 50px;
 		padding: 20px 0 0 80px;
-		text-align: right:
+		text-align: right;
 	}
 	
 	.directions {
